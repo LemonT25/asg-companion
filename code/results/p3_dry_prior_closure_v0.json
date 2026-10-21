@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "date": "2026-08-12",
+  "script": "src/p3_probe_dryprior.py",
+  "note": "final record of the A6 dry-prior program (closed as negative result, A6.4): 40k decoupled dryer (A6.3) theta line-search rel-err on val"
+ },
+ "dryer_40k": {
+  "theta_rel_median_po": 0.5871,
+  "theta_rel_median_gtstem": 0.5314,
+  "theta_rel_mean_po": 0.5399,
+  "dryprior_mrstft_median": 6.669
+ },
+ "dryer_12k": {
+  "theta_rel_median_po": 0.59,
+  "theta_rel_median_gtstem": 0.5257
+ },
+ "baselines": {
+  "est_head": 0.331,
+  "graph_joint_head": 0.247,
+  "linesearch_gt_prior": 0.013,
+  "linesearch_gt_prior_po_stems": 0.107
+ }
+}

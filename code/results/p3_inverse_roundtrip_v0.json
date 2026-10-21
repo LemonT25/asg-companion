@@ -1,0 +1,11 @@
+{
+ "meta": {
+  "date": "2026-08-21",
+  "script": "src/p3_inverse_roundtrip.py",
+  "def": "render(inverse_passby(GT wet stem, GT v), GT v) vs the GT wet stem, open scenes"
+ },
+ "sisdr_median": 23.531906803357572,
+ "sisdr_p10": 13.065351628079878,
+ "sisdr_p90": 40.859476560930865,
+ "n_slots": 81
+}

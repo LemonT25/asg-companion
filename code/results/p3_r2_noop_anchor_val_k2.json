@@ -1,0 +1,22 @@
+{
+ "meta": {
+  "date": "2026-10-21",
+  "script": "src/p3_noop_anchor.py",
+  "split": "val",
+  "ledger": "p3_edit_eval_v1.json",
+  "k2_rule": true,
+  "E4_anchor": "A12.5/M7: unmodified mixture vs the GT re-render at the commanded newa"
+ },
+ "median": {
+  "E1": 0.9785642830107959,
+  "E2": -1.6778770073736382,
+  "E3": 12.603413894619997,
+  "E4": 18.003684662300763
+ },
+ "n": {
+  "E1": 165,
+  "E2": 79,
+  "E3": 153,
+  "E4": 130
+ }
+}
