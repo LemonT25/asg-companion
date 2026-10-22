@@ -1,0 +1,4444 @@
+{
+ "meta": {
+  "date": "2026-10-21",
+  "script": "src/p3_r2_regen.py",
+  "system": "X5 ZETA (ICML'24)",
+  "split": "val",
+  "ledger": "p3_edit_eval_v1.json",
+  "n_specs": 60,
+  "n_done": 60,
+  "n_fail": 0,
+  "chains": {
+   "C1": "E1+E3",
+   "C2": "E2+E3",
+   "C3": "E1+E4",
+   "C4": "E1+E2"
+  },
+  "wav_dir": "/workspace/CF_ASG/p3/r2_out/x5",
+  "notes": "A14.3: combined = one instruction with both changes; seq = two instructions applied one after the other; edited mixtures LS-fitted to y (main-ledger concession); E4 (room) added in the revision with the prompt 'in a less/more reverberant room' (ZETA) or 'make the room less/more reverberant' (Audio-Omni)",
+  "edits_run": [
+   "E4"
+  ]
+ },
+ "specs": [
+  {
+   "scene": 1361,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 1776,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 4.0,
+   "E4_newa": 0.35,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 245,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 430,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.3,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 180,
+   "E1_slot": 2,
+   "E3_slot": 2,
+   "E3_factor": 0.5,
+   "E4_newa": 0.45,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.45,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1588,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.5,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1811,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 776,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 159,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1150,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1316,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 654,
+   "E1_slot": 1,
+   "E2_slot": 2,
+   "E2_newv": 5.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 2,
+   "C2_newv": 5.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 2,
+   "C4_newv": 5.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1624,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1180,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.3,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 887,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.4,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.4,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 535,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.3,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 371,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 756,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 771,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1123,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 699,
+   "E1_slot": 1,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C2_v_slot": 0,
+   "C2_newv": 30.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 0,
+   "C4_newv": 30.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1107,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 222,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1066,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1733,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 372,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.45,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 1830,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 108,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.5,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1067,
+   "E1_slot": 0,
+   "E2_slot": 1,
+   "E2_newv": 20.0,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "C2_v_slot": 1,
+   "C2_newv": 20.0,
+   "C2_r_slot": 0,
+   "C2_factor": 0.5,
+   "C4_v_slot": 1,
+   "C4_newv": 20.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 952,
+   "E2_slot": 0,
+   "E2_newv": 20.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 896,
+   "E1_slot": 1,
+   "E3_slot": 1,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 1169,
+   "E1_slot": 2,
+   "E2_slot": 1,
+   "E2_newv": 5.0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C2_v_slot": 1,
+   "C2_newv": 5.0,
+   "C2_r_slot": 0,
+   "C2_factor": 4.0,
+   "C4_v_slot": 1,
+   "C4_newv": 5.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 967,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.45,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1231,
+   "E2_slot": 0,
+   "E2_newv": 20.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 143,
+   "E1_slot": 2,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 454,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.3,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 961,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 561,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 255,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 4.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1311,
+   "E1_slot": 1,
+   "E2_slot": 2,
+   "E2_newv": 10.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C2_v_slot": 2,
+   "C2_newv": 10.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 2,
+   "C4_newv": 10.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1070,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 155,
+   "E1_slot": 2,
+   "E2_slot": 0,
+   "E2_newv": 10.0,
+   "C4_v_slot": 0,
+   "C4_newv": 10.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1360,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1608,
+   "E1_slot": 1,
+   "E2_slot": 1,
+   "E2_newv": 20.0,
+   "C4_v_slot": 1,
+   "C4_newv": 20.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1485,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 796,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.45,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C3_rm": 2,
+   "C3_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1433,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1163,
+   "E1_slot": 2,
+   "E2_slot": 1,
+   "E2_newv": 40.0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 1,
+   "C2_newv": 40.0,
+   "C2_r_slot": 0,
+   "C2_factor": 2.0,
+   "C4_v_slot": 1,
+   "C4_newv": 40.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 613,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 586,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 14,
+   "E2_slot": 0,
+   "E2_newv": 40.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1989,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C3_rm": 1,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 625,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 685,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1791,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1211,
+   "E2_slot": 0,
+   "E2_newv": 10.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 936,
+   "E1_slot": 1,
+   "E2_slot": 1,
+   "E2_newv": 40.0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 1,
+   "C2_newv": 40.0,
+   "C2_r_slot": 0,
+   "C2_factor": 2.0,
+   "C4_v_slot": 1,
+   "C4_newv": 40.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1117,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1782,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.35,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.35,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 1795,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.5,
+   "_alpha": 0.44999998807907104
+  }
+ ],
+ "prompts": [
+  {
+   "scene": 1361,
+   "E1": {
+    "source": "a recording of engine, gunshot and thump",
+    "target": "a recording of engine and gunshot"
+   },
+   "E3": {
+    "source": "a recording of engine, gunshot and thump",
+    "target": "a recording of engine, gunshot and thump, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of engine, gunshot and thump",
+    "target": "a recording of engine and gunshot, the engine is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of engine, gunshot and thump",
+     "a recording of engine and gunshot"
+    ],
+    [
+     "a recording of engine and gunshot",
+     "a recording of engine and gunshot, the engine is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of engine, gunshot and thump",
+    "target": "a recording of engine and gunshot, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of engine, gunshot and thump",
+     "a recording of engine and gunshot"
+    ],
+    [
+     "a recording of engine and gunshot",
+     "a recording of engine and gunshot, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of engine, gunshot and thump",
+    "target": "a recording of engine, gunshot and thump, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1776,
+   "E1": {
+    "source": "a recording of bass drum, door and alarm",
+    "target": "a recording of door and alarm"
+   },
+   "E3": {
+    "source": "a recording of bass drum, door and alarm",
+    "target": "a recording of bass drum, door and alarm, the alarm is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of bass drum, door and alarm",
+    "target": "a recording of door and alarm, the alarm is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of bass drum, door and alarm",
+     "a recording of door and alarm"
+    ],
+    [
+     "a recording of door and alarm",
+     "a recording of door and alarm, the alarm is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of bass drum, door and alarm",
+    "target": "a recording of door and alarm, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of bass drum, door and alarm",
+     "a recording of door and alarm"
+    ],
+    [
+     "a recording of door and alarm",
+     "a recording of door and alarm, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of bass drum, door and alarm",
+    "target": "a recording of bass drum, door and alarm, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 245,
+   "E3": {
+    "source": "a recording of tap",
+    "target": "a recording of tap, the tap is 4 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of tap",
+    "target": "a recording of tap, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 430,
+   "E1": {
+    "source": "a recording of engine, drum and door",
+    "target": "a recording of engine and door"
+   },
+   "E3": {
+    "source": "a recording of engine, drum and door",
+    "target": "a recording of engine, drum and door, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of engine, drum and door",
+    "target": "a recording of engine and door, the engine is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of engine, drum and door",
+     "a recording of engine and door"
+    ],
+    [
+     "a recording of engine and door",
+     "a recording of engine and door, the engine is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of engine, drum and door",
+    "target": "a recording of engine and door, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of engine, drum and door",
+     "a recording of engine and door"
+    ],
+    [
+     "a recording of engine and door",
+     "a recording of engine and door, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of engine, drum and door",
+    "target": "a recording of engine, drum and door, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 180,
+   "E1": {
+    "source": "a recording of bell, clapping and door",
+    "target": "a recording of bell and clapping"
+   },
+   "E3": {
+    "source": "a recording of bell, clapping and door",
+    "target": "a recording of bell, clapping and door, the door is twice as close and louder"
+   },
+   "C1": {
+    "source": "a recording of bell, clapping and door",
+    "target": "a recording of bell and clapping, the bell is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of bell, clapping and door",
+     "a recording of bell and clapping"
+    ],
+    [
+     "a recording of bell and clapping",
+     "a recording of bell and clapping, the bell is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of bell, clapping and door",
+    "target": "a recording of bell and clapping, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of bell, clapping and door",
+     "a recording of bell and clapping"
+    ],
+    [
+     "a recording of bell and clapping",
+     "a recording of bell and clapping, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of bell, clapping and door",
+    "target": "a recording of bell, clapping and door, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1588,
+   "E1": {
+    "source": "a recording of door, alarm and engine",
+    "target": "a recording of door and alarm"
+   },
+   "E3": {
+    "source": "a recording of door, alarm and engine",
+    "target": "a recording of door, alarm and engine, the door is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of door, alarm and engine",
+    "target": "a recording of door and alarm, the door is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of door, alarm and engine",
+     "a recording of door and alarm"
+    ],
+    [
+     "a recording of door and alarm",
+     "a recording of door and alarm, the door is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of door, alarm and engine",
+    "target": "a recording of door and alarm, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of door, alarm and engine",
+     "a recording of door and alarm"
+    ],
+    [
+     "a recording of door and alarm",
+     "a recording of door and alarm, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of door, alarm and engine",
+    "target": "a recording of door, alarm and engine, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1811,
+   "E2": {
+    "source": "a recording of engine",
+    "target": "a recording of engine, the engine passes by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 776,
+   "E1": {
+    "source": "a recording of alarm and engine",
+    "target": "a recording of alarm"
+   },
+   "E3": {
+    "source": "a recording of alarm and engine",
+    "target": "a recording of alarm and engine, the alarm is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of alarm and engine",
+    "target": "a recording of alarm, the alarm is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, the alarm is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of alarm and engine",
+    "target": "a recording of alarm, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of alarm and engine",
+    "target": "a recording of alarm and engine, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 159,
+   "E2": {
+    "source": "a recording of alarm",
+    "target": "a recording of alarm, the alarm passes by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 1150,
+   "E1": {
+    "source": "a recording of engine and door",
+    "target": "a recording of door"
+   },
+   "E3": {
+    "source": "a recording of engine and door",
+    "target": "a recording of engine and door, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of engine and door",
+    "target": "a recording of door, the door is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of engine and door",
+     "a recording of door"
+    ],
+    [
+     "a recording of door",
+     "a recording of door, the door is 2 times farther away and quieter"
+    ]
+   ]
+  },
+  {
+   "scene": 1316,
+   "E1": {
+    "source": "a recording of clapping and door",
+    "target": "a recording of clapping"
+   },
+   "E3": {
+    "source": "a recording of clapping and door",
+    "target": "a recording of clapping and door, the clapping is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of clapping and door",
+    "target": "a recording of clapping, the clapping is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of clapping and door",
+     "a recording of clapping"
+    ],
+    [
+     "a recording of clapping",
+     "a recording of clapping, the clapping is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of clapping and door",
+    "target": "a recording of clapping, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of clapping and door",
+     "a recording of clapping"
+    ],
+    [
+     "a recording of clapping",
+     "a recording of clapping, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of clapping and door",
+    "target": "a recording of clapping and door, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 654,
+   "E1": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm and engine"
+   },
+   "E2": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm, drum and engine, the engine passes by at 5 meters per second"
+   },
+   "E3": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm, drum and engine, the drum is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm and engine, the alarm is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of alarm, drum and engine",
+     "a recording of alarm and engine"
+    ],
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm and engine, the alarm is 2 times farther away and quieter"
+    ]
+   ],
+   "C2": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm, drum and engine, the engine passes by at 5 meters per second, the drum is 2 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of alarm, drum and engine",
+     "a recording of alarm, drum and engine, the engine passes by at 5 meters per second"
+    ],
+    [
+     "a recording of alarm, drum and engine, the engine passes by at 5 meters per second",
+     "a recording of alarm, drum and engine, the engine passes by at 5 meters per second, the drum is 2 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of alarm, drum and engine",
+    "target": "a recording of alarm and engine, the engine passes by at 5 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of alarm, drum and engine",
+     "a recording of alarm and engine"
+    ],
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm and engine, the engine passes by at 5 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1624,
+   "E1": {
+    "source": "a recording of engine and alarm",
+    "target": "a recording of alarm"
+   },
+   "E3": {
+    "source": "a recording of engine and alarm",
+    "target": "a recording of engine and alarm, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of engine and alarm",
+    "target": "a recording of alarm, the alarm is twice as close and louder"
+   },
+   "C1seq": [
+    [
+     "a recording of engine and alarm",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, the alarm is twice as close and louder"
+    ]
+   ]
+  },
+  {
+   "scene": 1180,
+   "E1": {
+    "source": "a recording of door, glass and alarm",
+    "target": "a recording of door and glass"
+   },
+   "E3": {
+    "source": "a recording of door, glass and alarm",
+    "target": "a recording of door, glass and alarm, the door is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of door, glass and alarm",
+    "target": "a recording of door and glass, the door is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of door, glass and alarm",
+     "a recording of door and glass"
+    ],
+    [
+     "a recording of door and glass",
+     "a recording of door and glass, the door is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of door, glass and alarm",
+    "target": "a recording of door and glass, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of door, glass and alarm",
+     "a recording of door and glass"
+    ],
+    [
+     "a recording of door and glass",
+     "a recording of door and glass, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of door, glass and alarm",
+    "target": "a recording of door, glass and alarm, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 887,
+   "E1": {
+    "source": "a recording of engine and hammer",
+    "target": "a recording of hammer"
+   },
+   "E3": {
+    "source": "a recording of engine and hammer",
+    "target": "a recording of engine and hammer, the engine is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of engine and hammer",
+    "target": "a recording of hammer, the hammer is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of engine and hammer",
+     "a recording of hammer"
+    ],
+    [
+     "a recording of hammer",
+     "a recording of hammer, the hammer is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of engine and hammer",
+    "target": "a recording of hammer, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of engine and hammer",
+     "a recording of hammer"
+    ],
+    [
+     "a recording of hammer",
+     "a recording of hammer, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of engine and hammer",
+    "target": "a recording of engine and hammer, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 535,
+   "E1": {
+    "source": "a recording of door, clapping and gunshot",
+    "target": "a recording of door and clapping"
+   },
+   "E3": {
+    "source": "a recording of door, clapping and gunshot",
+    "target": "a recording of door, clapping and gunshot, the door is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of door, clapping and gunshot",
+    "target": "a recording of door and clapping, the door is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of door, clapping and gunshot",
+     "a recording of door and clapping"
+    ],
+    [
+     "a recording of door and clapping",
+     "a recording of door and clapping, the door is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of door, clapping and gunshot",
+    "target": "a recording of door and clapping, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of door, clapping and gunshot",
+     "a recording of door and clapping"
+    ],
+    [
+     "a recording of door and clapping",
+     "a recording of door and clapping, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of door, clapping and gunshot",
+    "target": "a recording of door, clapping and gunshot, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 371,
+   "E3": {
+    "source": "a recording of engine",
+    "target": "a recording of engine, the engine is 4 times farther away and quieter"
+   }
+  },
+  {
+   "scene": 756,
+   "E3": {
+    "source": "a recording of door",
+    "target": "a recording of door, the door is twice as close and louder"
+   },
+   "E4": {
+    "source": "a recording of door",
+    "target": "a recording of door, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 771,
+   "E1": {
+    "source": "a recording of drum, glass and door",
+    "target": "a recording of glass and door"
+   },
+   "E3": {
+    "source": "a recording of drum, glass and door",
+    "target": "a recording of drum, glass and door, the door is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of drum, glass and door",
+    "target": "a recording of glass and door, the door is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of drum, glass and door",
+     "a recording of glass and door"
+    ],
+    [
+     "a recording of glass and door",
+     "a recording of glass and door, the door is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of drum, glass and door",
+    "target": "a recording of glass and door, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of drum, glass and door",
+     "a recording of glass and door"
+    ],
+    [
+     "a recording of glass and door",
+     "a recording of glass and door, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of drum, glass and door",
+    "target": "a recording of drum, glass and door, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1123,
+   "E3": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, the thump is 2 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 699,
+   "E1": {
+    "source": "a recording of engine and thump",
+    "target": "a recording of engine"
+   },
+   "E2": {
+    "source": "a recording of engine and thump",
+    "target": "a recording of engine and thump, the engine passes by at 30 meters per second"
+   },
+   "E3": {
+    "source": "a recording of engine and thump",
+    "target": "a recording of engine and thump, the thump is 2 times farther away and quieter"
+   },
+   "C2": {
+    "source": "a recording of engine and thump",
+    "target": "a recording of engine and thump, the engine passes by at 30 meters per second, the thump is 2 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of engine and thump",
+     "a recording of engine and thump, the engine passes by at 30 meters per second"
+    ],
+    [
+     "a recording of engine and thump, the engine passes by at 30 meters per second",
+     "a recording of engine and thump, the engine passes by at 30 meters per second, the thump is 2 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of engine and thump",
+    "target": "a recording of engine, the engine passes by at 30 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of engine and thump",
+     "a recording of engine"
+    ],
+    [
+     "a recording of engine",
+     "a recording of engine, the engine passes by at 30 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1107,
+   "E3": {
+    "source": "a recording of gunshot",
+    "target": "a recording of gunshot, the gunshot is 4 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of gunshot",
+    "target": "a recording of gunshot, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 222,
+   "E1": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door"
+   },
+   "E3": {
+    "source": "a recording of drum and door",
+    "target": "a recording of drum and door, the drum is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door, the door is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of drum and door",
+     "a recording of door"
+    ],
+    [
+     "a recording of door",
+     "a recording of door, the door is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of drum and door",
+     "a recording of door"
+    ],
+    [
+     "a recording of door",
+     "a recording of door, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of drum and door",
+    "target": "a recording of drum and door, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1066,
+   "E2": {
+    "source": "a recording of bell",
+    "target": "a recording of bell, the bell passes by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 1733,
+   "E3": {
+    "source": "a recording of alarm",
+    "target": "a recording of alarm, the alarm is 4 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of alarm",
+    "target": "a recording of alarm, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 372,
+   "E1": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door"
+   },
+   "E3": {
+    "source": "a recording of drum and door",
+    "target": "a recording of drum and door, the door is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door, the door is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of drum and door",
+     "a recording of door"
+    ],
+    [
+     "a recording of door",
+     "a recording of door, the door is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of drum and door",
+    "target": "a recording of door, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of drum and door",
+     "a recording of door"
+    ],
+    [
+     "a recording of door",
+     "a recording of door, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of drum and door",
+    "target": "a recording of drum and door, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1830,
+   "E3": {
+    "source": "a recording of bass drum",
+    "target": "a recording of bass drum, the bass drum is 4 times farther away and quieter"
+   }
+  },
+  {
+   "scene": 108,
+   "E1": {
+    "source": "a recording of thump and gunshot",
+    "target": "a recording of gunshot"
+   },
+   "E3": {
+    "source": "a recording of thump and gunshot",
+    "target": "a recording of thump and gunshot, the thump is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of thump and gunshot",
+    "target": "a recording of gunshot, the gunshot is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of thump and gunshot",
+     "a recording of gunshot"
+    ],
+    [
+     "a recording of gunshot",
+     "a recording of gunshot, the gunshot is 4 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of thump and gunshot",
+    "target": "a recording of gunshot, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of thump and gunshot",
+     "a recording of gunshot"
+    ],
+    [
+     "a recording of gunshot",
+     "a recording of gunshot, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of thump and gunshot",
+    "target": "a recording of thump and gunshot, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1067,
+   "E1": {
+    "source": "a recording of engine, alarm and bell",
+    "target": "a recording of alarm and bell"
+   },
+   "E2": {
+    "source": "a recording of engine, alarm and bell",
+    "target": "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second"
+   },
+   "E3": {
+    "source": "a recording of engine, alarm and bell",
+    "target": "a recording of engine, alarm and bell, the engine is twice as close and louder"
+   },
+   "C2": {
+    "source": "a recording of engine, alarm and bell",
+    "target": "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second, the engine is twice as close and louder"
+   },
+   "C2seq": [
+    [
+     "a recording of engine, alarm and bell",
+     "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second"
+    ],
+    [
+     "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second",
+     "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second, the engine is twice as close and louder"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of engine, alarm and bell",
+    "target": "a recording of alarm and bell, the alarm passes by at 20 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of engine, alarm and bell",
+     "a recording of alarm and bell"
+    ],
+    [
+     "a recording of alarm and bell",
+     "a recording of alarm and bell, the alarm passes by at 20 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 952,
+   "E2": {
+    "source": "a recording of alarm",
+    "target": "a recording of alarm, the alarm passes by at 20 meters per second"
+   }
+  },
+  {
+   "scene": 896,
+   "E1": {
+    "source": "a recording of engine, clapping and glass",
+    "target": "a recording of engine and glass"
+   },
+   "E3": {
+    "source": "a recording of engine, clapping and glass",
+    "target": "a recording of engine, clapping and glass, the clapping is twice as close and louder"
+   },
+   "C1": {
+    "source": "a recording of engine, clapping and glass",
+    "target": "a recording of engine and glass, the engine is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of engine, clapping and glass",
+     "a recording of engine and glass"
+    ],
+    [
+     "a recording of engine and glass",
+     "a recording of engine and glass, the engine is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of engine, clapping and glass",
+    "target": "a recording of engine and glass, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of engine, clapping and glass",
+     "a recording of engine and glass"
+    ],
+    [
+     "a recording of engine and glass",
+     "a recording of engine and glass, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of engine, clapping and glass",
+    "target": "a recording of engine, clapping and glass, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1169,
+   "E1": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass and engine"
+   },
+   "E2": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass, engine and hammer, the engine passes by at 5 meters per second"
+   },
+   "E3": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass, engine and hammer, the glass is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass and engine, the glass is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of glass, engine and hammer",
+     "a recording of glass and engine"
+    ],
+    [
+     "a recording of glass and engine",
+     "a recording of glass and engine, the glass is 4 times farther away and quieter"
+    ]
+   ],
+   "C2": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass, engine and hammer, the engine passes by at 5 meters per second, the glass is 4 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of glass, engine and hammer",
+     "a recording of glass, engine and hammer, the engine passes by at 5 meters per second"
+    ],
+    [
+     "a recording of glass, engine and hammer, the engine passes by at 5 meters per second",
+     "a recording of glass, engine and hammer, the engine passes by at 5 meters per second, the glass is 4 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of glass, engine and hammer",
+    "target": "a recording of glass and engine, the engine passes by at 5 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of glass, engine and hammer",
+     "a recording of glass and engine"
+    ],
+    [
+     "a recording of glass and engine",
+     "a recording of glass and engine, the engine passes by at 5 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 967,
+   "E1": {
+    "source": "a recording of gunshot, alarm and engine",
+    "target": "a recording of alarm and engine"
+   },
+   "E3": {
+    "source": "a recording of gunshot, alarm and engine",
+    "target": "a recording of gunshot, alarm and engine, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of gunshot, alarm and engine",
+    "target": "a recording of alarm and engine, the engine is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of gunshot, alarm and engine",
+     "a recording of alarm and engine"
+    ],
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm and engine, the engine is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of gunshot, alarm and engine",
+    "target": "a recording of alarm and engine, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of gunshot, alarm and engine",
+     "a recording of alarm and engine"
+    ],
+    [
+     "a recording of alarm and engine",
+     "a recording of alarm and engine, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of gunshot, alarm and engine",
+    "target": "a recording of gunshot, alarm and engine, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1231,
+   "E2": {
+    "source": "a recording of engine",
+    "target": "a recording of engine, the engine passes by at 20 meters per second"
+   }
+  },
+  {
+   "scene": 143,
+   "E1": {
+    "source": "a recording of bell, thump and bass drum",
+    "target": "a recording of bell and thump"
+   },
+   "E3": {
+    "source": "a recording of bell, thump and bass drum",
+    "target": "a recording of bell, thump and bass drum, the thump is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of bell, thump and bass drum",
+    "target": "a recording of bell and thump, the thump is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of bell, thump and bass drum",
+     "a recording of bell and thump"
+    ],
+    [
+     "a recording of bell and thump",
+     "a recording of bell and thump, the thump is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of bell, thump and bass drum",
+    "target": "a recording of bell and thump, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of bell, thump and bass drum",
+     "a recording of bell and thump"
+    ],
+    [
+     "a recording of bell and thump",
+     "a recording of bell and thump, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of bell, thump and bass drum",
+    "target": "a recording of bell, thump and bass drum, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 454,
+   "E3": {
+    "source": "a recording of glass",
+    "target": "a recording of glass, the glass is twice as close and louder"
+   },
+   "E4": {
+    "source": "a recording of glass",
+    "target": "a recording of glass, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 961,
+   "E2": {
+    "source": "a recording of bell",
+    "target": "a recording of bell, the bell passes by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 561,
+   "E3": {
+    "source": "a recording of bell",
+    "target": "a recording of bell, the bell is 2 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of bell",
+    "target": "a recording of bell, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 255,
+   "E1": {
+    "source": "a recording of gunshot and engine",
+    "target": "a recording of engine"
+   },
+   "E3": {
+    "source": "a recording of gunshot and engine",
+    "target": "a recording of gunshot and engine, the engine is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of gunshot and engine",
+    "target": "a recording of engine, the engine is 4 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of gunshot and engine",
+     "a recording of engine"
+    ],
+    [
+     "a recording of engine",
+     "a recording of engine, the engine is 4 times farther away and quieter"
+    ]
+   ]
+  },
+  {
+   "scene": 1311,
+   "E1": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass and engine"
+   },
+   "E2": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass, clapping and engine, the engine passes by at 10 meters per second"
+   },
+   "E3": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass, clapping and engine, the clapping is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass and engine, the glass is twice as close and louder"
+   },
+   "C1seq": [
+    [
+     "a recording of glass, clapping and engine",
+     "a recording of glass and engine"
+    ],
+    [
+     "a recording of glass and engine",
+     "a recording of glass and engine, the glass is twice as close and louder"
+    ]
+   ],
+   "C2": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass, clapping and engine, the engine passes by at 10 meters per second, the clapping is 2 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of glass, clapping and engine",
+     "a recording of glass, clapping and engine, the engine passes by at 10 meters per second"
+    ],
+    [
+     "a recording of glass, clapping and engine, the engine passes by at 10 meters per second",
+     "a recording of glass, clapping and engine, the engine passes by at 10 meters per second, the clapping is 2 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of glass, clapping and engine",
+    "target": "a recording of glass and engine, the engine passes by at 10 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of glass, clapping and engine",
+     "a recording of glass and engine"
+    ],
+    [
+     "a recording of glass and engine",
+     "a recording of glass and engine, the engine passes by at 10 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1070,
+   "E1": {
+    "source": "a recording of bell, bass drum and alarm",
+    "target": "a recording of bell and bass drum"
+   },
+   "E3": {
+    "source": "a recording of bell, bass drum and alarm",
+    "target": "a recording of bell, bass drum and alarm, the bell is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of bell, bass drum and alarm",
+    "target": "a recording of bell and bass drum, the bell is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of bell, bass drum and alarm",
+     "a recording of bell and bass drum"
+    ],
+    [
+     "a recording of bell and bass drum",
+     "a recording of bell and bass drum, the bell is 2 times farther away and quieter"
+    ]
+   ]
+  },
+  {
+   "scene": 155,
+   "E1": {
+    "source": "a recording of engine, bell and alarm",
+    "target": "a recording of engine and bell"
+   },
+   "E2": {
+    "source": "a recording of engine, bell and alarm",
+    "target": "a recording of engine, bell and alarm, the engine passes by at 10 meters per second"
+   },
+   "C4": {
+    "source": "a recording of engine, bell and alarm",
+    "target": "a recording of engine and bell, the engine passes by at 10 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of engine, bell and alarm",
+     "a recording of engine and bell"
+    ],
+    [
+     "a recording of engine and bell",
+     "a recording of engine and bell, the engine passes by at 10 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1360,
+   "E3": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, the thump is 2 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1608,
+   "E1": {
+    "source": "a recording of bell and alarm",
+    "target": "a recording of bell"
+   },
+   "E2": {
+    "source": "a recording of bell and alarm",
+    "target": "a recording of bell and alarm, the alarm passes by at 20 meters per second"
+   },
+   "C4": {
+    "source": "a recording of bell and alarm",
+    "target": "a recording of alarm, the alarm passes by at 20 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of bell and alarm",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, the alarm passes by at 20 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1485,
+   "E3": {
+    "source": "a recording of drum",
+    "target": "a recording of drum, the drum is 2 times farther away and quieter"
+   },
+   "E4": {
+    "source": "a recording of drum",
+    "target": "a recording of drum, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 796,
+   "E1": {
+    "source": "a recording of bell, alarm and engine",
+    "target": "a recording of bell and alarm"
+   },
+   "E3": {
+    "source": "a recording of bell, alarm and engine",
+    "target": "a recording of bell, alarm and engine, the bell is twice as close and louder"
+   },
+   "C1": {
+    "source": "a recording of bell, alarm and engine",
+    "target": "a recording of bell and alarm, the bell is twice as close and louder"
+   },
+   "C1seq": [
+    [
+     "a recording of bell, alarm and engine",
+     "a recording of bell and alarm"
+    ],
+    [
+     "a recording of bell and alarm",
+     "a recording of bell and alarm, the bell is twice as close and louder"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of bell, alarm and engine",
+    "target": "a recording of bell and alarm, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of bell, alarm and engine",
+     "a recording of bell and alarm"
+    ],
+    [
+     "a recording of bell and alarm",
+     "a recording of bell and alarm, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of bell, alarm and engine",
+    "target": "a recording of bell, alarm and engine, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1433,
+   "E1": {
+    "source": "a recording of glass and alarm",
+    "target": "a recording of alarm"
+   },
+   "E3": {
+    "source": "a recording of glass and alarm",
+    "target": "a recording of glass and alarm, the glass is 4 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of glass and alarm",
+    "target": "a recording of alarm, the alarm is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of glass and alarm",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, the alarm is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of glass and alarm",
+    "target": "a recording of alarm, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of glass and alarm",
+     "a recording of alarm"
+    ],
+    [
+     "a recording of alarm",
+     "a recording of alarm, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of glass and alarm",
+    "target": "a recording of glass and alarm, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1163,
+   "E1": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell and engine"
+   },
+   "E2": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second"
+   },
+   "E3": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell, engine and gunshot, the bell is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell and engine, the bell is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of bell, engine and gunshot",
+     "a recording of bell and engine"
+    ],
+    [
+     "a recording of bell and engine",
+     "a recording of bell and engine, the bell is 2 times farther away and quieter"
+    ]
+   ],
+   "C2": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second, the bell is 2 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of bell, engine and gunshot",
+     "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second"
+    ],
+    [
+     "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second",
+     "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second, the bell is 2 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of bell, engine and gunshot",
+    "target": "a recording of bell and engine, the engine passes by at 40 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of bell, engine and gunshot",
+     "a recording of bell and engine"
+    ],
+    [
+     "a recording of bell and engine",
+     "a recording of bell and engine, the engine passes by at 40 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 613,
+   "E3": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, the thump is twice as close and louder"
+   },
+   "E4": {
+    "source": "a recording of thump",
+    "target": "a recording of thump, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 586,
+   "E3": {
+    "source": "a recording of alarm",
+    "target": "a recording of alarm, the alarm is 2 times farther away and quieter"
+   }
+  },
+  {
+   "scene": 14,
+   "E2": {
+    "source": "a recording of bell",
+    "target": "a recording of bell, the bell passes by at 40 meters per second"
+   }
+  },
+  {
+   "scene": 1989,
+   "E1": {
+    "source": "a recording of glass and clapping",
+    "target": "a recording of glass"
+   },
+   "E3": {
+    "source": "a recording of glass and clapping",
+    "target": "a recording of glass and clapping, the glass is twice as close and louder"
+   },
+   "C1": {
+    "source": "a recording of glass and clapping",
+    "target": "a recording of glass, the glass is twice as close and louder"
+   },
+   "C1seq": [
+    [
+     "a recording of glass and clapping",
+     "a recording of glass"
+    ],
+    [
+     "a recording of glass",
+     "a recording of glass, the glass is twice as close and louder"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of glass and clapping",
+    "target": "a recording of glass, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of glass and clapping",
+     "a recording of glass"
+    ],
+    [
+     "a recording of glass",
+     "a recording of glass, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of glass and clapping",
+    "target": "a recording of glass and clapping, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 625,
+   "E1": {
+    "source": "a recording of gunshot and tap",
+    "target": "a recording of tap"
+   },
+   "E3": {
+    "source": "a recording of gunshot and tap",
+    "target": "a recording of gunshot and tap, the gunshot is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of gunshot and tap",
+    "target": "a recording of tap, the tap is twice as close and louder"
+   },
+   "C1seq": [
+    [
+     "a recording of gunshot and tap",
+     "a recording of tap"
+    ],
+    [
+     "a recording of tap",
+     "a recording of tap, the tap is twice as close and louder"
+    ]
+   ]
+  },
+  {
+   "scene": 685,
+   "E3": {
+    "source": "a recording of door",
+    "target": "a recording of door, the door is twice as close and louder"
+   },
+   "E4": {
+    "source": "a recording of door",
+    "target": "a recording of door, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1791,
+   "E1": {
+    "source": "a recording of door, drum and clapping",
+    "target": "a recording of door and drum"
+   },
+   "E3": {
+    "source": "a recording of door, drum and clapping",
+    "target": "a recording of door, drum and clapping, the door is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of door, drum and clapping",
+    "target": "a recording of door and drum, the door is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of door, drum and clapping",
+     "a recording of door and drum"
+    ],
+    [
+     "a recording of door and drum",
+     "a recording of door and drum, the door is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of door, drum and clapping",
+    "target": "a recording of door and drum, in a more reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of door, drum and clapping",
+     "a recording of door and drum"
+    ],
+    [
+     "a recording of door and drum",
+     "a recording of door and drum, in a more reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of door, drum and clapping",
+    "target": "a recording of door, drum and clapping, in a more reverberant room"
+   }
+  },
+  {
+   "scene": 1211,
+   "E2": {
+    "source": "a recording of engine",
+    "target": "a recording of engine, the engine passes by at 10 meters per second"
+   }
+  },
+  {
+   "scene": 936,
+   "E1": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of clapping"
+   },
+   "E2": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of clapping and bell, the bell passes by at 40 meters per second"
+   },
+   "E3": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of clapping and bell, the clapping is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of clapping, the clapping is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of clapping and bell",
+     "a recording of clapping"
+    ],
+    [
+     "a recording of clapping",
+     "a recording of clapping, the clapping is 2 times farther away and quieter"
+    ]
+   ],
+   "C2": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of clapping and bell, the bell passes by at 40 meters per second, the clapping is 2 times farther away and quieter"
+   },
+   "C2seq": [
+    [
+     "a recording of clapping and bell",
+     "a recording of clapping and bell, the bell passes by at 40 meters per second"
+    ],
+    [
+     "a recording of clapping and bell, the bell passes by at 40 meters per second",
+     "a recording of clapping and bell, the bell passes by at 40 meters per second, the clapping is 2 times farther away and quieter"
+    ]
+   ],
+   "C4": {
+    "source": "a recording of clapping and bell",
+    "target": "a recording of bell, the bell passes by at 40 meters per second"
+   },
+   "C4seq": [
+    [
+     "a recording of clapping and bell",
+     "a recording of bell"
+    ],
+    [
+     "a recording of bell",
+     "a recording of bell, the bell passes by at 40 meters per second"
+    ]
+   ]
+  },
+  {
+   "scene": 1117,
+   "E3": {
+    "source": "a recording of door",
+    "target": "a recording of door, the door is twice as close and louder"
+   }
+  },
+  {
+   "scene": 1782,
+   "E1": {
+    "source": "a recording of drum and engine",
+    "target": "a recording of engine"
+   },
+   "E3": {
+    "source": "a recording of drum and engine",
+    "target": "a recording of drum and engine, the engine is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of drum and engine",
+    "target": "a recording of engine, the engine is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of drum and engine",
+     "a recording of engine"
+    ],
+    [
+     "a recording of engine",
+     "a recording of engine, the engine is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of drum and engine",
+    "target": "a recording of engine, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of drum and engine",
+     "a recording of engine"
+    ],
+    [
+     "a recording of engine",
+     "a recording of engine, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of drum and engine",
+    "target": "a recording of drum and engine, in a less reverberant room"
+   }
+  },
+  {
+   "scene": 1795,
+   "E1": {
+    "source": "a recording of glass, bell and door",
+    "target": "a recording of glass and door"
+   },
+   "E3": {
+    "source": "a recording of glass, bell and door",
+    "target": "a recording of glass, bell and door, the glass is 2 times farther away and quieter"
+   },
+   "C1": {
+    "source": "a recording of glass, bell and door",
+    "target": "a recording of glass and door, the glass is 2 times farther away and quieter"
+   },
+   "C1seq": [
+    [
+     "a recording of glass, bell and door",
+     "a recording of glass and door"
+    ],
+    [
+     "a recording of glass and door",
+     "a recording of glass and door, the glass is 2 times farther away and quieter"
+    ]
+   ],
+   "C3": {
+    "source": "a recording of glass, bell and door",
+    "target": "a recording of glass and door, in a less reverberant room"
+   },
+   "C3seq": [
+    [
+     "a recording of glass, bell and door",
+     "a recording of glass and door"
+    ],
+    [
+     "a recording of glass and door",
+     "a recording of glass and door, in a less reverberant room"
+    ]
+   ],
+   "E4": {
+    "source": "a recording of glass, bell and door",
+    "target": "a recording of glass, bell and door, in a less reverberant room"
+   }
+  }
+ ],
+ "rows": {
+  "E1": [
+   {
+    "scene": 1361,
+    "sisdr": -46.73442236350313,
+    "mrstft": 3.859351396560669,
+    "loc": -46.73442236350319
+   },
+   {
+    "scene": 1776,
+    "sisdr": -55.81089394159157,
+    "mrstft": 5.93848991394043,
+    "loc": -55.81089394159111
+   },
+   {
+    "scene": 430,
+    "sisdr": -49.670407867949365,
+    "mrstft": 8.299430847167969,
+    "loc": -49.67040786795009
+   },
+   {
+    "scene": 180,
+    "sisdr": -37.88294416752955,
+    "mrstft": 3.8112246990203857,
+    "loc": -37.88294416752937
+   },
+   {
+    "scene": 1588,
+    "sisdr": -35.77325749438277,
+    "mrstft": 6.018695831298828,
+    "loc": -35.77325749438279
+   },
+   {
+    "scene": 776,
+    "sisdr": -44.096814628675574,
+    "mrstft": 4.401514530181885,
+    "loc": -44.09681462867559
+   },
+   {
+    "scene": 1150,
+    "sisdr": -41.9967476990908,
+    "mrstft": 3.608624219894409,
+    "loc": -41.996747699090974
+   },
+   {
+    "scene": 1316,
+    "sisdr": -55.35852090149866,
+    "mrstft": 5.484033584594727,
+    "loc": -55.35852090149894
+   },
+   {
+    "scene": 654,
+    "sisdr": -33.960347849996,
+    "mrstft": 4.029152870178223,
+    "loc": -33.960347849996005
+   },
+   {
+    "scene": 1624,
+    "sisdr": -38.87009909954826,
+    "mrstft": 3.998039484024048,
+    "loc": -38.87009909954826
+   },
+   {
+    "scene": 1180,
+    "sisdr": -41.13838990817369,
+    "mrstft": 4.838339328765869,
+    "loc": -41.138389908173835
+   },
+   {
+    "scene": 887,
+    "sisdr": -43.86815808469536,
+    "mrstft": 3.358351707458496,
+    "loc": -43.86815808469535
+   },
+   {
+    "scene": 535,
+    "sisdr": -52.756451192799474,
+    "mrstft": 5.189490795135498,
+    "loc": -52.756451192799965
+   },
+   {
+    "scene": 771,
+    "sisdr": -60.96511549967866,
+    "mrstft": 5.029630661010742,
+    "loc": -60.965115499678575
+   },
+   {
+    "scene": 699,
+    "sisdr": -56.096912887190875,
+    "mrstft": 4.856614589691162,
+    "loc": -56.09691288719123
+   },
+   {
+    "scene": 222,
+    "sisdr": -37.842926452723646,
+    "mrstft": 4.272250652313232,
+    "loc": -37.84292645272369
+   },
+   {
+    "scene": 372,
+    "sisdr": -31.37772419479768,
+    "mrstft": 5.252202987670898,
+    "loc": -31.377724194797693
+   },
+   {
+    "scene": 108,
+    "sisdr": -78.77145189115437,
+    "mrstft": 2.839177370071411,
+    "loc": -78.77145189115355
+   },
+   {
+    "scene": 1067,
+    "sisdr": -32.26660622975104,
+    "mrstft": 3.514110803604126,
+    "loc": -32.266606229751034
+   },
+   {
+    "scene": 896,
+    "sisdr": -33.96319065571759,
+    "mrstft": 4.487158298492432,
+    "loc": -33.96319065571757
+   },
+   {
+    "scene": 1169,
+    "sisdr": -38.94189660132785,
+    "mrstft": 3.7966623306274414,
+    "loc": -38.94189660132787
+   },
+   {
+    "scene": 967,
+    "sisdr": -41.82887237412337,
+    "mrstft": 6.184084415435791,
+    "loc": -41.82887237412348
+   },
+   {
+    "scene": 143,
+    "sisdr": -39.644206019642375,
+    "mrstft": 3.9040260314941406,
+    "loc": -39.644206019642375
+   },
+   {
+    "scene": 255,
+    "sisdr": -40.64233265881036,
+    "mrstft": 2.602769136428833,
+    "loc": -40.64233265881036
+   },
+   {
+    "scene": 1311,
+    "sisdr": -51.41247173344517,
+    "mrstft": 6.701371669769287,
+    "loc": -51.41247173344514
+   },
+   {
+    "scene": 1070,
+    "sisdr": -33.901079385519736,
+    "mrstft": 3.6728675365448,
+    "loc": -33.90107938551974
+   },
+   {
+    "scene": 155,
+    "sisdr": -33.44892467204518,
+    "mrstft": 5.327820301055908,
+    "loc": -33.448924672045166
+   },
+   {
+    "scene": 1608,
+    "sisdr": -49.67796571355816,
+    "mrstft": 2.386728286743164,
+    "loc": -49.677965713555494
+   },
+   {
+    "scene": 796,
+    "sisdr": -54.04932374423385,
+    "mrstft": 3.6131350994110107,
+    "loc": -54.049323744233455
+   },
+   {
+    "scene": 1433,
+    "sisdr": -30.441078483062654,
+    "mrstft": 4.455106258392334,
+    "loc": -30.441078483062654
+   },
+   {
+    "scene": 1163,
+    "sisdr": -31.782460740941076,
+    "mrstft": 3.5972535610198975,
+    "loc": -31.782460740941076
+   },
+   {
+    "scene": 1989,
+    "sisdr": -41.556952854897645,
+    "mrstft": 2.4919450283050537,
+    "loc": -41.5569528548976
+   },
+   {
+    "scene": 625,
+    "sisdr": -59.12242515778247,
+    "mrstft": 2.7742226123809814,
+    "loc": -59.12242515776394
+   },
+   {
+    "scene": 1791,
+    "sisdr": -42.77933346794838,
+    "mrstft": 4.862292766571045,
+    "loc": -42.77933346794872
+   },
+   {
+    "scene": 936,
+    "sisdr": -34.39685869331575,
+    "mrstft": 3.693186044692993,
+    "loc": -34.39685869331574
+   },
+   {
+    "scene": 1782,
+    "sisdr": -55.07199922898799,
+    "mrstft": 5.307754039764404,
+    "loc": -55.07199922898539
+   },
+   {
+    "scene": 1795,
+    "sisdr": -44.69369917659121,
+    "mrstft": 4.686064720153809,
+    "loc": -44.69369917658984
+   }
+  ],
+  "E3": [
+   {
+    "scene": 1361,
+    "sisdr": -38.398548158528165,
+    "mrstft": 6.794792652130127,
+    "loc": -45.19192762809294
+   },
+   {
+    "scene": 1776,
+    "sisdr": -33.662636669522705,
+    "mrstft": 3.372868776321411,
+    "loc": -66.61641264671107
+   },
+   {
+    "scene": 245,
+    "sisdr": -34.55253122039229,
+    "mrstft": 3.4769535064697266,
+    "loc": -130.50552081375974
+   },
+   {
+    "scene": 430,
+    "sisdr": -39.481771867603285,
+    "mrstft": 5.584615230560303,
+    "loc": -45.956186188231
+   },
+   {
+    "scene": 180,
+    "sisdr": -38.127395445749606,
+    "mrstft": 4.819436550140381,
+    "loc": -44.35102810858603
+   },
+   {
+    "scene": 1588,
+    "sisdr": -28.269663964965357,
+    "mrstft": 5.227283000946045,
+    "loc": -52.36517373044144
+   },
+   {
+    "scene": 776,
+    "sisdr": -39.22000968823148,
+    "mrstft": 5.506586074829102,
+    "loc": -38.69319196605461
+   },
+   {
+    "scene": 1150,
+    "sisdr": -46.87646615714054,
+    "mrstft": 4.94077730178833,
+    "loc": -52.064887097806434
+   },
+   {
+    "scene": 1316,
+    "sisdr": -31.78241269558958,
+    "mrstft": 5.177283763885498,
+    "loc": -44.70164369340128
+   },
+   {
+    "scene": 654,
+    "sisdr": -38.678432797823,
+    "mrstft": 4.485628128051758,
+    "loc": -28.393981755694547
+   },
+   {
+    "scene": 1624,
+    "sisdr": -33.44688881965084,
+    "mrstft": 4.821715354919434,
+    "loc": -58.9570818069473
+   },
+   {
+    "scene": 1180,
+    "sisdr": -35.09066447135841,
+    "mrstft": 5.862063884735107,
+    "loc": -95.05340619055218
+   },
+   {
+    "scene": 887,
+    "sisdr": -26.53059112804123,
+    "mrstft": 3.680161476135254,
+    "loc": -38.658833260708725
+   },
+   {
+    "scene": 535,
+    "sisdr": -65.30840176616528,
+    "mrstft": 6.804616451263428,
+    "loc": -34.80989762690706
+   },
+   {
+    "scene": 371,
+    "sisdr": -37.92517795497337,
+    "mrstft": 4.606701374053955,
+    "loc": -139.3393620456711
+   },
+   {
+    "scene": 756,
+    "sisdr": -32.310110384516825,
+    "mrstft": 5.871009826660156,
+    "loc": -152.0872285066254
+   },
+   {
+    "scene": 771,
+    "sisdr": -34.5407068961812,
+    "mrstft": 4.170016765594482,
+    "loc": -35.351651415353174
+   },
+   {
+    "scene": 1123,
+    "sisdr": -15.361845284559925,
+    "mrstft": 1.5027694702148438,
+    "loc": -137.46166870363754
+   },
+   {
+    "scene": 699,
+    "sisdr": -84.42946487252445,
+    "mrstft": 5.98729944229126,
+    "loc": -41.37851467712523
+   },
+   {
+    "scene": 1107,
+    "sisdr": -52.678049742088966,
+    "mrstft": 2.2795119285583496,
+    "loc": -129.1107950171259
+   },
+   {
+    "scene": 222,
+    "sisdr": -41.08813302337016,
+    "mrstft": 4.632263660430908,
+    "loc": -31.797207008348636
+   },
+   {
+    "scene": 1733,
+    "sisdr": -30.788104047071435,
+    "mrstft": 3.3143014907836914,
+    "loc": -131.55162679782265
+   },
+   {
+    "scene": 372,
+    "sisdr": -37.52242439606281,
+    "mrstft": 5.591126918792725,
+    "loc": -37.82488383500464
+   },
+   {
+    "scene": 1830,
+    "sisdr": -21.018881802703937,
+    "mrstft": 1.2658542394638062,
+    "loc": -143.3582971927117
+   },
+   {
+    "scene": 108,
+    "sisdr": -44.93963425098872,
+    "mrstft": 5.244304656982422,
+    "loc": -26.82736716465621
+   },
+   {
+    "scene": 1067,
+    "sisdr": -30.3110821587384,
+    "mrstft": 5.1374077796936035,
+    "loc": -59.202160945816715
+   },
+   {
+    "scene": 896,
+    "sisdr": -33.38906441130076,
+    "mrstft": 5.539739608764648,
+    "loc": -57.59249379369628
+   },
+   {
+    "scene": 1169,
+    "sisdr": -49.938079036483245,
+    "mrstft": 5.070318698883057,
+    "loc": -62.81286967238216
+   },
+   {
+    "scene": 967,
+    "sisdr": -54.88913085965236,
+    "mrstft": 5.986771106719971,
+    "loc": -39.07553568019126
+   },
+   {
+    "scene": 143,
+    "sisdr": -47.64990825901062,
+    "mrstft": 5.43894624710083,
+    "loc": -26.625105437315362
+   },
+   {
+    "scene": 454,
+    "sisdr": -46.45492074247062,
+    "mrstft": 4.556325435638428,
+    "loc": -144.1801937173533
+   },
+   {
+    "scene": 561,
+    "sisdr": -28.74840692312032,
+    "mrstft": 4.071889400482178,
+    "loc": -141.86055109076716
+   },
+   {
+    "scene": 255,
+    "sisdr": -46.61255567196288,
+    "mrstft": 4.81740665435791,
+    "loc": -43.95606106338623
+   },
+   {
+    "scene": 1311,
+    "sisdr": -37.85110409350765,
+    "mrstft": 5.796747207641602,
+    "loc": -44.851208240683846
+   },
+   {
+    "scene": 1070,
+    "sisdr": -53.483912969976444,
+    "mrstft": 7.958790302276611,
+    "loc": -57.58161837894633
+   },
+   {
+    "scene": 1360,
+    "sisdr": -36.6468381803197,
+    "mrstft": 0.8096396327018738,
+    "loc": -139.26709685518114
+   },
+   {
+    "scene": 1485,
+    "sisdr": -41.595286028924825,
+    "mrstft": 2.596829414367676,
+    "loc": -137.43781007050248
+   },
+   {
+    "scene": 796,
+    "sisdr": -33.84878280157806,
+    "mrstft": 5.464197158813477,
+    "loc": -53.94218922701198
+   },
+   {
+    "scene": 1433,
+    "sisdr": -42.5934322970414,
+    "mrstft": 6.15971565246582,
+    "loc": -48.03197984134555
+   },
+   {
+    "scene": 1163,
+    "sisdr": -32.29650786737723,
+    "mrstft": 3.669703722000122,
+    "loc": -69.68549543812276
+   },
+   {
+    "scene": 613,
+    "sisdr": -21.35761155476235,
+    "mrstft": 1.5634980201721191,
+    "loc": -152.0766221045527
+   },
+   {
+    "scene": 586,
+    "sisdr": -31.30703352449361,
+    "mrstft": 4.433064937591553,
+    "loc": -138.95639372682314
+   },
+   {
+    "scene": 1989,
+    "sisdr": -34.989242049628395,
+    "mrstft": 4.553741931915283,
+    "loc": -65.31754369403784
+   },
+   {
+    "scene": 625,
+    "sisdr": -65.56226135797563,
+    "mrstft": 3.928556203842163,
+    "loc": -66.82704809313849
+   },
+   {
+    "scene": 685,
+    "sisdr": -32.66967560476806,
+    "mrstft": 6.093631267547607,
+    "loc": -160.46062078574266
+   },
+   {
+    "scene": 1791,
+    "sisdr": -52.466631594742296,
+    "mrstft": 6.901674270629883,
+    "loc": -38.63156976023948
+   },
+   {
+    "scene": 936,
+    "sisdr": -41.98113883779836,
+    "mrstft": 5.8845391273498535,
+    "loc": -63.09372305625021
+   },
+   {
+    "scene": 1117,
+    "sisdr": -35.85070809188945,
+    "mrstft": 4.188117980957031,
+    "loc": -150.82264577573847
+   },
+   {
+    "scene": 1782,
+    "sisdr": -29.347140756586434,
+    "mrstft": 3.729635000228882,
+    "loc": -30.722882353477807
+   },
+   {
+    "scene": 1795,
+    "sisdr": -55.81704106601929,
+    "mrstft": 5.2512288093566895,
+    "loc": -65.26837522840538
+   }
+  ],
+  "C1": [
+   {
+    "scene": 1361,
+    "sisdr": -51.39422651066043,
+    "mrstft": 2.9543449878692627,
+    "loc": -41.98724841238739
+   },
+   {
+    "scene": 1776,
+    "sisdr": -31.552035549685435,
+    "mrstft": 2.4263360500335693,
+    "loc": -69.44011743543649
+   },
+   {
+    "scene": 430,
+    "sisdr": -50.8344319191213,
+    "mrstft": 6.732642650604248,
+    "loc": -41.68304554921
+   },
+   {
+    "scene": 180,
+    "sisdr": -33.962554581585486,
+    "mrstft": 3.328158378601074,
+    "loc": -54.69074405769657
+   },
+   {
+    "scene": 1588,
+    "sisdr": -25.277421422243584,
+    "mrstft": 4.640913486480713,
+    "loc": -48.84512246259046
+   },
+   {
+    "scene": 776,
+    "sisdr": -34.16632420163461,
+    "mrstft": 3.606806516647339,
+    "loc": -49.39502268653352
+   },
+   {
+    "scene": 1150,
+    "sisdr": -43.84229300070122,
+    "mrstft": 3.1785194873809814,
+    "loc": -40.71434168231798
+   },
+   {
+    "scene": 1316,
+    "sisdr": -77.81456070211993,
+    "mrstft": 4.443728923797607,
+    "loc": -44.58027087149746
+   },
+   {
+    "scene": 654,
+    "sisdr": -44.11638718752143,
+    "mrstft": 4.541049480438232,
+    "loc": -45.10172812498907
+   },
+   {
+    "scene": 1624,
+    "sisdr": -48.642514430219165,
+    "mrstft": 4.23860502243042,
+    "loc": -47.269245136386175
+   },
+   {
+    "scene": 1180,
+    "sisdr": -41.2928730859815,
+    "mrstft": 4.871766567230225,
+    "loc": -80.63294216826174
+   },
+   {
+    "scene": 887,
+    "sisdr": -50.24849200594724,
+    "mrstft": 2.7324202060699463,
+    "loc": -50.315803940719654
+   },
+   {
+    "scene": 535,
+    "sisdr": -35.88056183674078,
+    "mrstft": 5.1060357093811035,
+    "loc": -43.853793062277155
+   },
+   {
+    "scene": 771,
+    "sisdr": -41.96826344544497,
+    "mrstft": 3.6415107250213623,
+    "loc": -45.17357105512589
+   },
+   {
+    "scene": 222,
+    "sisdr": -34.195971560564665,
+    "mrstft": 3.5722362995147705,
+    "loc": -73.89849201940878
+   },
+   {
+    "scene": 372,
+    "sisdr": -45.39737804998556,
+    "mrstft": 5.089446544647217,
+    "loc": -42.159374763347245
+   },
+   {
+    "scene": 108,
+    "sisdr": -37.276460412335254,
+    "mrstft": 2.1942434310913086,
+    "loc": -50.540472168547936
+   },
+   {
+    "scene": 896,
+    "sisdr": -41.22471812594625,
+    "mrstft": 4.993419647216797,
+    "loc": -51.13658416243168
+   },
+   {
+    "scene": 1169,
+    "sisdr": -35.77241939362223,
+    "mrstft": 3.800107955932617,
+    "loc": -46.42617346664697
+   },
+   {
+    "scene": 967,
+    "sisdr": -47.11253397439403,
+    "mrstft": 5.593530178070068,
+    "loc": -41.387849154642836
+   },
+   {
+    "scene": 143,
+    "sisdr": -38.60870941053036,
+    "mrstft": 3.4063282012939453,
+    "loc": -73.80421437568985
+   },
+   {
+    "scene": 255,
+    "sisdr": -40.53735218219312,
+    "mrstft": 2.1609103679656982,
+    "loc": -50.66587177402259
+   },
+   {
+    "scene": 1311,
+    "sisdr": -35.009110964976955,
+    "mrstft": 6.6598968505859375,
+    "loc": -47.67667563476511
+   },
+   {
+    "scene": 1070,
+    "sisdr": -51.31709445052118,
+    "mrstft": 4.775462627410889,
+    "loc": -46.95878198324577
+   },
+   {
+    "scene": 796,
+    "sisdr": -40.095548812701836,
+    "mrstft": 3.6554019451141357,
+    "loc": -58.462888522085095
+   },
+   {
+    "scene": 1433,
+    "sisdr": -35.5413997090743,
+    "mrstft": 3.869570016860962,
+    "loc": -43.50022406043644
+   },
+   {
+    "scene": 1163,
+    "sisdr": -41.484427814946315,
+    "mrstft": 5.070253849029541,
+    "loc": -69.28927903224269
+   },
+   {
+    "scene": 1989,
+    "sisdr": -51.11481354066966,
+    "mrstft": 2.8649823665618896,
+    "loc": -90.35856837527724
+   },
+   {
+    "scene": 625,
+    "sisdr": -61.32620949830817,
+    "mrstft": 3.259071111679077,
+    "loc": -46.63013026906633
+   },
+   {
+    "scene": 1791,
+    "sisdr": -48.680684530367486,
+    "mrstft": 6.318326473236084,
+    "loc": -36.73243681618371
+   },
+   {
+    "scene": 936,
+    "sisdr": -36.880320193879655,
+    "mrstft": 3.9717442989349365,
+    "loc": -79.84146114306816
+   },
+   {
+    "scene": 1782,
+    "sisdr": -29.82876315908291,
+    "mrstft": 2.5372865200042725,
+    "loc": -51.68691998334726
+   },
+   {
+    "scene": 1795,
+    "sisdr": -61.82488365559501,
+    "mrstft": 5.144708156585693,
+    "loc": -92.83097450171674
+   }
+  ],
+  "C1seq": [
+   {
+    "scene": 1361,
+    "sisdr": -40.78117792384042,
+    "mrstft": 3.8764140605926514,
+    "loc": -42.57328759102906
+   },
+   {
+    "scene": 1776,
+    "sisdr": -37.373560063808824,
+    "mrstft": 3.580289602279663,
+    "loc": -63.0211992797215
+   },
+   {
+    "scene": 430,
+    "sisdr": -44.019901090365735,
+    "mrstft": 7.064538478851318,
+    "loc": -41.79032228667751
+   },
+   {
+    "scene": 180,
+    "sisdr": -45.48943920090395,
+    "mrstft": 2.9037609100341797,
+    "loc": -75.6907546870004
+   },
+   {
+    "scene": 1588,
+    "sisdr": -55.52425560514482,
+    "mrstft": 7.110805988311768,
+    "loc": -42.485908512946644
+   },
+   {
+    "scene": 776,
+    "sisdr": -52.623569515729244,
+    "mrstft": 4.502469539642334,
+    "loc": -48.589532397030865
+   },
+   {
+    "scene": 1150,
+    "sisdr": -53.69257668829215,
+    "mrstft": 3.714054822921753,
+    "loc": -40.71638818827612
+   },
+   {
+    "scene": 1316,
+    "sisdr": -37.92454395441319,
+    "mrstft": 4.648037433624268,
+    "loc": -44.542920508611424
+   },
+   {
+    "scene": 654,
+    "sisdr": -61.446994960902764,
+    "mrstft": 5.224078178405762,
+    "loc": -44.54084925118511
+   },
+   {
+    "scene": 1624,
+    "sisdr": -49.12103825270385,
+    "mrstft": 4.035916805267334,
+    "loc": -47.15913782779392
+   },
+   {
+    "scene": 1180,
+    "sisdr": -57.676358827098184,
+    "mrstft": 4.003216743469238,
+    "loc": -87.45136458223426
+   },
+   {
+    "scene": 887,
+    "sisdr": -40.5153329596783,
+    "mrstft": 2.8781349658966064,
+    "loc": -95.96505158203982
+   },
+   {
+    "scene": 535,
+    "sisdr": -44.848123985689774,
+    "mrstft": 5.037230014801025,
+    "loc": -42.391457908166814
+   },
+   {
+    "scene": 771,
+    "sisdr": -52.794565571869114,
+    "mrstft": 4.296627044677734,
+    "loc": -67.53797928489875
+   },
+   {
+    "scene": 222,
+    "sisdr": -46.10950430748123,
+    "mrstft": 3.3669967651367188,
+    "loc": -69.64103734146948
+   },
+   {
+    "scene": 372,
+    "sisdr": -44.204998089374435,
+    "mrstft": 4.355719089508057,
+    "loc": -42.045926420995706
+   },
+   {
+    "scene": 108,
+    "sisdr": -31.766486838971886,
+    "mrstft": 2.742633819580078,
+    "loc": -50.49069277993346
+   },
+   {
+    "scene": 896,
+    "sisdr": -41.911819111921204,
+    "mrstft": 5.222301006317139,
+    "loc": -50.33147370994058
+   },
+   {
+    "scene": 1169,
+    "sisdr": -49.58726009299498,
+    "mrstft": 3.052107095718384,
+    "loc": -44.592941407557944
+   },
+   {
+    "scene": 967,
+    "sisdr": -52.89602403282557,
+    "mrstft": 4.94594144821167,
+    "loc": -41.62681240839248
+   },
+   {
+    "scene": 143,
+    "sisdr": -64.37958113647448,
+    "mrstft": 3.499309539794922,
+    "loc": -64.72232019057608
+   },
+   {
+    "scene": 255,
+    "sisdr": -52.34275071607007,
+    "mrstft": 2.09035587310791,
+    "loc": -55.046517127302565
+   },
+   {
+    "scene": 1311,
+    "sisdr": -38.61632314135385,
+    "mrstft": 7.155633926391602,
+    "loc": -47.699985918878916
+   },
+   {
+    "scene": 1070,
+    "sisdr": -41.502213323391224,
+    "mrstft": 3.7093746662139893,
+    "loc": -46.34502523054786
+   },
+   {
+    "scene": 796,
+    "sisdr": -62.840002436223415,
+    "mrstft": 3.128192186355591,
+    "loc": -57.808848242509214
+   },
+   {
+    "scene": 1433,
+    "sisdr": -47.84492625924011,
+    "mrstft": 4.971480846405029,
+    "loc": -43.46252000388289
+   },
+   {
+    "scene": 1163,
+    "sisdr": -57.43872784557457,
+    "mrstft": 3.7636120319366455,
+    "loc": -75.91118171637663
+   },
+   {
+    "scene": 1989,
+    "sisdr": -47.310368246303696,
+    "mrstft": 2.674644708633423,
+    "loc": -99.2146260661842
+   },
+   {
+    "scene": 625,
+    "sisdr": -56.854388127753296,
+    "mrstft": 2.8116581439971924,
+    "loc": -46.63076342975519
+   },
+   {
+    "scene": 1791,
+    "sisdr": -45.676395344608174,
+    "mrstft": 3.8402302265167236,
+    "loc": -36.84202802305779
+   },
+   {
+    "scene": 936,
+    "sisdr": -33.13099467605851,
+    "mrstft": 3.9000041484832764,
+    "loc": -77.76949223550882
+   },
+   {
+    "scene": 1782,
+    "sisdr": -41.034747661155386,
+    "mrstft": 4.196765899658203,
+    "loc": -52.63962785722895
+   },
+   {
+    "scene": 1795,
+    "sisdr": -47.725973851517416,
+    "mrstft": 3.6505441665649414,
+    "loc": -76.02044525627659
+   }
+  ],
+  "C3": [
+   {
+    "scene": 1361,
+    "sisdr": -57.287877528385394,
+    "mrstft": 3.3562328815460205,
+    "loc": -3.6400865333525827
+   },
+   {
+    "scene": 1776,
+    "sisdr": -32.02853136098037,
+    "mrstft": 5.287381649017334,
+    "loc": -10.531050794416274
+   },
+   {
+    "scene": 430,
+    "sisdr": -55.92162795584337,
+    "mrstft": 9.318747520446777,
+    "loc": -6.561966622399935
+   },
+   {
+    "scene": 180,
+    "sisdr": -35.19573665378991,
+    "mrstft": 3.994729995727539,
+    "loc": -5.812797322454282
+   },
+   {
+    "scene": 1588,
+    "sisdr": -37.70462918231003,
+    "mrstft": 5.706324100494385,
+    "loc": -4.771148984108439
+   },
+   {
+    "scene": 776,
+    "sisdr": -46.90688715228557,
+    "mrstft": 3.7479755878448486,
+    "loc": -2.403216339147734
+   },
+   {
+    "scene": 1316,
+    "sisdr": -56.68061020242363,
+    "mrstft": 5.4256439208984375,
+    "loc": -5.495831160633928
+   },
+   {
+    "scene": 1180,
+    "sisdr": -43.51979778013637,
+    "mrstft": 5.1193671226501465,
+    "loc": -7.895343527984285
+   },
+   {
+    "scene": 887,
+    "sisdr": -50.827076010943756,
+    "mrstft": 3.32635235786438,
+    "loc": -5.390389493869002
+   },
+   {
+    "scene": 535,
+    "sisdr": -38.594352994066924,
+    "mrstft": 5.612345218658447,
+    "loc": -8.081152228763646
+   },
+   {
+    "scene": 771,
+    "sisdr": -36.774092952169546,
+    "mrstft": 3.394618272781372,
+    "loc": -4.0303430178333635
+   },
+   {
+    "scene": 222,
+    "sisdr": -34.04155822611748,
+    "mrstft": 4.549924850463867,
+    "loc": -5.860257219495329
+   },
+   {
+    "scene": 372,
+    "sisdr": -36.86896980611065,
+    "mrstft": 5.273929595947266,
+    "loc": -2.318205542185398
+   },
+   {
+    "scene": 108,
+    "sisdr": -35.96583037711852,
+    "mrstft": 2.448390007019043,
+    "loc": -2.771845633630361
+   },
+   {
+    "scene": 896,
+    "sisdr": -32.70816270408388,
+    "mrstft": 4.850827693939209,
+    "loc": -5.788353808645886
+   },
+   {
+    "scene": 967,
+    "sisdr": -50.150931472348006,
+    "mrstft": 6.928316116333008,
+    "loc": -6.639444058389064
+   },
+   {
+    "scene": 143,
+    "sisdr": -45.68201428845378,
+    "mrstft": 3.5042810440063477,
+    "loc": -2.3267359963014895
+   },
+   {
+    "scene": 796,
+    "sisdr": -95.78954443265962,
+    "mrstft": 3.885125160217285,
+    "loc": -3.6711201279891963
+   },
+   {
+    "scene": 1433,
+    "sisdr": -28.316736804300785,
+    "mrstft": 4.679826259613037,
+    "loc": -7.615685297873458
+   },
+   {
+    "scene": 1989,
+    "sisdr": -53.395784868322835,
+    "mrstft": 2.5972073078155518,
+    "loc": -7.1235405405947985
+   },
+   {
+    "scene": 1791,
+    "sisdr": -41.84008180754844,
+    "mrstft": 5.064865589141846,
+    "loc": -6.577437228536271
+   },
+   {
+    "scene": 1782,
+    "sisdr": -30.413707202180053,
+    "mrstft": 3.317064046859741,
+    "loc": -3.2657422317800497
+   },
+   {
+    "scene": 1795,
+    "sisdr": -62.38621948858569,
+    "mrstft": 5.776863098144531,
+    "loc": -4.291752933975733
+   }
+  ],
+  "C3seq": [
+   {
+    "scene": 1361,
+    "sisdr": -39.005381917489366,
+    "mrstft": 5.002091884613037,
+    "loc": -3.1256670113015956
+   },
+   {
+    "scene": 1776,
+    "sisdr": -38.91411761798101,
+    "mrstft": 6.638709545135498,
+    "loc": -10.380110713966292
+   },
+   {
+    "scene": 430,
+    "sisdr": -32.742895878384545,
+    "mrstft": 7.639972686767578,
+    "loc": -6.922632448053792
+   },
+   {
+    "scene": 180,
+    "sisdr": -57.31444296233679,
+    "mrstft": 3.6407721042633057,
+    "loc": -5.4911424258852914
+   },
+   {
+    "scene": 1588,
+    "sisdr": -44.21832948840665,
+    "mrstft": 6.11046838760376,
+    "loc": -4.744551488007587
+   },
+   {
+    "scene": 776,
+    "sisdr": -43.78416011856296,
+    "mrstft": 5.370603084564209,
+    "loc": -1.252392254697535
+   },
+   {
+    "scene": 1316,
+    "sisdr": -38.775909197769565,
+    "mrstft": 5.453350067138672,
+    "loc": -5.158469547238063
+   },
+   {
+    "scene": 1180,
+    "sisdr": -61.754754467742785,
+    "mrstft": 5.741044521331787,
+    "loc": -7.889731056234417
+   },
+   {
+    "scene": 887,
+    "sisdr": -41.04979965170698,
+    "mrstft": 3.7351105213165283,
+    "loc": -3.454177918649057
+   },
+   {
+    "scene": 535,
+    "sisdr": -42.839244265442666,
+    "mrstft": 6.1979217529296875,
+    "loc": -8.066232233193686
+   },
+   {
+    "scene": 771,
+    "sisdr": -52.44518487332324,
+    "mrstft": 4.224458694458008,
+    "loc": -4.0376450027800015
+   },
+   {
+    "scene": 222,
+    "sisdr": -43.10042111551677,
+    "mrstft": 4.2455925941467285,
+    "loc": -5.403724112310082
+   },
+   {
+    "scene": 372,
+    "sisdr": -26.72216358008282,
+    "mrstft": 4.5138773918151855,
+    "loc": -2.1785437763640103
+   },
+   {
+    "scene": 108,
+    "sisdr": -27.989934561400382,
+    "mrstft": 3.0323410034179688,
+    "loc": -2.7387344587074076
+   },
+   {
+    "scene": 896,
+    "sisdr": -48.59429035517502,
+    "mrstft": 6.058253765106201,
+    "loc": -5.398494002154155
+   },
+   {
+    "scene": 967,
+    "sisdr": -35.35888469763251,
+    "mrstft": 5.304538249969482,
+    "loc": -7.396307009616393
+   },
+   {
+    "scene": 143,
+    "sisdr": -66.07968766466017,
+    "mrstft": 3.693321943283081,
+    "loc": -2.818344910430679
+   },
+   {
+    "scene": 796,
+    "sisdr": -56.99333507965668,
+    "mrstft": 3.450352907180786,
+    "loc": -3.1518307163274266
+   },
+   {
+    "scene": 1433,
+    "sisdr": -48.39362770616152,
+    "mrstft": 7.241542816162109,
+    "loc": -7.075798382228942
+   },
+   {
+    "scene": 1989,
+    "sisdr": -46.46802990634406,
+    "mrstft": 2.5325748920440674,
+    "loc": -6.608168310397775
+   },
+   {
+    "scene": 1791,
+    "sisdr": -42.88422492955985,
+    "mrstft": 4.568896770477295,
+    "loc": -6.57845658768437
+   },
+   {
+    "scene": 1782,
+    "sisdr": -43.44353381347383,
+    "mrstft": 5.287359714508057,
+    "loc": -2.6788566540094383
+   },
+   {
+    "scene": 1795,
+    "sisdr": -48.248287220364,
+    "mrstft": 3.863192319869995,
+    "loc": -4.3040502924680135
+   }
+  ],
+  "E2": [
+   {
+    "scene": 1811,
+    "sisdr": -23.40448444181164,
+    "mrstft": 4.987924098968506,
+    "loc": -149.23107639221288
+   },
+   {
+    "scene": 159,
+    "sisdr": -34.42321859518028,
+    "mrstft": 6.21249532699585,
+    "loc": -144.33765767945152
+   },
+   {
+    "scene": 654,
+    "sisdr": -33.45662070716015,
+    "mrstft": 6.161057949066162,
+    "loc": -26.260262872720823
+   },
+   {
+    "scene": 699,
+    "sisdr": -87.64981228302685,
+    "mrstft": 3.5539634227752686,
+    "loc": -56.92477678626549
+   },
+   {
+    "scene": 1066,
+    "sisdr": -38.04309077831588,
+    "mrstft": 4.526664733886719,
+    "loc": -146.11999799154216
+   },
+   {
+    "scene": 1067,
+    "sisdr": -31.99233931921604,
+    "mrstft": 5.78380012512207,
+    "loc": -48.38527010939555
+   },
+   {
+    "scene": 952,
+    "sisdr": -29.198307282930003,
+    "mrstft": 4.0507965087890625,
+    "loc": -149.0974974680118
+   },
+   {
+    "scene": 1169,
+    "sisdr": -49.45155200001931,
+    "mrstft": 5.957422733306885,
+    "loc": -44.740530533590274
+   },
+   {
+    "scene": 1231,
+    "sisdr": -45.53855204674549,
+    "mrstft": 5.327208042144775,
+    "loc": -147.13249202797255
+   },
+   {
+    "scene": 961,
+    "sisdr": -26.876949101213967,
+    "mrstft": 3.0492866039276123,
+    "loc": -146.91020776996712
+   },
+   {
+    "scene": 1311,
+    "sisdr": -36.60671247084379,
+    "mrstft": 5.637589931488037,
+    "loc": -51.8219395406402
+   },
+   {
+    "scene": 155,
+    "sisdr": -38.22428235670757,
+    "mrstft": 4.916263580322266,
+    "loc": -54.335583468924895
+   },
+   {
+    "scene": 1608,
+    "sisdr": -29.61906296702876,
+    "mrstft": 3.6414413452148438,
+    "loc": -54.174435902383436
+   },
+   {
+    "scene": 1163,
+    "sisdr": -44.65479597716704,
+    "mrstft": 4.720017910003662,
+    "loc": -68.84053498934907
+   },
+   {
+    "scene": 14,
+    "sisdr": -21.078663004669963,
+    "mrstft": 0.66446453332901,
+    "loc": -132.82777622648834
+   },
+   {
+    "scene": 1211,
+    "sisdr": -17.708894989682193,
+    "mrstft": 5.471691131591797,
+    "loc": -153.801260694884
+   },
+   {
+    "scene": 936,
+    "sisdr": -40.48833517896593,
+    "mrstft": 6.924972057342529,
+    "loc": -55.14508395826959
+   }
+  ],
+  "C2": [
+   {
+    "scene": 654,
+    "sisdr": -35.2104976223949,
+    "mrstft": 6.482734680175781,
+    "loc": -37.03131006153984
+   },
+   {
+    "scene": 699,
+    "sisdr": -44.829736545144854,
+    "mrstft": 5.378964900970459,
+    "loc": -54.24393156353001
+   },
+   {
+    "scene": 1067,
+    "sisdr": -25.330598872972864,
+    "mrstft": 6.327158451080322,
+    "loc": -61.150160560613
+   },
+   {
+    "scene": 1169,
+    "sisdr": -47.08700872060102,
+    "mrstft": 5.716094493865967,
+    "loc": -45.53091672934371
+   },
+   {
+    "scene": 1311,
+    "sisdr": -41.473797798838525,
+    "mrstft": 5.991865634918213,
+    "loc": -61.509642813506815
+   },
+   {
+    "scene": 1163,
+    "sisdr": -35.313668526926115,
+    "mrstft": 3.711270570755005,
+    "loc": -50.63606621066002
+   },
+   {
+    "scene": 936,
+    "sisdr": -44.91505538193364,
+    "mrstft": 4.5513739585876465,
+    "loc": -46.66660800524632
+   }
+  ],
+  "C2seq": [
+   {
+    "scene": 654,
+    "sisdr": -44.98659944669173,
+    "mrstft": 6.7427520751953125,
+    "loc": -37.09161251972917
+   },
+   {
+    "scene": 699,
+    "sisdr": -44.96029927330622,
+    "mrstft": 3.40289568901062,
+    "loc": -54.24347918806123
+   },
+   {
+    "scene": 1067,
+    "sisdr": -41.08930054901599,
+    "mrstft": 5.831296443939209,
+    "loc": -60.80651154309416
+   },
+   {
+    "scene": 1169,
+    "sisdr": -57.26830098797505,
+    "mrstft": 4.13284158706665,
+    "loc": -45.51463734974281
+   },
+   {
+    "scene": 1311,
+    "sisdr": -58.3982729082566,
+    "mrstft": 6.777390003204346,
+    "loc": -69.5881290442428
+   },
+   {
+    "scene": 1163,
+    "sisdr": -39.96652373518378,
+    "mrstft": 3.3948142528533936,
+    "loc": -50.55342904270596
+   },
+   {
+    "scene": 936,
+    "sisdr": -49.7941739821854,
+    "mrstft": 5.0143585205078125,
+    "loc": -46.619904014542016
+   }
+  ],
+  "C4": [
+   {
+    "scene": 654,
+    "sisdr": -36.8073793097562,
+    "mrstft": 7.183199405670166,
+    "loc": -36.65867949168864
+   },
+   {
+    "scene": 699,
+    "sisdr": -83.28356267232385,
+    "mrstft": 3.641212224960327,
+    "loc": -114.10183635923758
+   },
+   {
+    "scene": 1067,
+    "sisdr": -33.700830762355096,
+    "mrstft": 5.9150071144104,
+    "loc": -46.940577474483824
+   },
+   {
+    "scene": 1169,
+    "sisdr": -60.29889401742042,
+    "mrstft": 5.5141072273254395,
+    "loc": -53.95801115239834
+   },
+   {
+    "scene": 1311,
+    "sisdr": -39.51788300314742,
+    "mrstft": 5.6648736000061035,
+    "loc": -56.751415270973084
+   },
+   {
+    "scene": 155,
+    "sisdr": -83.03475798074399,
+    "mrstft": 6.2417473793029785,
+    "loc": -48.85477277776214
+   },
+   {
+    "scene": 1608,
+    "sisdr": -28.2741802880535,
+    "mrstft": 5.154312610626221,
+    "loc": -70.28768741545193
+   },
+   {
+    "scene": 1163,
+    "sisdr": -37.56538787554867,
+    "mrstft": 4.074968338012695,
+    "loc": -52.58477173371137
+   },
+   {
+    "scene": 936,
+    "sisdr": -36.21176530708236,
+    "mrstft": 3.7958831787109375,
+    "loc": -45.86423833705241
+   }
+  ],
+  "C4seq": [
+   {
+    "scene": 654,
+    "sisdr": -47.492725880401565,
+    "mrstft": 7.056388854980469,
+    "loc": -36.6656292674883
+   },
+   {
+    "scene": 699,
+    "sisdr": -35.9653779358829,
+    "mrstft": 3.1194684505462646,
+    "loc": -107.67462187604805
+   },
+   {
+    "scene": 1067,
+    "sisdr": -45.07819626593273,
+    "mrstft": 4.513091087341309,
+    "loc": -46.955841427116034
+   },
+   {
+    "scene": 1169,
+    "sisdr": -46.03018111006425,
+    "mrstft": 4.128139972686768,
+    "loc": -53.97863280172298
+   },
+   {
+    "scene": 1311,
+    "sisdr": -47.00616349032191,
+    "mrstft": 6.539076328277588,
+    "loc": -62.78290654504992
+   },
+   {
+    "scene": 155,
+    "sisdr": -47.84561474035976,
+    "mrstft": 7.142603397369385,
+    "loc": -48.86913249259446
+   },
+   {
+    "scene": 1608,
+    "sisdr": -36.47311621116757,
+    "mrstft": 5.707918643951416,
+    "loc": -70.50133647072691
+   },
+   {
+    "scene": 1163,
+    "sisdr": -51.202780749446326,
+    "mrstft": 4.023098468780518,
+    "loc": -67.96513267522803
+   },
+   {
+    "scene": 936,
+    "sisdr": -84.58071843725662,
+    "mrstft": 3.8201682567596436,
+    "loc": -45.8773118875437
+   }
+  ],
+  "E4": [
+   {
+    "scene": 1361,
+    "sisdr": -39.96313014589163,
+    "mrstft": 6.836339473724365,
+    "loc": -5.658141143142926
+   },
+   {
+    "scene": 1776,
+    "sisdr": -39.052099191875946,
+    "mrstft": 6.742160797119141,
+    "loc": -10.138714720356134
+   },
+   {
+    "scene": 245,
+    "sisdr": -38.47431782092602,
+    "mrstft": 5.7630181312561035,
+    "loc": -6.165846327331326
+   },
+   {
+    "scene": 430,
+    "sisdr": -63.17487905264815,
+    "mrstft": 9.915862083435059,
+    "loc": -6.561532278208063
+   },
+   {
+    "scene": 180,
+    "sisdr": -28.293131276389538,
+    "mrstft": 4.279178619384766,
+    "loc": -6.818819848070601
+   },
+   {
+    "scene": 1588,
+    "sisdr": -56.5248169238599,
+    "mrstft": 6.573835372924805,
+    "loc": -4.77282541852773
+   },
+   {
+    "scene": 776,
+    "sisdr": -29.2677765664744,
+    "mrstft": 4.821110725402832,
+    "loc": -4.337224046229194
+   },
+   {
+    "scene": 1316,
+    "sisdr": -33.69977016969578,
+    "mrstft": 5.6564507484436035,
+    "loc": -3.7658656497244225
+   },
+   {
+    "scene": 1180,
+    "sisdr": -35.026315669556936,
+    "mrstft": 6.599684238433838,
+    "loc": -8.89568684288636
+   },
+   {
+    "scene": 887,
+    "sisdr": -36.42056821660018,
+    "mrstft": 5.341772556304932,
+    "loc": -4.024507575981508
+   },
+   {
+    "scene": 535,
+    "sisdr": -51.618192039615366,
+    "mrstft": 8.823599815368652,
+    "loc": -8.703078305125644
+   },
+   {
+    "scene": 756,
+    "sisdr": -28.404397526057544,
+    "mrstft": 4.280731678009033,
+    "loc": -5.742230621212823
+   },
+   {
+    "scene": 771,
+    "sisdr": -28.96629997075072,
+    "mrstft": 3.2433364391326904,
+    "loc": -4.225082943567275
+   },
+   {
+    "scene": 1123,
+    "sisdr": -22.986402697550584,
+    "mrstft": 1.7745674848556519,
+    "loc": -10.271468784089258
+   },
+   {
+    "scene": 1107,
+    "sisdr": -48.70531772482272,
+    "mrstft": 4.16584587097168,
+    "loc": -7.280475628988874
+   },
+   {
+    "scene": 222,
+    "sisdr": -42.475897895418726,
+    "mrstft": 5.365672588348389,
+    "loc": -5.150365790963995
+   },
+   {
+    "scene": 1733,
+    "sisdr": -41.98337708011928,
+    "mrstft": 5.966355800628662,
+    "loc": -8.283325404740932
+   },
+   {
+    "scene": 372,
+    "sisdr": -27.623242692625038,
+    "mrstft": 4.513510227203369,
+    "loc": -2.019827918895995
+   },
+   {
+    "scene": 108,
+    "sisdr": -46.1103324928225,
+    "mrstft": 5.574108123779297,
+    "loc": -2.6412522800174862
+   },
+   {
+    "scene": 896,
+    "sisdr": -41.083244080065114,
+    "mrstft": 6.075639724731445,
+    "loc": -5.457041567081067
+   },
+   {
+    "scene": 967,
+    "sisdr": -36.59511962245362,
+    "mrstft": 5.444118022918701,
+    "loc": -5.687588115867573
+   },
+   {
+    "scene": 143,
+    "sisdr": -37.2254919342267,
+    "mrstft": 4.470290660858154,
+    "loc": -5.2020624665084
+   },
+   {
+    "scene": 454,
+    "sisdr": -39.1108410180433,
+    "mrstft": 4.20441198348999,
+    "loc": -7.025175530006241
+   },
+   {
+    "scene": 561,
+    "sisdr": -26.03706875390329,
+    "mrstft": 4.464046955108643,
+    "loc": -5.190690155181008
+   },
+   {
+    "scene": 1360,
+    "sisdr": -41.096123025851256,
+    "mrstft": 0.9361622929573059,
+    "loc": -3.4587476661330157
+   },
+   {
+    "scene": 1485,
+    "sisdr": -37.22731515800717,
+    "mrstft": 2.2545599937438965,
+    "loc": -2.565254316981525
+   },
+   {
+    "scene": 796,
+    "sisdr": -35.44543681747881,
+    "mrstft": 5.648291110992432,
+    "loc": -4.946674605944725
+   },
+   {
+    "scene": 1433,
+    "sisdr": -48.37944644983962,
+    "mrstft": 7.951231002807617,
+    "loc": -6.057533737961272
+   },
+   {
+    "scene": 613,
+    "sisdr": -20.568479689919155,
+    "mrstft": 1.6936367750167847,
+    "loc": -9.949302700791415
+   },
+   {
+    "scene": 1989,
+    "sisdr": -27.194828724521166,
+    "mrstft": 4.311678886413574,
+    "loc": -7.926730314253458
+   },
+   {
+    "scene": 685,
+    "sisdr": -59.677189687122905,
+    "mrstft": 6.623497009277344,
+    "loc": -3.9392490065229353
+   },
+   {
+    "scene": 1791,
+    "sisdr": -41.36872908692115,
+    "mrstft": 6.090676784515381,
+    "loc": -6.572133255749071
+   },
+   {
+    "scene": 1782,
+    "sisdr": -35.78952531399704,
+    "mrstft": 5.252023696899414,
+    "loc": -3.0424273418740015
+   },
+   {
+    "scene": 1795,
+    "sisdr": -58.75613847957837,
+    "mrstft": 5.578453540802002,
+    "loc": -4.276834030153013
+   }
+  ]
+ },
+ "edits": {
+  "E1": {
+   "sisdr": {
+    "median": -41.82887237412337,
+    "ci95": [
+     -46.73442236350313,
+     -38.87009909954826
+    ],
+    "n": 37
+   },
+   "mrstft": {
+    "median": 4.272250652313232,
+    "ci95": [
+     3.7966623306274414,
+     4.856614589691162
+    ],
+    "n": 37
+   },
+   "loc": {
+    "median": -41.82887237412348,
+    "ci95": [
+     -46.73442236350319,
+     -38.87009909954826
+    ],
+    "n": 37
+   }
+  },
+  "E3": {
+   "sisdr": {
+    "median": -37.68676424478523,
+    "ci95": [
+     -40.15407135580082,
+     -34.41668559895257
+    ],
+    "n": 50
+   },
+   "mrstft": {
+    "median": 4.881246328353882,
+    "ci95": [
+     4.520976781845093,
+     5.321049815416331
+    ],
+    "n": 50
+   },
+   "loc": {
+    "median": -58.27478780032179,
+    "ci95": [
+     -66.61641264671107,
+     -45.956186188231
+    ],
+    "n": 50
+   }
+  },
+  "C1": {
+   "sisdr": {
+    "median": -41.2928730859815,
+    "ci95": [
+     -45.39737804998556,
+     -36.880320193879655
+    ],
+    "n": 33
+   },
+   "mrstft": {
+    "median": 3.869570016860962,
+    "ci95": [
+     3.5722362995147705,
+     4.640913486480713
+    ],
+    "n": 33
+   },
+   "loc": {
+    "median": -48.84512246259046,
+    "ci95": [
+     -51.13658416243168,
+     -46.42617346664697
+    ],
+    "n": 33
+   }
+  },
+  "C1seq": {
+   "sisdr": {
+    "median": -47.310368246303696,
+    "ci95": [
+     -52.34275071607007,
+     -44.204998089374435
+    ],
+    "n": 33
+   },
+   "mrstft": {
+    "median": 3.8764140605926514,
+    "ci95": [
+     3.580289602279663,
+     4.296627044677734
+    ],
+    "n": 33
+   },
+   "loc": {
+    "median": -48.589532397030865,
+    "ci95": [
+     -57.808848242509214,
+     -44.592941407557944
+    ],
+    "n": 33
+   }
+  },
+  "C3": {
+   "sisdr": {
+    "median": -41.84008180754844,
+    "ci95": [
+     -50.1678350858129,
+     -36.774092952169546
+    ],
+    "n": 23
+   },
+   "mrstft": {
+    "median": 4.679826259613037,
+    "ci95": [
+     3.5042810440063477,
+     5.273929595947266
+    ],
+    "n": 23
+   },
+   "loc": {
+    "median": -5.495831160633928,
+    "ci95": [
+     -6.561966622399935,
+     -3.6711201279891963
+    ],
+    "n": 23
+   }
+  },
+  "C3seq": {
+   "sisdr": {
+    "median": -43.44353381347383,
+    "ci95": [
+     -48.248287220364,
+     -41.04979965170698
+    ],
+    "n": 23
+   },
+   "mrstft": {
+    "median": 5.002091884613037,
+    "ci95": [
+     3.863192319869995,
+     5.453350067138672
+    ],
+    "n": 23
+   },
+   "loc": {
+    "median": -5.158469547238063,
+    "ci95": [
+     -6.57845658768437,
+     -3.1518307163274266
+    ],
+    "n": 23
+   }
+  },
+  "E2": {
+   "sisdr": {
+    "median": -34.42321859518028,
+    "ci95": [
+     -40.48833517896593,
+     -29.198307282930003
+    ],
+    "n": 17
+   },
+   "mrstft": {
+    "median": 4.987924098968506,
+    "ci95": [
+     4.0507965087890625,
+     5.78380012512207
+    ],
+    "n": 17
+   },
+   "loc": {
+    "median": -68.84053498934907,
+    "ci95": [
+     -146.91020776996712,
+     -54.174435902383436
+    ],
+    "n": 17
+   }
+  },
+  "C2": {
+   "sisdr": {
+    "median": -41.473797798838525,
+    "ci95": [
+     -44.91505538193364,
+     -35.2104976223949
+    ],
+    "n": 7
+   },
+   "mrstft": {
+    "median": 5.716094493865967,
+    "ci95": [
+     4.5513739585876465,
+     6.327158451080322
+    ],
+    "n": 7
+   },
+   "loc": {
+    "median": -50.63606621066002,
+    "ci95": [
+     -61.150160560613,
+     -45.53091672934371
+    ],
+    "n": 7
+   }
+  },
+  "C2seq": {
+   "sisdr": {
+    "median": -44.98659944669173,
+    "ci95": [
+     -57.26830098797505,
+     -41.08930054901599
+    ],
+    "n": 7
+   },
+   "mrstft": {
+    "median": 5.0143585205078125,
+    "ci95": [
+     3.40289568901062,
+     6.7427520751953125
+    ],
+    "n": 7
+   },
+   "loc": {
+    "median": -50.55342904270596,
+    "ci95": [
+     -60.80651154309416,
+     -45.51463734974281
+    ],
+    "n": 7
+   }
+  },
+  "C4": {
+   "sisdr": {
+    "median": -37.56538787554867,
+    "ci95": [
+     -83.03475798074399,
+     -33.700830762355096
+    ],
+    "n": 9
+   },
+   "mrstft": {
+    "median": 5.5141072273254395,
+    "ci95": [
+     3.7958831787109375,
+     6.2417473793029785
+    ],
+    "n": 9
+   },
+   "loc": {
+    "median": -52.58477173371137,
+    "ci95": [
+     -70.28768741545193,
+     -45.86423833705241
+    ],
+    "n": 9
+   }
+  },
+  "C4seq": {
+   "sisdr": {
+    "median": -47.00616349032191,
+    "ci95": [
+     -51.202780749446326,
+     -36.47311621116757
+    ],
+    "n": 9
+   },
+   "mrstft": {
+    "median": 4.513091087341309,
+    "ci95": [
+     3.8201682567596436,
+     7.056388854980469
+    ],
+    "n": 9
+   },
+   "loc": {
+    "median": -53.97863280172298,
+    "ci95": [
+     -70.50133647072691,
+     -45.8773118875437
+    ],
+    "n": 9
+   }
+  },
+  "E4": {
+   "sisdr": {
+    "median": -37.850816489466595,
+    "ci95": [
+     -41.096123025851256,
+     -35.44543681747881
+    ],
+    "n": 34
+   },
+   "mrstft": {
+    "median": 5.404895305633545,
+    "ci95": [
+     4.470290660858154,
+     5.7630181312561035
+    ],
+    "n": 34
+   },
+   "loc": {
+    "median": -5.557591355111996,
+    "ci95": [
+     -6.561532278208063,
+     -4.77282541852773
+    ],
+    "n": 34
+   }
+  }
+ }
+}

@@ -1,0 +1,3802 @@
+{
+ "meta": {
+  "date": "2026-10-21",
+  "script": "src/p3_r2_regen.py",
+  "system": "X6 Audio-Omni (SIGGRAPH'26)",
+  "split": "val",
+  "ledger": "p3_edit_eval_v1.json",
+  "n_specs": 60,
+  "n_done": 60,
+  "n_fail": 0,
+  "chains": {
+   "C1": "E1+E3",
+   "C2": "E2+E3",
+   "C3": "E1+E4",
+   "C4": "E1+E2"
+  },
+  "wav_dir": "/workspace/CF_ASG/p3/r2_out/x6",
+  "notes": "A14.3: combined = one instruction with both changes; seq = two instructions applied one after the other; edited mixtures LS-fitted to y (main-ledger concession); E4 (room) added in the revision with the prompt 'in a less/more reverberant room' (ZETA) or 'make the room less/more reverberant' (Audio-Omni)",
+  "edits_run": [
+   "E4"
+  ]
+ },
+ "specs": [
+  {
+   "scene": 1361,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 1776,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 4.0,
+   "E4_newa": 0.35,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 245,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 430,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.3,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 180,
+   "E1_slot": 2,
+   "E3_slot": 2,
+   "E3_factor": 0.5,
+   "E4_newa": 0.45,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.45,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1588,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.5,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1811,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 776,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 159,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1150,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1316,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 654,
+   "E1_slot": 1,
+   "E2_slot": 2,
+   "E2_newv": 5.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 2,
+   "C2_newv": 5.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 2,
+   "C4_newv": 5.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1624,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1180,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.3,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 887,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.4,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.4,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 535,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C3_rm": 2,
+   "C3_newa": 0.3,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 371,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 756,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 771,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1123,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 699,
+   "E1_slot": 1,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C2_v_slot": 0,
+   "C2_newv": 30.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 0,
+   "C4_newv": 30.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1107,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 222,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1066,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1733,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 372,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.45,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 1830,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 108,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "C3_rm": 0,
+   "C3_newa": 0.5,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1067,
+   "E1_slot": 0,
+   "E2_slot": 1,
+   "E2_newv": 20.0,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "C2_v_slot": 1,
+   "C2_newv": 20.0,
+   "C2_r_slot": 0,
+   "C2_factor": 0.5,
+   "C4_v_slot": 1,
+   "C4_newv": 20.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 952,
+   "E2_slot": 0,
+   "E2_newv": 20.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 896,
+   "E1_slot": 1,
+   "E3_slot": 1,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 1169,
+   "E1_slot": 2,
+   "E2_slot": 1,
+   "E2_newv": 5.0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 4.0,
+   "C2_v_slot": 1,
+   "C2_newv": 5.0,
+   "C2_r_slot": 0,
+   "C2_factor": 4.0,
+   "C4_v_slot": 1,
+   "C4_newv": 5.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 967,
+   "E1_slot": 0,
+   "E3_slot": 2,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "C1_rm": 0,
+   "C1_slot": 2,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.45,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1231,
+   "E2_slot": 0,
+   "E2_newv": 20.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 143,
+   "E1_slot": 2,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 454,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.3,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 961,
+   "E2_slot": 0,
+   "E2_newv": 30.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 561,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 255,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 4.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 4.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1311,
+   "E1_slot": 1,
+   "E2_slot": 2,
+   "E2_newv": 10.0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C2_v_slot": 2,
+   "C2_newv": 10.0,
+   "C2_r_slot": 1,
+   "C2_factor": 2.0,
+   "C4_v_slot": 2,
+   "C4_newv": 10.0,
+   "C4_rm": 1,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1070,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 155,
+   "E1_slot": 2,
+   "E2_slot": 0,
+   "E2_newv": 10.0,
+   "C4_v_slot": 0,
+   "C4_newv": 10.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1360,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1608,
+   "E1_slot": 1,
+   "E2_slot": 1,
+   "E2_newv": 20.0,
+   "C4_v_slot": 1,
+   "C4_newv": 20.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1485,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.45,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 796,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.45,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C3_rm": 2,
+   "C3_newa": 0.45,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1433,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 4.0,
+   "E4_newa": 0.3,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.3,
+   "_alpha": 0.3499999940395355
+  },
+  {
+   "scene": 1163,
+   "E1_slot": 2,
+   "E2_slot": 1,
+   "E2_newv": 40.0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 1,
+   "C2_newv": 40.0,
+   "C2_r_slot": 0,
+   "C2_factor": 2.0,
+   "C4_v_slot": 1,
+   "C4_newv": 40.0,
+   "C4_rm": 2,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 613,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.35,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 586,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 14,
+   "E2_slot": 0,
+   "E2_newv": 40.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1989,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.4,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 0.5,
+   "C3_rm": 1,
+   "C3_newa": 0.4,
+   "_alpha": 0.44999998807907104
+  },
+  {
+   "scene": 625,
+   "E1_slot": 0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 685,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "E4_newa": 0.5,
+   "_alpha": 0.4000000059604645
+  },
+  {
+   "scene": 1791,
+   "E1_slot": 2,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.4,
+   "C1_rm": 2,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 2,
+   "C3_newa": 0.4,
+   "_alpha": 0.5
+  },
+  {
+   "scene": 1211,
+   "E2_slot": 0,
+   "E2_newv": 10.0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 936,
+   "E1_slot": 1,
+   "E2_slot": 1,
+   "E2_newv": 40.0,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C2_v_slot": 1,
+   "C2_newv": 40.0,
+   "C2_r_slot": 0,
+   "C2_factor": 2.0,
+   "C4_v_slot": 1,
+   "C4_newv": 40.0,
+   "C4_rm": 0,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1117,
+   "E3_slot": 0,
+   "E3_factor": 0.5,
+   "_alpha": -1.0
+  },
+  {
+   "scene": 1782,
+   "E1_slot": 0,
+   "E3_slot": 1,
+   "E3_factor": 2.0,
+   "E4_newa": 0.35,
+   "C1_rm": 0,
+   "C1_slot": 1,
+   "C1_factor": 2.0,
+   "C3_rm": 0,
+   "C3_newa": 0.35,
+   "_alpha": 0.30000001192092896
+  },
+  {
+   "scene": 1795,
+   "E1_slot": 1,
+   "E3_slot": 0,
+   "E3_factor": 2.0,
+   "E4_newa": 0.5,
+   "C1_rm": 1,
+   "C1_slot": 0,
+   "C1_factor": 2.0,
+   "C3_rm": 1,
+   "C3_newa": 0.5,
+   "_alpha": 0.44999998807907104
+  }
+ ],
+ "prompts": [
+  {
+   "scene": 1361,
+   "E1": {
+    "instruction": "remove the thump sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the thump sound and make the engine sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the thump sound",
+    "make the engine sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the thump sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the thump sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1776,
+   "E1": {
+    "instruction": "remove the bass drum sound"
+   },
+   "E3": {
+    "instruction": "make the alarm sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the bass drum sound and make the alarm sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the bass drum sound",
+    "make the alarm sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the bass drum sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the bass drum sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 245,
+   "E3": {
+    "instruction": "make the tap sound 4 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 430,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the engine sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the engine sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the drum sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the drum sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 180,
+   "E1": {
+    "instruction": "remove the door sound"
+   },
+   "E3": {
+    "instruction": "make the door sound twice as close"
+   },
+   "C1": {
+    "instruction": "remove the door sound and make the bell sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the door sound",
+    "make the bell sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the door sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the door sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1588,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the door sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the door sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the engine sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the engine sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1811,
+   "E2": {
+    "instruction": "make the engine pass by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 776,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the alarm sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the alarm sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the alarm sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the engine sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the engine sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 159,
+   "E2": {
+    "instruction": "make the alarm pass by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 1150,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the door sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the door sound 2 times farther away"
+   ]
+  },
+  {
+   "scene": 1316,
+   "E1": {
+    "instruction": "remove the door sound"
+   },
+   "E3": {
+    "instruction": "make the clapping sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the door sound and make the clapping sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the door sound",
+    "make the clapping sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the door sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the door sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 654,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 5 meters per second"
+   },
+   "E3": {
+    "instruction": "make the drum sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the alarm sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the alarm sound 2 times farther away"
+   ],
+   "C2": {
+    "instruction": "make the engine pass by at 5 meters per second and make the drum sound 2 times farther away"
+   },
+   "C2seq": [
+    "make the engine pass by at 5 meters per second",
+    "make the drum sound 2 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the drum sound and make the engine pass by at 5 meters per second"
+   },
+   "C4seq": [
+    "remove the drum sound",
+    "make the engine pass by at 5 meters per second"
+   ]
+  },
+  {
+   "scene": 1624,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the alarm sound twice as close"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the alarm sound twice as close"
+   ]
+  },
+  {
+   "scene": 1180,
+   "E1": {
+    "instruction": "remove the alarm sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the alarm sound and make the door sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the alarm sound",
+    "make the door sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the alarm sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the alarm sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 887,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the hammer sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the hammer sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the engine sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the engine sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 535,
+   "E1": {
+    "instruction": "remove the gunshot sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the gunshot sound and make the door sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the gunshot sound",
+    "make the door sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the gunshot sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the gunshot sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 371,
+   "E3": {
+    "instruction": "make the engine sound 4 times farther away"
+   }
+  },
+  {
+   "scene": 756,
+   "E3": {
+    "instruction": "make the door sound twice as close"
+   },
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 771,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the door sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the door sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the drum sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the drum sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1123,
+   "E3": {
+    "instruction": "make the thump sound 2 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 699,
+   "E1": {
+    "instruction": "remove the thump sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 30 meters per second"
+   },
+   "E3": {
+    "instruction": "make the thump sound 2 times farther away"
+   },
+   "C2": {
+    "instruction": "make the engine pass by at 30 meters per second and make the thump sound 2 times farther away"
+   },
+   "C2seq": [
+    "make the engine pass by at 30 meters per second",
+    "make the thump sound 2 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the thump sound and make the engine pass by at 30 meters per second"
+   },
+   "C4seq": [
+    "remove the thump sound",
+    "make the engine pass by at 30 meters per second"
+   ]
+  },
+  {
+   "scene": 1107,
+   "E3": {
+    "instruction": "make the gunshot sound 4 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 222,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E3": {
+    "instruction": "make the drum sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the door sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the door sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the drum sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the drum sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1066,
+   "E2": {
+    "instruction": "make the bell pass by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 1733,
+   "E3": {
+    "instruction": "make the alarm sound 4 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 372,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the door sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the door sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the drum sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the drum sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1830,
+   "E3": {
+    "instruction": "make the bass drum sound 4 times farther away"
+   }
+  },
+  {
+   "scene": 108,
+   "E1": {
+    "instruction": "remove the thump sound"
+   },
+   "E3": {
+    "instruction": "make the thump sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the thump sound and make the gunshot sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the thump sound",
+    "make the gunshot sound 4 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the thump sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the thump sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1067,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E2": {
+    "instruction": "make the alarm pass by at 20 meters per second"
+   },
+   "E3": {
+    "instruction": "make the engine sound twice as close"
+   },
+   "C2": {
+    "instruction": "make the alarm pass by at 20 meters per second and make the engine sound twice as close"
+   },
+   "C2seq": [
+    "make the alarm pass by at 20 meters per second",
+    "make the engine sound twice as close"
+   ],
+   "C4": {
+    "instruction": "remove the engine sound and make the alarm pass by at 20 meters per second"
+   },
+   "C4seq": [
+    "remove the engine sound",
+    "make the alarm pass by at 20 meters per second"
+   ]
+  },
+  {
+   "scene": 952,
+   "E2": {
+    "instruction": "make the alarm pass by at 20 meters per second"
+   }
+  },
+  {
+   "scene": 896,
+   "E1": {
+    "instruction": "remove the clapping sound"
+   },
+   "E3": {
+    "instruction": "make the clapping sound twice as close"
+   },
+   "C1": {
+    "instruction": "remove the clapping sound and make the engine sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the clapping sound",
+    "make the engine sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the clapping sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the clapping sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1169,
+   "E1": {
+    "instruction": "remove the hammer sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 5 meters per second"
+   },
+   "E3": {
+    "instruction": "make the glass sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the hammer sound and make the glass sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the hammer sound",
+    "make the glass sound 4 times farther away"
+   ],
+   "C2": {
+    "instruction": "make the engine pass by at 5 meters per second and make the glass sound 4 times farther away"
+   },
+   "C2seq": [
+    "make the engine pass by at 5 meters per second",
+    "make the glass sound 4 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the hammer sound and make the engine pass by at 5 meters per second"
+   },
+   "C4seq": [
+    "remove the hammer sound",
+    "make the engine pass by at 5 meters per second"
+   ]
+  },
+  {
+   "scene": 967,
+   "E1": {
+    "instruction": "remove the gunshot sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the gunshot sound and make the engine sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the gunshot sound",
+    "make the engine sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the gunshot sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the gunshot sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1231,
+   "E2": {
+    "instruction": "make the engine pass by at 20 meters per second"
+   }
+  },
+  {
+   "scene": 143,
+   "E1": {
+    "instruction": "remove the bass drum sound"
+   },
+   "E3": {
+    "instruction": "make the thump sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the bass drum sound and make the thump sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the bass drum sound",
+    "make the thump sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the bass drum sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the bass drum sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 454,
+   "E3": {
+    "instruction": "make the glass sound twice as close"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 961,
+   "E2": {
+    "instruction": "make the bell pass by at 30 meters per second"
+   }
+  },
+  {
+   "scene": 561,
+   "E3": {
+    "instruction": "make the bell sound 2 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 255,
+   "E1": {
+    "instruction": "remove the gunshot sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the gunshot sound and make the engine sound 4 times farther away"
+   },
+   "C1seq": [
+    "remove the gunshot sound",
+    "make the engine sound 4 times farther away"
+   ]
+  },
+  {
+   "scene": 1311,
+   "E1": {
+    "instruction": "remove the clapping sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 10 meters per second"
+   },
+   "E3": {
+    "instruction": "make the clapping sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the clapping sound and make the glass sound twice as close"
+   },
+   "C1seq": [
+    "remove the clapping sound",
+    "make the glass sound twice as close"
+   ],
+   "C2": {
+    "instruction": "make the engine pass by at 10 meters per second and make the clapping sound 2 times farther away"
+   },
+   "C2seq": [
+    "make the engine pass by at 10 meters per second",
+    "make the clapping sound 2 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the clapping sound and make the engine pass by at 10 meters per second"
+   },
+   "C4seq": [
+    "remove the clapping sound",
+    "make the engine pass by at 10 meters per second"
+   ]
+  },
+  {
+   "scene": 1070,
+   "E1": {
+    "instruction": "remove the alarm sound"
+   },
+   "E3": {
+    "instruction": "make the bell sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the alarm sound and make the bell sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the alarm sound",
+    "make the bell sound 2 times farther away"
+   ]
+  },
+  {
+   "scene": 155,
+   "E1": {
+    "instruction": "remove the alarm sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 10 meters per second"
+   },
+   "C4": {
+    "instruction": "remove the alarm sound and make the engine pass by at 10 meters per second"
+   },
+   "C4seq": [
+    "remove the alarm sound",
+    "make the engine pass by at 10 meters per second"
+   ]
+  },
+  {
+   "scene": 1360,
+   "E3": {
+    "instruction": "make the thump sound 2 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1608,
+   "E1": {
+    "instruction": "remove the alarm sound"
+   },
+   "E2": {
+    "instruction": "make the alarm pass by at 20 meters per second"
+   },
+   "C4": {
+    "instruction": "remove the bell sound and make the alarm pass by at 20 meters per second"
+   },
+   "C4seq": [
+    "remove the bell sound",
+    "make the alarm pass by at 20 meters per second"
+   ]
+  },
+  {
+   "scene": 1485,
+   "E3": {
+    "instruction": "make the drum sound 2 times farther away"
+   },
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 796,
+   "E1": {
+    "instruction": "remove the engine sound"
+   },
+   "E3": {
+    "instruction": "make the bell sound twice as close"
+   },
+   "C1": {
+    "instruction": "remove the engine sound and make the bell sound twice as close"
+   },
+   "C1seq": [
+    "remove the engine sound",
+    "make the bell sound twice as close"
+   ],
+   "C3": {
+    "instruction": "remove the engine sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the engine sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1433,
+   "E1": {
+    "instruction": "remove the glass sound"
+   },
+   "E3": {
+    "instruction": "make the glass sound 4 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the glass sound and make the alarm sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the glass sound",
+    "make the alarm sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the glass sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the glass sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1163,
+   "E1": {
+    "instruction": "remove the gunshot sound"
+   },
+   "E2": {
+    "instruction": "make the engine pass by at 40 meters per second"
+   },
+   "E3": {
+    "instruction": "make the bell sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the gunshot sound and make the bell sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the gunshot sound",
+    "make the bell sound 2 times farther away"
+   ],
+   "C2": {
+    "instruction": "make the engine pass by at 40 meters per second and make the bell sound 2 times farther away"
+   },
+   "C2seq": [
+    "make the engine pass by at 40 meters per second",
+    "make the bell sound 2 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the gunshot sound and make the engine pass by at 40 meters per second"
+   },
+   "C4seq": [
+    "remove the gunshot sound",
+    "make the engine pass by at 40 meters per second"
+   ]
+  },
+  {
+   "scene": 613,
+   "E3": {
+    "instruction": "make the thump sound twice as close"
+   },
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 586,
+   "E3": {
+    "instruction": "make the alarm sound 2 times farther away"
+   }
+  },
+  {
+   "scene": 14,
+   "E2": {
+    "instruction": "make the bell pass by at 40 meters per second"
+   }
+  },
+  {
+   "scene": 1989,
+   "E1": {
+    "instruction": "remove the clapping sound"
+   },
+   "E3": {
+    "instruction": "make the glass sound twice as close"
+   },
+   "C1": {
+    "instruction": "remove the clapping sound and make the glass sound twice as close"
+   },
+   "C1seq": [
+    "remove the clapping sound",
+    "make the glass sound twice as close"
+   ],
+   "C3": {
+    "instruction": "remove the clapping sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the clapping sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 625,
+   "E1": {
+    "instruction": "remove the gunshot sound"
+   },
+   "E3": {
+    "instruction": "make the gunshot sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the gunshot sound and make the tap sound twice as close"
+   },
+   "C1seq": [
+    "remove the gunshot sound",
+    "make the tap sound twice as close"
+   ]
+  },
+  {
+   "scene": 685,
+   "E3": {
+    "instruction": "make the door sound twice as close"
+   },
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1791,
+   "E1": {
+    "instruction": "remove the clapping sound"
+   },
+   "E3": {
+    "instruction": "make the door sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the clapping sound and make the door sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the clapping sound",
+    "make the door sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the clapping sound and make the room more reverberant"
+   },
+   "C3seq": [
+    "remove the clapping sound",
+    "make the room more reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room more reverberant"
+   }
+  },
+  {
+   "scene": 1211,
+   "E2": {
+    "instruction": "make the engine pass by at 10 meters per second"
+   }
+  },
+  {
+   "scene": 936,
+   "E1": {
+    "instruction": "remove the bell sound"
+   },
+   "E2": {
+    "instruction": "make the bell pass by at 40 meters per second"
+   },
+   "E3": {
+    "instruction": "make the clapping sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the bell sound and make the clapping sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the bell sound",
+    "make the clapping sound 2 times farther away"
+   ],
+   "C2": {
+    "instruction": "make the bell pass by at 40 meters per second and make the clapping sound 2 times farther away"
+   },
+   "C2seq": [
+    "make the bell pass by at 40 meters per second",
+    "make the clapping sound 2 times farther away"
+   ],
+   "C4": {
+    "instruction": "remove the clapping sound and make the bell pass by at 40 meters per second"
+   },
+   "C4seq": [
+    "remove the clapping sound",
+    "make the bell pass by at 40 meters per second"
+   ]
+  },
+  {
+   "scene": 1117,
+   "E3": {
+    "instruction": "make the door sound twice as close"
+   }
+  },
+  {
+   "scene": 1782,
+   "E1": {
+    "instruction": "remove the drum sound"
+   },
+   "E3": {
+    "instruction": "make the engine sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the drum sound and make the engine sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the drum sound",
+    "make the engine sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the drum sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the drum sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  },
+  {
+   "scene": 1795,
+   "E1": {
+    "instruction": "remove the bell sound"
+   },
+   "E3": {
+    "instruction": "make the glass sound 2 times farther away"
+   },
+   "C1": {
+    "instruction": "remove the bell sound and make the glass sound 2 times farther away"
+   },
+   "C1seq": [
+    "remove the bell sound",
+    "make the glass sound 2 times farther away"
+   ],
+   "C3": {
+    "instruction": "remove the bell sound and make the room less reverberant"
+   },
+   "C3seq": [
+    "remove the bell sound",
+    "make the room less reverberant"
+   ],
+   "E4": {
+    "instruction": "make the room less reverberant"
+   }
+  }
+ ],
+ "rows": {
+  "E1": [
+   {
+    "scene": 1361,
+    "sisdr": -28.468260497938267,
+    "mrstft": 2.1205689907073975,
+    "loc": -28.468260497938267
+   },
+   {
+    "scene": 1776,
+    "sisdr": -40.81610709793281,
+    "mrstft": 4.065768241882324,
+    "loc": -40.8161070979328
+   },
+   {
+    "scene": 430,
+    "sisdr": -31.498217429672724,
+    "mrstft": 5.352133274078369,
+    "loc": -31.498217429672724
+   },
+   {
+    "scene": 180,
+    "sisdr": -19.75448939734603,
+    "mrstft": 1.8463306427001953,
+    "loc": -19.754489397346028
+   },
+   {
+    "scene": 1588,
+    "sisdr": -43.33214459970154,
+    "mrstft": 4.117405414581299,
+    "loc": -43.33214459970155
+   },
+   {
+    "scene": 776,
+    "sisdr": -69.15519327362273,
+    "mrstft": 2.694655418395996,
+    "loc": -69.15519327362283
+   },
+   {
+    "scene": 1150,
+    "sisdr": -32.30750878009937,
+    "mrstft": 3.829479217529297,
+    "loc": -32.30750878009933
+   },
+   {
+    "scene": 1316,
+    "sisdr": -44.1340170432978,
+    "mrstft": 3.3413937091827393,
+    "loc": -44.134017043297845
+   },
+   {
+    "scene": 654,
+    "sisdr": -31.225409343630606,
+    "mrstft": 4.122386932373047,
+    "loc": -31.225409343630602
+   },
+   {
+    "scene": 1624,
+    "sisdr": -43.91335123660411,
+    "mrstft": 1.0532735586166382,
+    "loc": -43.91335123660411
+   },
+   {
+    "scene": 1180,
+    "sisdr": -42.989900205134894,
+    "mrstft": 3.493438720703125,
+    "loc": -42.989900205134866
+   },
+   {
+    "scene": 887,
+    "sisdr": -41.74732878216951,
+    "mrstft": 3.5595006942749023,
+    "loc": -41.74732878216949
+   },
+   {
+    "scene": 535,
+    "sisdr": -41.47242600199064,
+    "mrstft": 5.358056545257568,
+    "loc": -41.47242600199078
+   },
+   {
+    "scene": 771,
+    "sisdr": -36.974292913046106,
+    "mrstft": 3.2465922832489014,
+    "loc": -36.974292913046106
+   },
+   {
+    "scene": 699,
+    "sisdr": -105.19417924558972,
+    "mrstft": 2.245173215866089,
+    "loc": -105.19417924558886
+   },
+   {
+    "scene": 222,
+    "sisdr": -13.16993686625943,
+    "mrstft": 1.6411890983581543,
+    "loc": -13.16993686625943
+   },
+   {
+    "scene": 372,
+    "sisdr": -37.15004108771431,
+    "mrstft": 5.9305195808410645,
+    "loc": -37.1500410877143
+   },
+   {
+    "scene": 108,
+    "sisdr": -26.501757739465873,
+    "mrstft": 3.2262468338012695,
+    "loc": -26.501757739465873
+   },
+   {
+    "scene": 1067,
+    "sisdr": -23.291497072484884,
+    "mrstft": 2.58756947517395,
+    "loc": -23.291497072484894
+   },
+   {
+    "scene": 896,
+    "sisdr": -35.363954009452605,
+    "mrstft": 3.0653724670410156,
+    "loc": -35.36395400945261
+   },
+   {
+    "scene": 1169,
+    "sisdr": -45.332748911176715,
+    "mrstft": 3.8263988494873047,
+    "loc": -45.33274891117664
+   },
+   {
+    "scene": 967,
+    "sisdr": -53.59100159189458,
+    "mrstft": 3.49758243560791,
+    "loc": -53.59100159189457
+   },
+   {
+    "scene": 143,
+    "sisdr": -29.64267161501833,
+    "mrstft": 3.8058035373687744,
+    "loc": -29.64267161501833
+   },
+   {
+    "scene": 255,
+    "sisdr": -42.35758792530602,
+    "mrstft": 3.3452541828155518,
+    "loc": -42.35758792530603
+   },
+   {
+    "scene": 1311,
+    "sisdr": -40.550317484112135,
+    "mrstft": 4.986943244934082,
+    "loc": -40.55031748411196
+   },
+   {
+    "scene": 1070,
+    "sisdr": -34.146431758796176,
+    "mrstft": 2.777672529220581,
+    "loc": -34.146431758796176
+   },
+   {
+    "scene": 155,
+    "sisdr": -41.69480141667415,
+    "mrstft": 5.449516773223877,
+    "loc": -41.69480141667415
+   },
+   {
+    "scene": 1608,
+    "sisdr": -33.60373239557911,
+    "mrstft": 3.706899881362915,
+    "loc": -33.60373239557913
+   },
+   {
+    "scene": 796,
+    "sisdr": -30.009823424436497,
+    "mrstft": 3.613135576248169,
+    "loc": -30.009823424436476
+   },
+   {
+    "scene": 1433,
+    "sisdr": -49.800178459848254,
+    "mrstft": 2.693554162979126,
+    "loc": -49.800178459848254
+   },
+   {
+    "scene": 1163,
+    "sisdr": -33.56550054521522,
+    "mrstft": 3.4205291271209717,
+    "loc": -33.565500545215215
+   },
+   {
+    "scene": 1989,
+    "sisdr": -39.280403936391814,
+    "mrstft": 2.014911413192749,
+    "loc": -39.28040393639178
+   },
+   {
+    "scene": 625,
+    "sisdr": -42.0484298755624,
+    "mrstft": 3.2901065349578857,
+    "loc": -42.04842987556263
+   },
+   {
+    "scene": 1791,
+    "sisdr": -47.003722191209846,
+    "mrstft": 3.5131165981292725,
+    "loc": -47.003722191209256
+   },
+   {
+    "scene": 936,
+    "sisdr": -40.14068080753108,
+    "mrstft": 3.530703544616699,
+    "loc": -40.14068080753108
+   },
+   {
+    "scene": 1782,
+    "sisdr": -39.65524484925521,
+    "mrstft": 2.5457370281219482,
+    "loc": -39.65524484925518
+   },
+   {
+    "scene": 1795,
+    "sisdr": -57.62921271491457,
+    "mrstft": 4.8378376960754395,
+    "loc": -57.62921271493749
+   }
+  ],
+  "E3": [
+   {
+    "scene": 1361,
+    "sisdr": -42.40993850683539,
+    "mrstft": 5.334566593170166,
+    "loc": -44.45309071773168
+   },
+   {
+    "scene": 1776,
+    "sisdr": -42.05597134956488,
+    "mrstft": 3.907809257507324,
+    "loc": -46.03168989377692
+   },
+   {
+    "scene": 245,
+    "sisdr": -25.218424822852462,
+    "mrstft": 2.246129274368286,
+    "loc": -130.5962659091951
+   },
+   {
+    "scene": 430,
+    "sisdr": -64.47550042739547,
+    "mrstft": 6.469913482666016,
+    "loc": -45.76108875756426
+   },
+   {
+    "scene": 180,
+    "sisdr": -27.75583093495944,
+    "mrstft": 3.6105449199676514,
+    "loc": -50.52382334538554
+   },
+   {
+    "scene": 1588,
+    "sisdr": -52.03851142449419,
+    "mrstft": 8.566962242126465,
+    "loc": -47.47597734711776
+   },
+   {
+    "scene": 776,
+    "sisdr": -42.78198066602087,
+    "mrstft": 8.210328102111816,
+    "loc": -38.936861588732945
+   },
+   {
+    "scene": 1150,
+    "sisdr": -32.613124936701304,
+    "mrstft": 2.683546304702759,
+    "loc": -41.482680580878096
+   },
+   {
+    "scene": 1316,
+    "sisdr": -50.04142017834429,
+    "mrstft": 7.19531774520874,
+    "loc": -48.48125497348238
+   },
+   {
+    "scene": 654,
+    "sisdr": -63.69830277246155,
+    "mrstft": 7.06353235244751,
+    "loc": -28.446850799110074
+   },
+   {
+    "scene": 1624,
+    "sisdr": -33.614756681572885,
+    "mrstft": 3.548706293106079,
+    "loc": -63.02307104975447
+   },
+   {
+    "scene": 1180,
+    "sisdr": -42.644480852346966,
+    "mrstft": 7.215536594390869,
+    "loc": -57.825031422785344
+   },
+   {
+    "scene": 887,
+    "sisdr": -32.50295600133,
+    "mrstft": 2.9927260875701904,
+    "loc": -37.99366032980337
+   },
+   {
+    "scene": 535,
+    "sisdr": -33.37413615240048,
+    "mrstft": 5.35870361328125,
+    "loc": -37.65029394453903
+   },
+   {
+    "scene": 371,
+    "sisdr": -17.19506685142691,
+    "mrstft": 1.5379785299301147,
+    "loc": -139.93717890701373
+   },
+   {
+    "scene": 756,
+    "sisdr": -21.544573091218933,
+    "mrstft": 5.948831081390381,
+    "loc": -152.06640378541124
+   },
+   {
+    "scene": 771,
+    "sisdr": -82.63773499521989,
+    "mrstft": 6.272688388824463,
+    "loc": -79.96472057272916
+   },
+   {
+    "scene": 1123,
+    "sisdr": -25.75813435042243,
+    "mrstft": 0.5890088081359863,
+    "loc": -137.4618893461676
+   },
+   {
+    "scene": 699,
+    "sisdr": -29.558323716179373,
+    "mrstft": 4.105748653411865,
+    "loc": -40.685355640452336
+   },
+   {
+    "scene": 1107,
+    "sisdr": -28.338899648739677,
+    "mrstft": 0.9875247478485107,
+    "loc": -129.1606473046917
+   },
+   {
+    "scene": 222,
+    "sisdr": -16.642252982062175,
+    "mrstft": 3.55395245552063,
+    "loc": -22.995141819958267
+   },
+   {
+    "scene": 1733,
+    "sisdr": -67.25514886826383,
+    "mrstft": 6.758437633514404,
+    "loc": -131.52276597658255
+   },
+   {
+    "scene": 372,
+    "sisdr": -41.61842531764493,
+    "mrstft": 5.96747350692749,
+    "loc": -38.11583431807112
+   },
+   {
+    "scene": 1830,
+    "sisdr": -27.37267625371973,
+    "mrstft": 1.9569578170776367,
+    "loc": -143.15692289471517
+   },
+   {
+    "scene": 108,
+    "sisdr": -32.98069174158578,
+    "mrstft": 4.089480876922607,
+    "loc": -26.700747704569597
+   },
+   {
+    "scene": 1067,
+    "sisdr": -12.3632247862319,
+    "mrstft": 2.132155179977417,
+    "loc": -34.65208584642477
+   },
+   {
+    "scene": 896,
+    "sisdr": -45.20889462686108,
+    "mrstft": 6.395858287811279,
+    "loc": -81.71700060575672
+   },
+   {
+    "scene": 1169,
+    "sisdr": -49.13247169721572,
+    "mrstft": 5.7387847900390625,
+    "loc": -62.58327884463678
+   },
+   {
+    "scene": 967,
+    "sisdr": -40.55085920347922,
+    "mrstft": 3.615682363510132,
+    "loc": -38.99002858614471
+   },
+   {
+    "scene": 143,
+    "sisdr": -26.416620490817493,
+    "mrstft": 3.6784355640411377,
+    "loc": -37.11475252813658
+   },
+   {
+    "scene": 454,
+    "sisdr": -26.5285668709406,
+    "mrstft": 4.894860744476318,
+    "loc": -144.17303319436056
+   },
+   {
+    "scene": 561,
+    "sisdr": -26.749508106379366,
+    "mrstft": 2.308382749557495,
+    "loc": -142.19598283653661
+   },
+   {
+    "scene": 255,
+    "sisdr": -27.95990721981906,
+    "mrstft": 2.648252487182617,
+    "loc": -27.91314125381775
+   },
+   {
+    "scene": 1311,
+    "sisdr": -53.93668549025448,
+    "mrstft": 6.659641265869141,
+    "loc": -51.52348669233024
+   },
+   {
+    "scene": 1070,
+    "sisdr": -35.541276065796346,
+    "mrstft": 3.7876079082489014,
+    "loc": -54.55892194613646
+   },
+   {
+    "scene": 1360,
+    "sisdr": -23.17307524737549,
+    "mrstft": 0.3750289976596832,
+    "loc": -139.26709438228616
+   },
+   {
+    "scene": 1485,
+    "sisdr": -43.701042073405034,
+    "mrstft": 2.4116101264953613,
+    "loc": -137.4378140913228
+   },
+   {
+    "scene": 796,
+    "sisdr": -66.93010133015478,
+    "mrstft": 9.286541938781738,
+    "loc": -59.23217370696722
+   },
+   {
+    "scene": 1433,
+    "sisdr": -41.47863696047929,
+    "mrstft": 5.56475305557251,
+    "loc": -48.22367718241601
+   },
+   {
+    "scene": 1163,
+    "sisdr": -34.3665660110662,
+    "mrstft": 3.010629653930664,
+    "loc": -61.39990472606884
+   },
+   {
+    "scene": 613,
+    "sisdr": -24.422212948786353,
+    "mrstft": 0.7908210754394531,
+    "loc": -152.08859064852734
+   },
+   {
+    "scene": 586,
+    "sisdr": -56.610545375491206,
+    "mrstft": 7.8689751625061035,
+    "loc": -138.95639298263524
+   },
+   {
+    "scene": 1989,
+    "sisdr": -31.179321394667504,
+    "mrstft": 5.195104122161865,
+    "loc": -78.83273615540892
+   },
+   {
+    "scene": 625,
+    "sisdr": -30.22828874922174,
+    "mrstft": 1.6566776037216187,
+    "loc": -34.64487116668967
+   },
+   {
+    "scene": 685,
+    "sisdr": -25.975740486132448,
+    "mrstft": 6.106128692626953,
+    "loc": -160.45416747616446
+   },
+   {
+    "scene": 1791,
+    "sisdr": -20.85010425237055,
+    "mrstft": 3.5621073246002197,
+    "loc": -28.381528506827504
+   },
+   {
+    "scene": 936,
+    "sisdr": -57.68605568020674,
+    "mrstft": 7.294769763946533,
+    "loc": -60.752389101599434
+   },
+   {
+    "scene": 1117,
+    "sisdr": -22.215405182259712,
+    "mrstft": 2.5125484466552734,
+    "loc": -150.8040085839239
+   },
+   {
+    "scene": 1782,
+    "sisdr": -26.330532852298706,
+    "mrstft": 3.1664764881134033,
+    "loc": -30.70859285187357
+   },
+   {
+    "scene": 1795,
+    "sisdr": -31.159710310696664,
+    "mrstft": 4.118722438812256,
+    "loc": -41.03001537807272
+   }
+  ],
+  "C1": [
+   {
+    "scene": 1361,
+    "sisdr": -41.05753998788157,
+    "mrstft": 1.5096406936645508,
+    "loc": -44.69653758991912
+   },
+   {
+    "scene": 1776,
+    "sisdr": -51.239995319646916,
+    "mrstft": 3.77721905708313,
+    "loc": -64.07334897454875
+   },
+   {
+    "scene": 430,
+    "sisdr": -20.319016531201175,
+    "mrstft": 2.675691843032837,
+    "loc": -41.8242251871858
+   },
+   {
+    "scene": 180,
+    "sisdr": -32.727309142572935,
+    "mrstft": 3.0985171794891357,
+    "loc": -55.820075292993465
+   },
+   {
+    "scene": 1588,
+    "sisdr": -49.53901927066031,
+    "mrstft": 6.237152099609375,
+    "loc": -42.59742380287789
+   },
+   {
+    "scene": 776,
+    "sisdr": -42.08203980909633,
+    "mrstft": 1.3543592691421509,
+    "loc": -52.01187427649889
+   },
+   {
+    "scene": 1150,
+    "sisdr": -30.726354710970185,
+    "mrstft": 2.717114210128784,
+    "loc": -40.71358347145597
+   },
+   {
+    "scene": 1316,
+    "sisdr": -61.097613432123445,
+    "mrstft": 5.212497234344482,
+    "loc": -44.637431894912034
+   },
+   {
+    "scene": 654,
+    "sisdr": -60.73295004796777,
+    "mrstft": 6.501152038574219,
+    "loc": -44.5352279555246
+   },
+   {
+    "scene": 1624,
+    "sisdr": -42.04628264556946,
+    "mrstft": 2.0820257663726807,
+    "loc": -47.10673386663586
+   },
+   {
+    "scene": 1180,
+    "sisdr": -43.802554960635625,
+    "mrstft": 2.2989635467529297,
+    "loc": -75.86517943550125
+   },
+   {
+    "scene": 887,
+    "sisdr": -46.387023142846004,
+    "mrstft": 2.912447690963745,
+    "loc": -70.89205892006319
+   },
+   {
+    "scene": 535,
+    "sisdr": -53.284528304929765,
+    "mrstft": 4.740675926208496,
+    "loc": -42.64629048132964
+   },
+   {
+    "scene": 771,
+    "sisdr": -47.03928483000111,
+    "mrstft": 4.83667516708374,
+    "loc": -54.031546503222614
+   },
+   {
+    "scene": 222,
+    "sisdr": -44.89653252750919,
+    "mrstft": 3.6678314208984375,
+    "loc": -68.89628829843788
+   },
+   {
+    "scene": 372,
+    "sisdr": -38.48340963522886,
+    "mrstft": 5.462488651275635,
+    "loc": -42.10249049861525
+   },
+   {
+    "scene": 108,
+    "sisdr": -36.06863625871209,
+    "mrstft": 2.8101274967193604,
+    "loc": -49.609106729971
+   },
+   {
+    "scene": 896,
+    "sisdr": -39.25861445096663,
+    "mrstft": 2.9150428771972656,
+    "loc": -51.523224618468866
+   },
+   {
+    "scene": 1169,
+    "sisdr": -49.424521136892224,
+    "mrstft": 3.218949556350708,
+    "loc": -44.739825837630214
+   },
+   {
+    "scene": 967,
+    "sisdr": -51.24242808327082,
+    "mrstft": 2.8675053119659424,
+    "loc": -41.30547586581602
+   },
+   {
+    "scene": 143,
+    "sisdr": -38.41964810898426,
+    "mrstft": 4.131289958953857,
+    "loc": -52.6922695314351
+   },
+   {
+    "scene": 255,
+    "sisdr": -41.250006350502986,
+    "mrstft": 2.1146583557128906,
+    "loc": -50.81388499995229
+   },
+   {
+    "scene": 1311,
+    "sisdr": -48.653891926322395,
+    "mrstft": 8.622608184814453,
+    "loc": -47.74762535370547
+   },
+   {
+    "scene": 1070,
+    "sisdr": -28.840701214231824,
+    "mrstft": 2.5204226970672607,
+    "loc": -43.97223859708025
+   },
+   {
+    "scene": 796,
+    "sisdr": -39.47195825576717,
+    "mrstft": 2.6266489028930664,
+    "loc": -57.69653900320803
+   },
+   {
+    "scene": 1433,
+    "sisdr": -38.11527931318437,
+    "mrstft": 3.0831336975097656,
+    "loc": -43.45249136533375
+   },
+   {
+    "scene": 1163,
+    "sisdr": -54.854050774218194,
+    "mrstft": 4.171339511871338,
+    "loc": -75.72102888528829
+   },
+   {
+    "scene": 1989,
+    "sisdr": -19.53978881669345,
+    "mrstft": 2.9159653186798096,
+    "loc": -101.97460175003484
+   },
+   {
+    "scene": 625,
+    "sisdr": -46.705054296297455,
+    "mrstft": 3.22841477394104,
+    "loc": -46.63264317141709
+   },
+   {
+    "scene": 1791,
+    "sisdr": -22.12640443986162,
+    "mrstft": 2.4140684604644775,
+    "loc": -33.18763562416991
+   },
+   {
+    "scene": 936,
+    "sisdr": -45.0288753439882,
+    "mrstft": 4.964925765991211,
+    "loc": -94.25040209428472
+   },
+   {
+    "scene": 1782,
+    "sisdr": -48.76950430489379,
+    "mrstft": 2.0973198413848877,
+    "loc": -53.57143958481202
+   },
+   {
+    "scene": 1795,
+    "sisdr": -36.53719412086683,
+    "mrstft": 4.661116123199463,
+    "loc": -50.51683802682425
+   }
+  ],
+  "C1seq": [
+   {
+    "scene": 1361,
+    "sisdr": -60.57077124519026,
+    "mrstft": 2.549489974975586,
+    "loc": -42.617684223504256
+   },
+   {
+    "scene": 1776,
+    "sisdr": -44.809894244264605,
+    "mrstft": 4.024304389953613,
+    "loc": -80.94046182632822
+   },
+   {
+    "scene": 430,
+    "sisdr": -29.768829394766428,
+    "mrstft": 4.795521259307861,
+    "loc": -41.85074296224124
+   },
+   {
+    "scene": 180,
+    "sisdr": -29.7722872314888,
+    "mrstft": 2.453935384750366,
+    "loc": -44.053132193611575
+   },
+   {
+    "scene": 1588,
+    "sisdr": -47.77047348206084,
+    "mrstft": 5.796470642089844,
+    "loc": -42.60515131907131
+   },
+   {
+    "scene": 776,
+    "sisdr": -52.6172818905323,
+    "mrstft": 5.793572902679443,
+    "loc": -48.51084175018718
+   },
+   {
+    "scene": 1150,
+    "sisdr": -49.63727016014349,
+    "mrstft": 3.831693410873413,
+    "loc": -40.71984780172176
+   },
+   {
+    "scene": 1316,
+    "sisdr": -52.14093884548583,
+    "mrstft": 5.715505123138428,
+    "loc": -44.667769824366495
+   },
+   {
+    "scene": 654,
+    "sisdr": -30.874714699513195,
+    "mrstft": 3.162539482116699,
+    "loc": -52.80327704175363
+   },
+   {
+    "scene": 1624,
+    "sisdr": -52.8858421874419,
+    "mrstft": 5.705322265625,
+    "loc": -47.25315971384887
+   },
+   {
+    "scene": 1180,
+    "sisdr": -35.01738390180996,
+    "mrstft": 4.959676265716553,
+    "loc": -81.35084392744261
+   },
+   {
+    "scene": 887,
+    "sisdr": -55.44027972361044,
+    "mrstft": 3.0790421962738037,
+    "loc": -74.6801056997287
+   },
+   {
+    "scene": 535,
+    "sisdr": -45.84590553475017,
+    "mrstft": 6.18651819229126,
+    "loc": -43.01766740230508
+   },
+   {
+    "scene": 771,
+    "sisdr": -57.12602997251825,
+    "mrstft": 4.799881458282471,
+    "loc": -82.03539512067302
+   },
+   {
+    "scene": 222,
+    "sisdr": -10.371718682811391,
+    "mrstft": 1.6922942399978638,
+    "loc": -63.68125597930369
+   },
+   {
+    "scene": 372,
+    "sisdr": -33.790592994964214,
+    "mrstft": 3.829221725463867,
+    "loc": -42.127243078703785
+   },
+   {
+    "scene": 108,
+    "sisdr": -33.37538533370519,
+    "mrstft": 2.224163770675659,
+    "loc": -49.320786370772154
+   },
+   {
+    "scene": 896,
+    "sisdr": -47.936325650329636,
+    "mrstft": 4.53581428527832,
+    "loc": -48.65883618429669
+   },
+   {
+    "scene": 1169,
+    "sisdr": -52.481191724755845,
+    "mrstft": 3.313298463821411,
+    "loc": -45.72836452381071
+   },
+   {
+    "scene": 967,
+    "sisdr": -35.689223347227525,
+    "mrstft": 4.041023254394531,
+    "loc": -41.73926310641917
+   },
+   {
+    "scene": 143,
+    "sisdr": -47.65957624926894,
+    "mrstft": 3.8170745372772217,
+    "loc": -65.39783557880975
+   },
+   {
+    "scene": 255,
+    "sisdr": -39.015497310864916,
+    "mrstft": 1.861880898475647,
+    "loc": -44.18107728461366
+   },
+   {
+    "scene": 1311,
+    "sisdr": -55.58592271024529,
+    "mrstft": 9.3478422164917,
+    "loc": -47.75390142252607
+   },
+   {
+    "scene": 1070,
+    "sisdr": -53.456385650280794,
+    "mrstft": 5.227131366729736,
+    "loc": -46.97631452568337
+   },
+   {
+    "scene": 796,
+    "sisdr": -59.21917004852163,
+    "mrstft": 2.3727047443389893,
+    "loc": -57.694956901348746
+   },
+   {
+    "scene": 1433,
+    "sisdr": -37.05498077551452,
+    "mrstft": 4.918586254119873,
+    "loc": -43.52770241768084
+   },
+   {
+    "scene": 1163,
+    "sisdr": -54.46424333894691,
+    "mrstft": 4.213742733001709,
+    "loc": -76.46798292834677
+   },
+   {
+    "scene": 1989,
+    "sisdr": -43.640342557761485,
+    "mrstft": 3.2979440689086914,
+    "loc": -101.44910076336939
+   },
+   {
+    "scene": 625,
+    "sisdr": -51.714261007546455,
+    "mrstft": 3.1178653240203857,
+    "loc": -46.62893114034741
+   },
+   {
+    "scene": 1791,
+    "sisdr": -66.46023458727487,
+    "mrstft": 3.631864309310913,
+    "loc": -36.704463906339576
+   },
+   {
+    "scene": 936,
+    "sisdr": -46.28852763763797,
+    "mrstft": 5.055041790008545,
+    "loc": -83.41860275440939
+   },
+   {
+    "scene": 1782,
+    "sisdr": -29.345237772843316,
+    "mrstft": 2.1603646278381348,
+    "loc": -53.79413209648241
+   },
+   {
+    "scene": 1795,
+    "sisdr": -55.098704505690506,
+    "mrstft": 4.733078479766846,
+    "loc": -84.49964430868191
+   }
+  ],
+  "C3": [
+   {
+    "scene": 1361,
+    "sisdr": -39.989334853568714,
+    "mrstft": 3.386336088180542,
+    "loc": -4.74607158478292
+   },
+   {
+    "scene": 1776,
+    "sisdr": -50.04156710689735,
+    "mrstft": 6.940573215484619,
+    "loc": -10.45312343467371
+   },
+   {
+    "scene": 430,
+    "sisdr": -77.63701944659572,
+    "mrstft": 12.000496864318848,
+    "loc": -6.560371523022257
+   },
+   {
+    "scene": 180,
+    "sisdr": -43.729891231911104,
+    "mrstft": 4.671600818634033,
+    "loc": -5.546730737951649
+   },
+   {
+    "scene": 1588,
+    "sisdr": -36.30713905083335,
+    "mrstft": 3.2200489044189453,
+    "loc": -4.752478300895579
+   },
+   {
+    "scene": 776,
+    "sisdr": -33.031869508646686,
+    "mrstft": 2.237011194229126,
+    "loc": -6.572452996701949
+   },
+   {
+    "scene": 1316,
+    "sisdr": -44.291899646934816,
+    "mrstft": 4.490912914276123,
+    "loc": -12.547745189660592
+   },
+   {
+    "scene": 1180,
+    "sisdr": -39.68659678158153,
+    "mrstft": 4.424642086029053,
+    "loc": -7.907158315952053
+   },
+   {
+    "scene": 887,
+    "sisdr": -51.21443358635355,
+    "mrstft": 3.806516647338867,
+    "loc": -6.10762608004439
+   },
+   {
+    "scene": 535,
+    "sisdr": -43.470161791388556,
+    "mrstft": 4.5993876457214355,
+    "loc": -8.085370877298194
+   },
+   {
+    "scene": 771,
+    "sisdr": -45.9508811844463,
+    "mrstft": 3.9511544704437256,
+    "loc": -4.043407720432697
+   },
+   {
+    "scene": 222,
+    "sisdr": -35.75012736261746,
+    "mrstft": 2.7098114490509033,
+    "loc": -8.309073759070992
+   },
+   {
+    "scene": 372,
+    "sisdr": -36.09675795940318,
+    "mrstft": 6.462599277496338,
+    "loc": -2.714683844985202
+   },
+   {
+    "scene": 108,
+    "sisdr": -40.07073469327728,
+    "mrstft": 3.5274860858917236,
+    "loc": -3.1860589707397406
+   },
+   {
+    "scene": 896,
+    "sisdr": -49.712271665879086,
+    "mrstft": 4.757063388824463,
+    "loc": -5.4001774828397195
+   },
+   {
+    "scene": 967,
+    "sisdr": -37.033296568819,
+    "mrstft": 2.067964553833008,
+    "loc": -20.902029857220686
+   },
+   {
+    "scene": 143,
+    "sisdr": -42.97377628905256,
+    "mrstft": 3.997835874557495,
+    "loc": -8.1778624463753
+   },
+   {
+    "scene": 796,
+    "sisdr": -47.18753385540482,
+    "mrstft": 4.785801410675049,
+    "loc": -4.764121323586021
+   },
+   {
+    "scene": 1433,
+    "sisdr": -27.98234270165227,
+    "mrstft": 5.527130603790283,
+    "loc": -7.566075512965592
+   },
+   {
+    "scene": 1989,
+    "sisdr": -74.39017835446292,
+    "mrstft": 1.7328163385391235,
+    "loc": -6.244023754963837
+   },
+   {
+    "scene": 1791,
+    "sisdr": -34.66723947268746,
+    "mrstft": 3.0163376331329346,
+    "loc": -6.661521980959999
+   },
+   {
+    "scene": 1782,
+    "sisdr": -25.45799035312012,
+    "mrstft": 2.6599228382110596,
+    "loc": -4.048982634400246
+   },
+   {
+    "scene": 1795,
+    "sisdr": -33.37635651784567,
+    "mrstft": 2.5692832469940186,
+    "loc": -4.718164471578128
+   }
+  ],
+  "C3seq": [
+   {
+    "scene": 1361,
+    "sisdr": -45.13940798082959,
+    "mrstft": 6.191011905670166,
+    "loc": -4.187944188898956
+   },
+   {
+    "scene": 1776,
+    "sisdr": -84.26666663962679,
+    "mrstft": 9.18797779083252,
+    "loc": -10.34399041067854
+   },
+   {
+    "scene": 430,
+    "sisdr": -39.419493375208255,
+    "mrstft": 10.250338554382324,
+    "loc": -6.646088135059415
+   },
+   {
+    "scene": 180,
+    "sisdr": -41.252782376950556,
+    "mrstft": 3.6755053997039795,
+    "loc": -5.600321489407182
+   },
+   {
+    "scene": 1588,
+    "sisdr": -53.927294434023516,
+    "mrstft": 6.489564418792725,
+    "loc": -4.718658584093513
+   },
+   {
+    "scene": 776,
+    "sisdr": -61.24983401525818,
+    "mrstft": 7.321608066558838,
+    "loc": -1.142019296156538
+   },
+   {
+    "scene": 1316,
+    "sisdr": -47.230412517080055,
+    "mrstft": 6.65761137008667,
+    "loc": -4.850983594455874
+   },
+   {
+    "scene": 1180,
+    "sisdr": -48.284126321505966,
+    "mrstft": 7.9682698249816895,
+    "loc": -7.890767356159948
+   },
+   {
+    "scene": 887,
+    "sisdr": -58.77190903955287,
+    "mrstft": 3.916264533996582,
+    "loc": -3.4439443858497536
+   },
+   {
+    "scene": 535,
+    "sisdr": -68.72008619022634,
+    "mrstft": 7.958967685699463,
+    "loc": -8.066831907749188
+   },
+   {
+    "scene": 771,
+    "sisdr": -55.95617120410357,
+    "mrstft": 5.021410942077637,
+    "loc": -4.037306808886663
+   },
+   {
+    "scene": 222,
+    "sisdr": -49.31859849500359,
+    "mrstft": 4.494512557983398,
+    "loc": -5.35266155734783
+   },
+   {
+    "scene": 372,
+    "sisdr": -60.41722952479657,
+    "mrstft": 4.39343786239624,
+    "loc": -1.9953130806995425
+   },
+   {
+    "scene": 108,
+    "sisdr": -43.927947389858765,
+    "mrstft": 2.2865960597991943,
+    "loc": -2.9704324760011187
+   },
+   {
+    "scene": 896,
+    "sisdr": -56.148187010639774,
+    "mrstft": 6.726107120513916,
+    "loc": -5.375900007024481
+   },
+   {
+    "scene": 967,
+    "sisdr": -50.16096771205702,
+    "mrstft": 5.58390474319458,
+    "loc": -6.603536943366274
+   },
+   {
+    "scene": 143,
+    "sisdr": -70.4682659224344,
+    "mrstft": 3.6296966075897217,
+    "loc": -2.670631062169517
+   },
+   {
+    "scene": 796,
+    "sisdr": -49.24512423125472,
+    "mrstft": 3.5479001998901367,
+    "loc": -4.339965782495269
+   },
+   {
+    "scene": 1433,
+    "sisdr": -49.79178315879502,
+    "mrstft": 6.349680423736572,
+    "loc": -7.117514367440871
+   },
+   {
+    "scene": 1989,
+    "sisdr": -77.40396129941895,
+    "mrstft": 2.7457973957061768,
+    "loc": -6.305419586533281
+   },
+   {
+    "scene": 1791,
+    "sisdr": -88.47730832747558,
+    "mrstft": 5.263618469238281,
+    "loc": -6.5559340504396815
+   },
+   {
+    "scene": 1782,
+    "sisdr": -67.02633897955452,
+    "mrstft": 6.261155605316162,
+    "loc": -2.6476252918289593
+   },
+   {
+    "scene": 1795,
+    "sisdr": -40.89596584959361,
+    "mrstft": 3.4893429279327393,
+    "loc": -4.414913777393576
+   }
+  ],
+  "E2": [
+   {
+    "scene": 1811,
+    "sisdr": -27.11578002056429,
+    "mrstft": 3.224289655685425,
+    "loc": -149.2308624459597
+   },
+   {
+    "scene": 159,
+    "sisdr": -40.55641813194099,
+    "mrstft": 4.580414295196533,
+    "loc": -144.33909201288625
+   },
+   {
+    "scene": 654,
+    "sisdr": -33.5134969763843,
+    "mrstft": 4.3680739402771,
+    "loc": -26.225120919396634
+   },
+   {
+    "scene": 699,
+    "sisdr": -39.64171273632263,
+    "mrstft": 2.7889671325683594,
+    "loc": -60.7388746151775
+   },
+   {
+    "scene": 1066,
+    "sisdr": -50.557762961920425,
+    "mrstft": 3.942938804626465,
+    "loc": -146.14567027850865
+   },
+   {
+    "scene": 1067,
+    "sisdr": -32.82556226711512,
+    "mrstft": 4.516443729400635,
+    "loc": -50.229499125203894
+   },
+   {
+    "scene": 952,
+    "sisdr": -42.344071374368184,
+    "mrstft": 4.616611957550049,
+    "loc": -149.10280795322268
+   },
+   {
+    "scene": 1169,
+    "sisdr": -35.73096605237537,
+    "mrstft": 3.249371290206909,
+    "loc": -44.739672857859475
+   },
+   {
+    "scene": 1231,
+    "sisdr": -32.010074030354396,
+    "mrstft": 3.396376609802246,
+    "loc": -147.12965549684978
+   },
+   {
+    "scene": 961,
+    "sisdr": -42.25966585106684,
+    "mrstft": 2.80572772026062,
+    "loc": -146.9740663882127
+   },
+   {
+    "scene": 1311,
+    "sisdr": -41.87448815210696,
+    "mrstft": 5.0129876136779785,
+    "loc": -57.94212406134989
+   },
+   {
+    "scene": 155,
+    "sisdr": -42.19465171469747,
+    "mrstft": 5.159246921539307,
+    "loc": -56.55082958880559
+   },
+   {
+    "scene": 1608,
+    "sisdr": -34.80239821754235,
+    "mrstft": 3.25152850151062,
+    "loc": -39.85172882591605
+   },
+   {
+    "scene": 1163,
+    "sisdr": -32.94644023582097,
+    "mrstft": 2.011481285095215,
+    "loc": -45.17358386424897
+   },
+   {
+    "scene": 14,
+    "sisdr": -76.20976257545695,
+    "mrstft": 0.97786545753479,
+    "loc": -132.81658260158832
+   },
+   {
+    "scene": 1211,
+    "sisdr": -20.990541753654245,
+    "mrstft": 3.9274604320526123,
+    "loc": -153.84434570089292
+   },
+   {
+    "scene": 936,
+    "sisdr": -33.72446457116289,
+    "mrstft": 6.830346584320068,
+    "loc": -55.4090000960198
+   }
+  ],
+  "C2": [
+   {
+    "scene": 654,
+    "sisdr": -21.42449930847929,
+    "mrstft": 2.8934428691864014,
+    "loc": -35.50921130487194
+   },
+   {
+    "scene": 699,
+    "sisdr": -38.19013300437789,
+    "mrstft": 2.994244337081909,
+    "loc": -54.24325200828939
+   },
+   {
+    "scene": 1067,
+    "sisdr": -32.408709578015014,
+    "mrstft": 3.977123498916626,
+    "loc": -62.941781767688205
+   },
+   {
+    "scene": 1169,
+    "sisdr": -38.53043586695026,
+    "mrstft": 3.956622838973999,
+    "loc": -46.241233770322204
+   },
+   {
+    "scene": 1311,
+    "sisdr": -61.56952249591416,
+    "mrstft": 7.384764194488525,
+    "loc": -70.62158982011728
+   },
+   {
+    "scene": 1163,
+    "sisdr": -26.497510663753204,
+    "mrstft": 1.94290292263031,
+    "loc": -58.402771259204016
+   },
+   {
+    "scene": 936,
+    "sisdr": -38.5752117842272,
+    "mrstft": 4.1596360206604,
+    "loc": -46.55521162936785
+   }
+  ],
+  "C2seq": [
+   {
+    "scene": 654,
+    "sisdr": -50.77547317389012,
+    "mrstft": 7.415487766265869,
+    "loc": -37.013467285588696
+   },
+   {
+    "scene": 699,
+    "sisdr": -35.610411234422436,
+    "mrstft": 3.8577873706817627,
+    "loc": -54.2426519876621
+   },
+   {
+    "scene": 1067,
+    "sisdr": -25.81177645425981,
+    "mrstft": 5.224306583404541,
+    "loc": -41.53195932357413
+   },
+   {
+    "scene": 1169,
+    "sisdr": -37.03915597432982,
+    "mrstft": 4.670059680938721,
+    "loc": -45.54339024694316
+   },
+   {
+    "scene": 1311,
+    "sisdr": -57.28710166489574,
+    "mrstft": 7.3318305015563965,
+    "loc": -69.98358493159782
+   },
+   {
+    "scene": 1163,
+    "sisdr": -35.46175371438197,
+    "mrstft": 2.657590627670288,
+    "loc": -50.29614893778732
+   },
+   {
+    "scene": 936,
+    "sisdr": -63.28812818458089,
+    "mrstft": 5.946976184844971,
+    "loc": -46.63339090779499
+   }
+  ],
+  "C4": [
+   {
+    "scene": 654,
+    "sisdr": -43.8633792583963,
+    "mrstft": 3.995332717895508,
+    "loc": -36.906322171144396
+   },
+   {
+    "scene": 699,
+    "sisdr": -37.20702696936413,
+    "mrstft": 3.004282236099243,
+    "loc": -89.00711381391866
+   },
+   {
+    "scene": 1067,
+    "sisdr": -53.483388754224094,
+    "mrstft": 2.902446985244751,
+    "loc": -46.59441651797103
+   },
+   {
+    "scene": 1169,
+    "sisdr": -37.505398715196876,
+    "mrstft": 3.995344400405884,
+    "loc": -55.19617110086074
+   },
+   {
+    "scene": 1311,
+    "sisdr": -56.22396651007602,
+    "mrstft": 9.3800048828125,
+    "loc": -64.28235380357019
+   },
+   {
+    "scene": 155,
+    "sisdr": -45.83969979417635,
+    "mrstft": 5.289021015167236,
+    "loc": -48.76494795824934
+   },
+   {
+    "scene": 1608,
+    "sisdr": -20.587770532889987,
+    "mrstft": 4.701409816741943,
+    "loc": -70.08947700724609
+   },
+   {
+    "scene": 1163,
+    "sisdr": -40.93626708944092,
+    "mrstft": 3.52959942817688,
+    "loc": -56.66564721691436
+   },
+   {
+    "scene": 936,
+    "sisdr": -40.22487727460092,
+    "mrstft": 3.4153621196746826,
+    "loc": -45.89028115702825
+   }
+  ],
+  "C4seq": [
+   {
+    "scene": 654,
+    "sisdr": -37.291599361456164,
+    "mrstft": 6.113236904144287,
+    "loc": -36.65827024228215
+   },
+   {
+    "scene": 699,
+    "sisdr": -38.78051232342442,
+    "mrstft": 2.3422467708587646,
+    "loc": -76.91637716349625
+   },
+   {
+    "scene": 1067,
+    "sisdr": -37.7102921247454,
+    "mrstft": 3.5108678340911865,
+    "loc": -47.08434407071507
+   },
+   {
+    "scene": 1169,
+    "sisdr": -44.94407864012593,
+    "mrstft": 4.320455074310303,
+    "loc": -53.93458954443727
+   },
+   {
+    "scene": 1311,
+    "sisdr": -42.33288891077513,
+    "mrstft": 5.958017826080322,
+    "loc": -60.76362583938777
+   },
+   {
+    "scene": 155,
+    "sisdr": -44.8274302089125,
+    "mrstft": 7.963320255279541,
+    "loc": -48.86449884384511
+   },
+   {
+    "scene": 1608,
+    "sisdr": -46.23114846500098,
+    "mrstft": 4.9923014640808105,
+    "loc": -70.7803295689116
+   },
+   {
+    "scene": 1163,
+    "sisdr": -56.74471278012287,
+    "mrstft": 3.6184089183807373,
+    "loc": -66.39283555882513
+   },
+   {
+    "scene": 936,
+    "sisdr": -61.822793480503655,
+    "mrstft": 3.7312545776367188,
+    "loc": -45.88803367355513
+   }
+  ],
+  "E4": [
+   {
+    "scene": 1361,
+    "sisdr": -32.7351755519087,
+    "mrstft": 8.228133201599121,
+    "loc": -5.953683743516321
+   },
+   {
+    "scene": 1776,
+    "sisdr": -67.05658410706397,
+    "mrstft": 11.036262512207031,
+    "loc": -10.122363067898634
+   },
+   {
+    "scene": 245,
+    "sisdr": -41.48809238806275,
+    "mrstft": 5.69166374206543,
+    "loc": -6.118769976961136
+   },
+   {
+    "scene": 430,
+    "sisdr": -30.58430677597094,
+    "mrstft": 9.662666320800781,
+    "loc": -7.104681608328521
+   },
+   {
+    "scene": 180,
+    "sisdr": -25.706351685683913,
+    "mrstft": 4.664556980133057,
+    "loc": -8.063217106833342
+   },
+   {
+    "scene": 1588,
+    "sisdr": -46.58904987686755,
+    "mrstft": 6.213743686676025,
+    "loc": -4.7575592337591806
+   },
+   {
+    "scene": 776,
+    "sisdr": -45.36995941752254,
+    "mrstft": 8.742165565490723,
+    "loc": -4.094866934938968
+   },
+   {
+    "scene": 1316,
+    "sisdr": -55.32086420376679,
+    "mrstft": 7.8819050788879395,
+    "loc": -3.389300523749459
+   },
+   {
+    "scene": 1180,
+    "sisdr": -40.1770402685754,
+    "mrstft": 8.551324844360352,
+    "loc": -8.888171917423994
+   },
+   {
+    "scene": 887,
+    "sisdr": -53.93767788880004,
+    "mrstft": 5.694282531738281,
+    "loc": -4.020598005670589
+   },
+   {
+    "scene": 535,
+    "sisdr": -38.61960837341859,
+    "mrstft": 8.648179054260254,
+    "loc": -8.716950881955173
+   },
+   {
+    "scene": 756,
+    "sisdr": -27.654794894989504,
+    "mrstft": 4.138156890869141,
+    "loc": -6.086245393257725
+   },
+   {
+    "scene": 771,
+    "sisdr": -45.39505799277207,
+    "mrstft": 4.8851447105407715,
+    "loc": -4.0574881530643285
+   },
+   {
+    "scene": 1123,
+    "sisdr": -56.77696851422311,
+    "mrstft": 2.3046696186065674,
+    "loc": -5.53426852903717
+   },
+   {
+    "scene": 1107,
+    "sisdr": -52.74271434924955,
+    "mrstft": 4.485607624053955,
+    "loc": -7.2740825622176555
+   },
+   {
+    "scene": 222,
+    "sisdr": -45.72455851904408,
+    "mrstft": 5.830941677093506,
+    "loc": -5.06143838528655
+   },
+   {
+    "scene": 1733,
+    "sisdr": -24.573690333134888,
+    "mrstft": 6.355254650115967,
+    "loc": -9.279912698953668
+   },
+   {
+    "scene": 372,
+    "sisdr": -27.63856274125387,
+    "mrstft": 4.260038375854492,
+    "loc": -2.103397264346679
+   },
+   {
+    "scene": 108,
+    "sisdr": -69.82440538577174,
+    "mrstft": 7.750816822052002,
+    "loc": -2.6402191904574694
+   },
+   {
+    "scene": 896,
+    "sisdr": -38.648303989118475,
+    "mrstft": 7.641037464141846,
+    "loc": -5.483532575174209
+   },
+   {
+    "scene": 967,
+    "sisdr": -49.287144634476654,
+    "mrstft": 6.923739910125732,
+    "loc": -5.557881706286985
+   },
+   {
+    "scene": 143,
+    "sisdr": -31.118735068745252,
+    "mrstft": 3.5301706790924072,
+    "loc": -6.061937294385218
+   },
+   {
+    "scene": 454,
+    "sisdr": -36.851585648533074,
+    "mrstft": 5.315764904022217,
+    "loc": -7.076627406104175
+   },
+   {
+    "scene": 561,
+    "sisdr": -25.816737731814236,
+    "mrstft": 4.95540189743042,
+    "loc": -6.079315122858477
+   },
+   {
+    "scene": 1360,
+    "sisdr": -44.9657225733814,
+    "mrstft": 0.7166211009025574,
+    "loc": -3.4570064346481826
+   },
+   {
+    "scene": 1485,
+    "sisdr": -38.922557928691624,
+    "mrstft": 0.8643525242805481,
+    "loc": -2.7611645963158518
+   },
+   {
+    "scene": 796,
+    "sisdr": -37.015613109548966,
+    "mrstft": 6.865488529205322,
+    "loc": -4.881134436742448
+   },
+   {
+    "scene": 1433,
+    "sisdr": -44.65428617006622,
+    "mrstft": 8.666497230529785,
+    "loc": -6.081860532703528
+   },
+   {
+    "scene": 613,
+    "sisdr": -26.668500575486362,
+    "mrstft": 1.499792218208313,
+    "loc": -7.795959895137349
+   },
+   {
+    "scene": 1989,
+    "sisdr": -51.817198456076866,
+    "mrstft": 5.760359287261963,
+    "loc": -5.823675917089832
+   },
+   {
+    "scene": 685,
+    "sisdr": -46.04782251865327,
+    "mrstft": 6.129486083984375,
+    "loc": -3.9365245668253195
+   },
+   {
+    "scene": 1791,
+    "sisdr": -50.28209344464819,
+    "mrstft": 8.165495872497559,
+    "loc": -6.551521208483186
+   },
+   {
+    "scene": 1782,
+    "sisdr": -24.993733479177575,
+    "mrstft": 4.314329147338867,
+    "loc": -4.469120103063882
+   },
+   {
+    "scene": 1795,
+    "sisdr": -62.20253144624938,
+    "mrstft": 5.353975772857666,
+    "loc": -4.276314875776734
+   }
+  ]
+ },
+ "edits": {
+  "E1": {
+   "sisdr": {
+    "median": -40.14068080753108,
+    "ci95": [
+     -42.0484298755624,
+     -34.146431758796176
+    ],
+    "n": 37
+   },
+   "mrstft": {
+    "median": 3.493438720703125,
+    "ci95": [
+     3.2262468338012695,
+     3.706899881362915
+    ],
+    "n": 37
+   },
+   "loc": {
+    "median": -40.14068080753108,
+    "ci95": [
+     -42.04842987556263,
+     -34.146431758796176
+    ],
+    "n": 37
+   }
+  },
+  "E3": {
+   "sisdr": {
+    "median": -32.79690833914354,
+    "ci95": [
+     -41.47863696047929,
+     -28.338899648739677
+    ],
+    "n": 50
+   },
+   "mrstft": {
+    "median": 3.998645067214966,
+    "ci95": [
+     3.5513293743133545,
+     5.3799285888671875
+    ],
+    "n": 50
+   },
+   "loc": {
+    "median": -53.041204319233344,
+    "ci95": [
+     -70.70800750002286,
+     -45.2423903057543
+    ],
+    "n": 50
+   }
+  },
+  "C1": {
+   "sisdr": {
+    "median": -42.08203980909633,
+    "ci95": [
+     -47.03928483000111,
+     -39.25861445096663
+    ],
+    "n": 33
+   },
+   "mrstft": {
+    "median": 3.0831336975097656,
+    "ci95": [
+     2.8101274967193604,
+     3.77721905708313
+    ],
+    "n": 33
+   },
+   "loc": {
+    "median": -49.609106729971,
+    "ci95": [
+     -53.57143958481202,
+     -44.69653758991912
+    ],
+    "n": 33
+   }
+  },
+  "C1seq": {
+   "sisdr": {
+    "median": -47.77047348206084,
+    "ci95": [
+     -52.48459397890026,
+     -39.015497310864916
+    ],
+    "n": 33
+   },
+   "mrstft": {
+    "median": 4.024304389953613,
+    "ci95": [
+     3.2979440689086914,
+     4.795521259307861
+    ],
+    "n": 33
+   },
+   "loc": {
+    "median": -47.75390142252607,
+    "ci95": [
+     -53.79413209648241,
+     -44.65560251087285
+    ],
+    "n": 33
+   }
+  },
+  "C3": {
+   "sisdr": {
+    "median": -40.07073469327728,
+    "ci95": [
+     -45.9508811844463,
+     -36.30713905083335
+    ],
+    "n": 23
+   },
+   "mrstft": {
+    "median": 3.9511544704437256,
+    "ci95": [
+     3.2200489044189453,
+     4.671600818634033
+    ],
+    "n": 23
+   },
+   "loc": {
+    "median": -6.244023754963837,
+    "ci95": [
+     -7.907158315952053,
+     -4.752478300895579
+    ],
+    "n": 23
+   }
+  },
+  "C3seq": {
+   "sisdr": {
+    "median": -53.927294434023516,
+    "ci95": [
+     -60.41722952479657,
+     -49.24512423125472
+    ],
+    "n": 23
+   },
+   "mrstft": {
+    "median": 5.58390474319458,
+    "ci95": [
+     3.916264533996582,
+     6.489564418792725
+    ],
+    "n": 23
+   },
+   "loc": {
+    "median": -4.850983594455874,
+    "ci95": [
+     -6.305419586533281,
+     -4.037306808886663
+    ],
+    "n": 23
+   }
+  },
+  "E2": {
+   "sisdr": {
+    "median": -35.73096605237537,
+    "ci95": [
+     -42.19465171469747,
+     -32.94644023582097
+    ],
+    "n": 17
+   },
+   "mrstft": {
+    "median": 3.9274604320526123,
+    "ci95": [
+     3.224289655685425,
+     4.580414295196533
+    ],
+    "n": 17
+   },
+   "loc": {
+    "median": -60.7388746151775,
+    "ci95": [
+     -146.9740663882127,
+     -50.229499125203894
+    ],
+    "n": 17
+   }
+  },
+  "C2": {
+   "sisdr": {
+    "median": -38.19013300437789,
+    "ci95": [
+     -38.5752117842272,
+     -26.497510663753204
+    ],
+    "n": 7
+   },
+   "mrstft": {
+    "median": 3.956622838973999,
+    "ci95": [
+     2.8934428691864014,
+     4.1596360206604
+    ],
+    "n": 7
+   },
+   "loc": {
+    "median": -54.24325200828939,
+    "ci95": [
+     -62.941781767688205,
+     -46.241233770322204
+    ],
+    "n": 7
+   }
+  },
+  "C2seq": {
+   "sisdr": {
+    "median": -37.03915597432982,
+    "ci95": [
+     -57.28710166489574,
+     -35.46175371438197
+    ],
+    "n": 7
+   },
+   "mrstft": {
+    "median": 5.224306583404541,
+    "ci95": [
+     3.8577873706817627,
+     7.3318305015563965
+    ],
+    "n": 7
+   },
+   "loc": {
+    "median": -46.63339090779499,
+    "ci95": [
+     -54.2426519876621,
+     -41.53195932357413
+    ],
+    "n": 7
+   }
+  },
+  "C4": {
+   "sisdr": {
+    "median": -40.93626708944092,
+    "ci95": [
+     -53.483388754224094,
+     -37.20702696936413
+    ],
+    "n": 9
+   },
+   "mrstft": {
+    "median": 3.995332717895508,
+    "ci95": [
+     3.004282236099243,
+     5.289021015167236
+    ],
+    "n": 9
+   },
+   "loc": {
+    "median": -55.19617110086074,
+    "ci95": [
+     -70.08947700724609,
+     -45.89028115702825
+    ],
+    "n": 9
+   }
+  },
+  "C4seq": {
+   "sisdr": {
+    "median": -44.8274302089125,
+    "ci95": [
+     -56.74471278012287,
+     -37.7102921247454
+    ],
+    "n": 9
+   },
+   "mrstft": {
+    "median": 4.320455074310303,
+    "ci95": [
+     3.5108678340911865,
+     6.113236904144287
+    ],
+    "n": 9
+   },
+   "loc": {
+    "median": -53.93458954443727,
+    "ci95": [
+     -70.7803295689116,
+     -45.88803367355513
+    ],
+    "n": 9
+   }
+  },
+  "E4": {
+   "sisdr": {
+    "median": -43.071189279064484,
+    "ci95": [
+     -46.04782251865327,
+     -37.015613109548966
+    ],
+    "n": 34
+   },
+   "mrstft": {
+    "median": 5.795650482177734,
+    "ci95": [
+     4.95540189743042,
+     6.923739910125732
+    ],
+    "n": 34
+   },
+   "loc": {
+    "median": -5.690778811688409,
+    "ci95": [
+     -6.086245393257725,
+     -4.7575592337591806
+    ],
+    "n": 34
+   }
+  }
+ }
+}

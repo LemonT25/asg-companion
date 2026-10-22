@@ -1,0 +1,953 @@
+{
+ "meta": {
+  "date": "2026-08-16",
+  "script": "src/p3_x5_zeta.py",
+  "split": "val",
+  "locality": "A12.2: loc = si_sdr((est - ref) + noedit_ref, noedit_ref), noedit_ref = y - gts[k]; for E1 ref == noedit_ref so loc == sisdr (recorded); measured, not granted",
+  "loc_clean": "not defined for the regeneration family: the edited mixture has no node decomposition (est - node_prime does not exist); proxy loc only, disclosed",
+  "system": "X5 ZETA (ICML'24)",
+  "family": "regeneration",
+  "model_id": "cvssp/audioldm2",
+  "model_sr": 16000,
+  "inversion": {
+   "mode": "ours",
+   "num_diffusion_steps": 200,
+   "tstart": 100,
+   "cfg_src": 3,
+   "cfg_tar": 12
+  },
+  "seed_rule": "42 + spec_index",
+  "n_fail": 0,
+  "notes": "ZETA edits the whole mixture from a text instruction (prompts logged per row); the edited mixture is LS scale-fitted to y (disclosed), then scored against the same references as the stem systems; same edits as p3_edit_eval_v1.json"
+ },
+ "X5": {
+  "roundtrip_sisdr": {
+   "median": -28.356105523654314,
+   "ci95": [
+    -31.88167704781899,
+    -21.83989901483094
+   ],
+   "n": 60
+  },
+  "edits": {
+   "E1": {
+    "sisdr": {
+     "median": -41.62721206610642,
+     "ci95": [
+      -46.08123243510593,
+      -38.79627551570384
+     ],
+     "n": 37
+    },
+    "mrstft": {
+     "median": 4.197319984436035,
+     "ci95": [
+      3.7554895877838135,
+      4.905235290527344
+     ],
+     "n": 37
+    },
+    "loc": {
+     "median": -41.627212066106416,
+     "ci95": [
+      -46.081232435105946,
+      -38.79627551570384
+     ],
+     "n": 37
+    }
+   },
+   "E2": {
+    "sisdr": {
+     "median": -34.51080391920852,
+     "ci95": [
+      -39.83511233909172,
+      -29.55627751595376
+     ],
+     "n": 17
+    },
+    "mrstft": {
+     "median": 5.456155300140381,
+     "ci95": [
+      4.0577263832092285,
+      5.951785564422607
+     ],
+     "n": 17
+    },
+    "loc": {
+     "median": -68.356620132703,
+     "ci95": [
+      -146.9197510822225,
+      -51.84573845638393
+     ],
+     "n": 17
+    }
+   },
+   "E3": {
+    "sisdr": {
+     "median": -38.06144696919915,
+     "ci95": [
+      -41.428284237535195,
+      -34.71292844023292
+     ],
+     "n": 50
+    },
+    "mrstft": {
+     "median": 5.009328126907349,
+     "ci95": [
+      4.556756496429443,
+      5.3369266211986535
+     ],
+     "n": 50
+    },
+    "loc": {
+     "median": -59.11535210825394,
+     "ci95": [
+      -66.24320891955065,
+      -46.40967514423109
+     ],
+     "n": 50
+    }
+   }
+  },
+  "rows": {
+   "E1": [
+    {
+     "scene": 1361,
+     "sisdr": -46.08123243510593,
+     "mrstft": 3.803499937057495,
+     "loc": -46.081232435105946,
+     "source_prompt": "a recording of engine, gunshot and thump",
+     "target_prompt": "a recording of engine and gunshot"
+    },
+    {
+     "scene": 1776,
+     "sisdr": -33.73425759827137,
+     "mrstft": 5.030601501464844,
+     "loc": -33.73425759827136,
+     "source_prompt": "a recording of bass drum, door and alarm",
+     "target_prompt": "a recording of door and alarm"
+    },
+    {
+     "scene": 430,
+     "sisdr": -47.14719661448985,
+     "mrstft": 8.06966495513916,
+     "loc": -47.147196614489644,
+     "source_prompt": "a recording of engine, drum and door",
+     "target_prompt": "a recording of engine and door"
+    },
+    {
+     "scene": 180,
+     "sisdr": -39.262370043229886,
+     "mrstft": 3.8789169788360596,
+     "loc": -39.262370043229915,
+     "source_prompt": "a recording of bell, clapping and door",
+     "target_prompt": "a recording of bell and clapping"
+    },
+    {
+     "scene": 1588,
+     "sisdr": -35.929039436923595,
+     "mrstft": 6.042048931121826,
+     "loc": -35.929039436923574,
+     "source_prompt": "a recording of door, alarm and engine",
+     "target_prompt": "a recording of door and alarm"
+    },
+    {
+     "scene": 776,
+     "sisdr": -47.931650393197344,
+     "mrstft": 4.505208969116211,
+     "loc": -47.93165039319738,
+     "source_prompt": "a recording of alarm and engine",
+     "target_prompt": "a recording of alarm"
+    },
+    {
+     "scene": 1150,
+     "sisdr": -41.79824729391158,
+     "mrstft": 3.605083465576172,
+     "loc": -41.798247293911395,
+     "source_prompt": "a recording of engine and door",
+     "target_prompt": "a recording of door"
+    },
+    {
+     "scene": 1316,
+     "sisdr": -56.53804605621094,
+     "mrstft": 5.4697113037109375,
+     "loc": -56.538046056210796,
+     "source_prompt": "a recording of clapping and door",
+     "target_prompt": "a recording of clapping"
+    },
+    {
+     "scene": 654,
+     "sisdr": -38.221624897060984,
+     "mrstft": 4.212454795837402,
+     "loc": -38.22162489706099,
+     "source_prompt": "a recording of alarm, drum and engine",
+     "target_prompt": "a recording of alarm and engine"
+    },
+    {
+     "scene": 1624,
+     "sisdr": -38.79627551570384,
+     "mrstft": 3.7458598613739014,
+     "loc": -38.79627551570384,
+     "source_prompt": "a recording of engine and alarm",
+     "target_prompt": "a recording of alarm"
+    },
+    {
+     "scene": 1180,
+     "sisdr": -41.1735789189013,
+     "mrstft": 5.002058982849121,
+     "loc": -41.1735789189014,
+     "source_prompt": "a recording of door, glass and alarm",
+     "target_prompt": "a recording of door and glass"
+    },
+    {
+     "scene": 887,
+     "sisdr": -43.88384022706053,
+     "mrstft": 3.3579928874969482,
+     "loc": -43.883840227060524,
+     "source_prompt": "a recording of engine and hammer",
+     "target_prompt": "a recording of hammer"
+    },
+    {
+     "scene": 535,
+     "sisdr": -51.62809420080616,
+     "mrstft": 5.158029556274414,
+     "loc": -51.6280942008063,
+     "source_prompt": "a recording of door, clapping and gunshot",
+     "target_prompt": "a recording of door and clapping"
+    },
+    {
+     "scene": 771,
+     "sisdr": -67.828095430185,
+     "mrstft": 5.2167067527771,
+     "loc": -67.82809543021582,
+     "source_prompt": "a recording of drum, glass and door",
+     "target_prompt": "a recording of glass and door"
+    },
+    {
+     "scene": 699,
+     "sisdr": -66.19811514802569,
+     "mrstft": 4.855389595031738,
+     "loc": -66.19811514802562,
+     "source_prompt": "a recording of engine and thump",
+     "target_prompt": "a recording of engine"
+    },
+    {
+     "scene": 222,
+     "sisdr": -36.655371971763415,
+     "mrstft": 4.197319984436035,
+     "loc": -36.655371971763486,
+     "source_prompt": "a recording of drum and door",
+     "target_prompt": "a recording of door"
+    },
+    {
+     "scene": 372,
+     "sisdr": -31.33383754270647,
+     "mrstft": 5.255380630493164,
+     "loc": -31.33383754270647,
+     "source_prompt": "a recording of drum and door",
+     "target_prompt": "a recording of door"
+    },
+    {
+     "scene": 108,
+     "sisdr": -43.27402510578938,
+     "mrstft": 2.790064573287964,
+     "loc": -43.27402510578939,
+     "source_prompt": "a recording of thump and gunshot",
+     "target_prompt": "a recording of gunshot"
+    },
+    {
+     "scene": 1067,
+     "sisdr": -31.58100878862753,
+     "mrstft": 3.4709551334381104,
+     "loc": -31.581008788627535,
+     "source_prompt": "a recording of engine, alarm and bell",
+     "target_prompt": "a recording of alarm and bell"
+    },
+    {
+     "scene": 896,
+     "sisdr": -33.97032255058517,
+     "mrstft": 4.486030578613281,
+     "loc": -33.97032255058518,
+     "source_prompt": "a recording of engine, clapping and glass",
+     "target_prompt": "a recording of engine and glass"
+    },
+    {
+     "scene": 1169,
+     "sisdr": -39.41500487055804,
+     "mrstft": 3.809227228164673,
+     "loc": -39.41500487055803,
+     "source_prompt": "a recording of glass, engine and hammer",
+     "target_prompt": "a recording of glass and engine"
+    },
+    {
+     "scene": 967,
+     "sisdr": -41.31078195219626,
+     "mrstft": 6.056976795196533,
+     "loc": -41.310781952196294,
+     "source_prompt": "a recording of gunshot, alarm and engine",
+     "target_prompt": "a recording of alarm and engine"
+    },
+    {
+     "scene": 143,
+     "sisdr": -39.60152962915603,
+     "mrstft": 3.9070701599121094,
+     "loc": -39.60152962915602,
+     "source_prompt": "a recording of bell, thump and bass drum",
+     "target_prompt": "a recording of bell and thump"
+    },
+    {
+     "scene": 255,
+     "sisdr": -49.107364836116744,
+     "mrstft": 2.617690324783325,
+     "loc": -49.107364836116744,
+     "source_prompt": "a recording of gunshot and engine",
+     "target_prompt": "a recording of engine"
+    },
+    {
+     "scene": 1311,
+     "sisdr": -51.92962832107882,
+     "mrstft": 6.749749660491943,
+     "loc": -51.92962832107998,
+     "source_prompt": "a recording of glass, clapping and engine",
+     "target_prompt": "a recording of glass and engine"
+    },
+    {
+     "scene": 1070,
+     "sisdr": -34.02056496657094,
+     "mrstft": 3.666531562805176,
+     "loc": -34.02056496657094,
+     "source_prompt": "a recording of bell, bass drum and alarm",
+     "target_prompt": "a recording of bell and bass drum"
+    },
+    {
+     "scene": 155,
+     "sisdr": -34.13059834231987,
+     "mrstft": 5.547195911407471,
+     "loc": -34.13059834231987,
+     "source_prompt": "a recording of engine, bell and alarm",
+     "target_prompt": "a recording of engine and bell"
+    },
+    {
+     "scene": 1608,
+     "sisdr": -48.75183125721682,
+     "mrstft": 5.359950542449951,
+     "loc": -48.75183125721681,
+     "source_prompt": "a recording of bell and alarm",
+     "target_prompt": "a recording of bell"
+    },
+    {
+     "scene": 796,
+     "sisdr": -50.849446854192664,
+     "mrstft": 3.2302305698394775,
+     "loc": -50.84944685419242,
+     "source_prompt": "a recording of bell, alarm and engine",
+     "target_prompt": "a recording of bell and alarm"
+    },
+    {
+     "scene": 1433,
+     "sisdr": -29.160417484729404,
+     "mrstft": 3.883993148803711,
+     "loc": -29.160417484729404,
+     "source_prompt": "a recording of glass and alarm",
+     "target_prompt": "a recording of alarm"
+    },
+    {
+     "scene": 1163,
+     "sisdr": -31.70848773249432,
+     "mrstft": 3.586493492126465,
+     "loc": -31.708487732494316,
+     "source_prompt": "a recording of bell, engine and gunshot",
+     "target_prompt": "a recording of bell and engine"
+    },
+    {
+     "scene": 1989,
+     "sisdr": -41.62721206610642,
+     "mrstft": 2.4914138317108154,
+     "loc": -41.627212066106416,
+     "source_prompt": "a recording of glass and clapping",
+     "target_prompt": "a recording of glass"
+    },
+    {
+     "scene": 625,
+     "sisdr": -59.10841797875088,
+     "mrstft": 2.773543119430542,
+     "loc": -59.108417978758,
+     "source_prompt": "a recording of gunshot and tap",
+     "target_prompt": "a recording of tap"
+    },
+    {
+     "scene": 1791,
+     "sisdr": -43.088987429367826,
+     "mrstft": 4.905235290527344,
+     "loc": -43.08898742936711,
+     "source_prompt": "a recording of door, drum and clapping",
+     "target_prompt": "a recording of door and drum"
+    },
+    {
+     "scene": 936,
+     "sisdr": -32.496257198091676,
+     "mrstft": 3.5977087020874023,
+     "loc": -32.49625719809167,
+     "source_prompt": "a recording of clapping and bell",
+     "target_prompt": "a recording of clapping"
+    },
+    {
+     "scene": 1782,
+     "sisdr": -50.742411675298804,
+     "mrstft": 3.7554895877838135,
+     "loc": -50.74241167529883,
+     "source_prompt": "a recording of drum and engine",
+     "target_prompt": "a recording of engine"
+    },
+    {
+     "scene": 1795,
+     "sisdr": -44.528798595610446,
+     "mrstft": 4.676158428192139,
+     "loc": -44.52879859560834,
+     "source_prompt": "a recording of glass, bell and door",
+     "target_prompt": "a recording of glass and door"
+    }
+   ],
+   "E2": [
+    {
+     "scene": 1811,
+     "sisdr": -26.146823268027973,
+     "mrstft": 5.456155300140381,
+     "loc": -149.23646477952812,
+     "source_prompt": "a recording of engine",
+     "target_prompt": "a recording of engine, the engine passes by at 30 meters per second"
+    },
+    {
+     "scene": 159,
+     "sisdr": -34.51080391920852,
+     "mrstft": 6.22320032119751,
+     "loc": -144.33766915810827,
+     "source_prompt": "a recording of alarm",
+     "target_prompt": "a recording of alarm, the alarm passes by at 30 meters per second"
+    },
+    {
+     "scene": 654,
+     "sisdr": -34.08799745762429,
+     "mrstft": 5.951785564422607,
+     "loc": -26.251948319841077,
+     "source_prompt": "a recording of alarm, drum and engine",
+     "target_prompt": "a recording of alarm, drum and engine, the engine passes by at 5 meters per second"
+    },
+    {
+     "scene": 699,
+     "sisdr": -60.1284041405093,
+     "mrstft": 3.535146713256836,
+     "loc": -58.214482996071666,
+     "source_prompt": "a recording of engine and thump",
+     "target_prompt": "a recording of engine and thump, the engine passes by at 30 meters per second"
+    },
+    {
+     "scene": 1066,
+     "sisdr": -37.79485848326897,
+     "mrstft": 4.5273613929748535,
+     "loc": -146.11991685294095,
+     "source_prompt": "a recording of bell",
+     "target_prompt": "a recording of bell, the bell passes by at 30 meters per second"
+    },
+    {
+     "scene": 1067,
+     "sisdr": -32.06659608073551,
+     "mrstft": 5.802738666534424,
+     "loc": -48.39707799886624,
+     "source_prompt": "a recording of engine, alarm and bell",
+     "target_prompt": "a recording of engine, alarm and bell, the alarm passes by at 20 meters per second"
+    },
+    {
+     "scene": 952,
+     "sisdr": -29.55627751595376,
+     "mrstft": 4.0577263832092285,
+     "loc": -149.09800477870778,
+     "source_prompt": "a recording of alarm",
+     "target_prompt": "a recording of alarm, the alarm passes by at 20 meters per second"
+    },
+    {
+     "scene": 1169,
+     "sisdr": -49.21869850187158,
+     "mrstft": 5.9631195068359375,
+     "loc": -44.740336690025984,
+     "source_prompt": "a recording of glass, engine and hammer",
+     "target_prompt": "a recording of glass, engine and hammer, the engine passes by at 5 meters per second"
+    },
+    {
+     "scene": 1231,
+     "sisdr": -42.3113573451226,
+     "mrstft": 6.376502513885498,
+     "loc": -147.13167856751022,
+     "source_prompt": "a recording of engine",
+     "target_prompt": "a recording of engine, the engine passes by at 20 meters per second"
+    },
+    {
+     "scene": 961,
+     "sisdr": -26.930026860471678,
+     "mrstft": 2.4128260612487793,
+     "loc": -146.9197510822225,
+     "source_prompt": "a recording of bell",
+     "target_prompt": "a recording of bell, the bell passes by at 30 meters per second"
+    },
+    {
+     "scene": 1311,
+     "sisdr": -36.62713967624358,
+     "mrstft": 5.639719009399414,
+     "loc": -51.84573845638393,
+     "source_prompt": "a recording of glass, clapping and engine",
+     "target_prompt": "a recording of glass, clapping and engine, the engine passes by at 10 meters per second"
+    },
+    {
+     "scene": 155,
+     "sisdr": -38.39750910405441,
+     "mrstft": 4.920833587646484,
+     "loc": -54.30621508732743,
+     "source_prompt": "a recording of engine, bell and alarm",
+     "target_prompt": "a recording of engine, bell and alarm, the engine passes by at 10 meters per second"
+    },
+    {
+     "scene": 1608,
+     "sisdr": -33.23669233988249,
+     "mrstft": 3.632176637649536,
+     "loc": -49.83737396972551,
+     "source_prompt": "a recording of bell and alarm",
+     "target_prompt": "a recording of bell and alarm, the alarm passes by at 20 meters per second"
+    },
+    {
+     "scene": 1163,
+     "sisdr": -44.340837782763565,
+     "mrstft": 4.6900763511657715,
+     "loc": -68.356620132703,
+     "source_prompt": "a recording of bell, engine and gunshot",
+     "target_prompt": "a recording of bell, engine and gunshot, the engine passes by at 40 meters per second"
+    },
+    {
+     "scene": 14,
+     "sisdr": -21.09692976827809,
+     "mrstft": 0.6639111638069153,
+     "loc": -132.82794004389854,
+     "source_prompt": "a recording of bell",
+     "target_prompt": "a recording of bell, the bell passes by at 40 meters per second"
+    },
+    {
+     "scene": 1211,
+     "sisdr": -16.87811081829857,
+     "mrstft": 5.476809024810791,
+     "loc": -153.78733162000893,
+     "source_prompt": "a recording of engine",
+     "target_prompt": "a recording of engine, the engine passes by at 10 meters per second"
+    },
+    {
+     "scene": 936,
+     "sisdr": -39.83511233909172,
+     "mrstft": 6.755162715911865,
+     "loc": -55.16890398565839,
+     "source_prompt": "a recording of clapping and bell",
+     "target_prompt": "a recording of clapping and bell, the bell passes by at 40 meters per second"
+    }
+   ],
+   "E3": [
+    {
+     "scene": 1361,
+     "sisdr": -35.42624786036207,
+     "mrstft": 6.273751735687256,
+     "loc": -43.68985608433971,
+     "source_prompt": "a recording of engine, gunshot and thump",
+     "target_prompt": "a recording of engine, gunshot and thump, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1776,
+     "sisdr": -34.13030033938699,
+     "mrstft": 3.4242324829101562,
+     "loc": -65.66883440752842,
+     "source_prompt": "a recording of bass drum, door and alarm",
+     "target_prompt": "a recording of bass drum, door and alarm, the alarm is 4 times farther away and quieter"
+    },
+    {
+     "scene": 245,
+     "sisdr": -34.50915744899027,
+     "mrstft": 3.4740817546844482,
+     "loc": -130.50564271197845,
+     "source_prompt": "a recording of tap",
+     "target_prompt": "a recording of tap, the tap is 4 times farther away and quieter"
+    },
+    {
+     "scene": 430,
+     "sisdr": -40.36254825088582,
+     "mrstft": 5.686436176300049,
+     "loc": -45.9725502273991,
+     "source_prompt": "a recording of engine, drum and door",
+     "target_prompt": "a recording of engine, drum and door, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 180,
+     "sisdr": -38.190846739261886,
+     "mrstft": 4.824151992797852,
+     "loc": -44.336932029241034,
+     "source_prompt": "a recording of bell, clapping and door",
+     "target_prompt": "a recording of bell, clapping and door, the door is twice as close and louder"
+    },
+    {
+     "scene": 1588,
+     "sisdr": -27.663504553618054,
+     "mrstft": 5.145467281341553,
+     "loc": -49.18194924736237,
+     "source_prompt": "a recording of door, alarm and engine",
+     "target_prompt": "a recording of door, alarm and engine, the door is 4 times farther away and quieter"
+    },
+    {
+     "scene": 776,
+     "sisdr": -52.09656256298446,
+     "mrstft": 7.617772579193115,
+     "loc": -38.96119238211769,
+     "source_prompt": "a recording of alarm and engine",
+     "target_prompt": "a recording of alarm and engine, the alarm is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1150,
+     "sisdr": -47.068712894982205,
+     "mrstft": 4.956262588500977,
+     "loc": -52.101071077190824,
+     "source_prompt": "a recording of engine and door",
+     "target_prompt": "a recording of engine and door, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1316,
+     "sisdr": -31.911585914353303,
+     "mrstft": 5.193331241607666,
+     "loc": -44.79288357194123,
+     "source_prompt": "a recording of clapping and door",
+     "target_prompt": "a recording of clapping and door, the clapping is 2 times farther away and quieter"
+    },
+    {
+     "scene": 654,
+     "sisdr": -39.31872185800223,
+     "mrstft": 4.5675201416015625,
+     "loc": -28.399878091975708,
+     "source_prompt": "a recording of alarm, drum and engine",
+     "target_prompt": "a recording of alarm, drum and engine, the drum is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1624,
+     "sisdr": -32.23000578693196,
+     "mrstft": 4.705806732177734,
+     "loc": -60.48536473169907,
+     "source_prompt": "a recording of engine and alarm",
+     "target_prompt": "a recording of engine and alarm, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1180,
+     "sisdr": -35.00777076039895,
+     "mrstft": 5.846916198730469,
+     "loc": -95.1889085441137,
+     "source_prompt": "a recording of door, glass and alarm",
+     "target_prompt": "a recording of door, glass and alarm, the door is 4 times farther away and quieter"
+    },
+    {
+     "scene": 887,
+     "sisdr": -26.583540791850186,
+     "mrstft": 3.684046983718872,
+     "loc": -38.64568215223314,
+     "source_prompt": "a recording of engine and hammer",
+     "target_prompt": "a recording of engine and hammer, the engine is 4 times farther away and quieter"
+    },
+    {
+     "scene": 535,
+     "sisdr": -70.91908057514513,
+     "mrstft": 6.9410223960876465,
+     "loc": -34.80929749060384,
+     "source_prompt": "a recording of door, clapping and gunshot",
+     "target_prompt": "a recording of door, clapping and gunshot, the door is 4 times farther away and quieter"
+    },
+    {
+     "scene": 371,
+     "sisdr": -38.74510547268504,
+     "mrstft": 4.696141719818115,
+     "loc": -139.33840023472862,
+     "source_prompt": "a recording of engine",
+     "target_prompt": "a recording of engine, the engine is 4 times farther away and quieter"
+    },
+    {
+     "scene": 756,
+     "sisdr": -32.61165850721258,
+     "mrstft": 5.903702259063721,
+     "loc": -152.08735659056572,
+     "source_prompt": "a recording of door",
+     "target_prompt": "a recording of door, the door is twice as close and louder"
+    },
+    {
+     "scene": 771,
+     "sisdr": -34.7131276069873,
+     "mrstft": 4.183276176452637,
+     "loc": -35.5537709417484,
+     "source_prompt": "a recording of drum, glass and door",
+     "target_prompt": "a recording of drum, glass and door, the door is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1123,
+     "sisdr": -15.436353674744673,
+     "mrstft": 1.5013493299484253,
+     "loc": -137.46167004292604,
+     "source_prompt": "a recording of thump",
+     "target_prompt": "a recording of thump, the thump is 2 times farther away and quieter"
+    },
+    {
+     "scene": 699,
+     "sisdr": -45.37723084038011,
+     "mrstft": 5.224393844604492,
+     "loc": -41.3046808530421,
+     "source_prompt": "a recording of engine and thump",
+     "target_prompt": "a recording of engine and thump, the thump is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1107,
+     "sisdr": -52.041614285362854,
+     "mrstft": 2.265829086303711,
+     "loc": -129.11082482270277,
+     "source_prompt": "a recording of gunshot",
+     "target_prompt": "a recording of gunshot, the gunshot is 4 times farther away and quieter"
+    },
+    {
+     "scene": 222,
+     "sisdr": -41.428284237535195,
+     "mrstft": 4.644128322601318,
+     "loc": -31.7813011492342,
+     "source_prompt": "a recording of drum and door",
+     "target_prompt": "a recording of drum and door, the drum is 4 times farther away and quieter"
+    },
+    {
+     "scene": 1733,
+     "sisdr": -30.807532297616113,
+     "mrstft": 3.3142404556274414,
+     "loc": -131.5514984764752,
+     "source_prompt": "a recording of alarm",
+     "target_prompt": "a recording of alarm, the alarm is 4 times farther away and quieter"
+    },
+    {
+     "scene": 372,
+     "sisdr": -37.29363246958326,
+     "mrstft": 5.570982456207275,
+     "loc": -37.80298331164439,
+     "source_prompt": "a recording of drum and door",
+     "target_prompt": "a recording of drum and door, the door is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1830,
+     "sisdr": -21.065864499738353,
+     "mrstft": 1.264798641204834,
+     "loc": -143.3555576196405,
+     "source_prompt": "a recording of bass drum",
+     "target_prompt": "a recording of bass drum, the bass drum is 4 times farther away and quieter"
+    },
+    {
+     "scene": 108,
+     "sisdr": -43.91097660594238,
+     "mrstft": 5.142514705657959,
+     "loc": -26.825033298554338,
+     "source_prompt": "a recording of thump and gunshot",
+     "target_prompt": "a recording of thump and gunshot, the thump is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1067,
+     "sisdr": -31.096767264540254,
+     "mrstft": 5.179013729095459,
+     "loc": -58.98493712627611,
+     "source_prompt": "a recording of engine, alarm and bell",
+     "target_prompt": "a recording of engine, alarm and bell, the engine is twice as close and louder"
+    },
+    {
+     "scene": 896,
+     "sisdr": -33.31022900973394,
+     "mrstft": 5.531223773956299,
+     "loc": -57.40806282370777,
+     "source_prompt": "a recording of engine, clapping and glass",
+     "target_prompt": "a recording of engine, clapping and glass, the clapping is twice as close and louder"
+    },
+    {
+     "scene": 1169,
+     "sisdr": -49.806937842456556,
+     "mrstft": 5.062393665313721,
+     "loc": -62.73668191874475,
+     "source_prompt": "a recording of glass, engine and hammer",
+     "target_prompt": "a recording of glass, engine and hammer, the glass is 4 times farther away and quieter"
+    },
+    {
+     "scene": 967,
+     "sisdr": -53.018107441240204,
+     "mrstft": 5.93649435043335,
+     "loc": -39.06966837133026,
+     "source_prompt": "a recording of gunshot, alarm and engine",
+     "target_prompt": "a recording of gunshot, alarm and engine, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 143,
+     "sisdr": -47.82619945770875,
+     "mrstft": 5.453935146331787,
+     "loc": -26.622880591980444,
+     "source_prompt": "a recording of bell, thump and bass drum",
+     "target_prompt": "a recording of bell, thump and bass drum, the thump is 2 times farther away and quieter"
+    },
+    {
+     "scene": 454,
+     "sisdr": -46.46368282734824,
+     "mrstft": 4.556756496429443,
+     "loc": -144.18019386562878,
+     "source_prompt": "a recording of glass",
+     "target_prompt": "a recording of glass, the glass is twice as close and louder"
+    },
+    {
+     "scene": 561,
+     "sisdr": -28.35052706210554,
+     "mrstft": 4.027318477630615,
+     "loc": -141.86045484869285,
+     "source_prompt": "a recording of bell",
+     "target_prompt": "a recording of bell, the bell is 2 times farther away and quieter"
+    },
+    {
+     "scene": 255,
+     "sisdr": -66.35472229153943,
+     "mrstft": 6.04693603515625,
+     "loc": -46.40967514423109,
+     "source_prompt": "a recording of gunshot and engine",
+     "target_prompt": "a recording of gunshot and engine, the engine is 4 times farther away and quieter"
+    },
+    {
+     "scene": 1311,
+     "sisdr": -37.93204719913642,
+     "mrstft": 5.806705474853516,
+     "loc": -45.04725882924674,
+     "source_prompt": "a recording of glass, clapping and engine",
+     "target_prompt": "a recording of glass, clapping and engine, the clapping is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1070,
+     "sisdr": -52.52933382896687,
+     "mrstft": 7.911261081695557,
+     "loc": -57.57259644311405,
+     "source_prompt": "a recording of bell, bass drum and alarm",
+     "target_prompt": "a recording of bell, bass drum and alarm, the bell is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1360,
+     "sisdr": -36.65007139331181,
+     "mrstft": 0.8096514344215393,
+     "loc": -139.2670968555283,
+     "source_prompt": "a recording of thump",
+     "target_prompt": "a recording of thump, the thump is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1485,
+     "sisdr": -41.65596284649605,
+     "mrstft": 2.598348379135132,
+     "loc": -137.43781003606978,
+     "source_prompt": "a recording of drum",
+     "target_prompt": "a recording of drum, the drum is 2 times farther away and quieter"
+    },
+    {
+     "scene": 796,
+     "sisdr": -47.399823089268516,
+     "mrstft": 7.6333184242248535,
+     "loc": -59.245767090231766,
+     "source_prompt": "a recording of bell, alarm and engine",
+     "target_prompt": "a recording of bell, alarm and engine, the bell is twice as close and louder"
+    },
+    {
+     "scene": 1433,
+     "sisdr": -39.26801676120714,
+     "mrstft": 5.842578887939453,
+     "loc": -48.418820397129466,
+     "source_prompt": "a recording of glass and alarm",
+     "target_prompt": "a recording of glass and alarm, the glass is 4 times farther away and quieter"
+    },
+    {
+     "scene": 1163,
+     "sisdr": -32.27746933600846,
+     "mrstft": 3.6685619354248047,
+     "loc": -69.5329109477963,
+     "source_prompt": "a recording of bell, engine and gunshot",
+     "target_prompt": "a recording of bell, engine and gunshot, the bell is 2 times farther away and quieter"
+    },
+    {
+     "scene": 613,
+     "sisdr": -21.467910233435727,
+     "mrstft": 1.5590901374816895,
+     "loc": -152.07721411394056,
+     "source_prompt": "a recording of thump",
+     "target_prompt": "a recording of thump, the thump is twice as close and louder"
+    },
+    {
+     "scene": 586,
+     "sisdr": -31.01886876919652,
+     "mrstft": 4.405389308929443,
+     "loc": -138.9563937523805,
+     "source_prompt": "a recording of alarm",
+     "target_prompt": "a recording of alarm, the alarm is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1989,
+     "sisdr": -34.901164424633635,
+     "mrstft": 4.546388626098633,
+     "loc": -65.11040588348916,
+     "source_prompt": "a recording of glass and clapping",
+     "target_prompt": "a recording of glass and clapping, the glass is twice as close and louder"
+    },
+    {
+     "scene": 625,
+     "sisdr": -66.23423512252721,
+     "mrstft": 3.952087163925171,
+     "loc": -66.81758343157287,
+     "source_prompt": "a recording of gunshot and tap",
+     "target_prompt": "a recording of gunshot and tap, the gunshot is 2 times farther away and quieter"
+    },
+    {
+     "scene": 685,
+     "sisdr": -31.422492532811262,
+     "mrstft": 5.962711811065674,
+     "loc": -160.46003530371453,
+     "source_prompt": "a recording of door",
+     "target_prompt": "a recording of door, the door is twice as close and louder"
+    },
+    {
+     "scene": 1791,
+     "sisdr": -52.555805247424445,
+     "mrstft": 6.897729396820068,
+     "loc": -38.63117371521025,
+     "source_prompt": "a recording of door, drum and clapping",
+     "target_prompt": "a recording of door, drum and clapping, the door is 2 times farther away and quieter"
+    },
+    {
+     "scene": 936,
+     "sisdr": -43.56173092305663,
+     "mrstft": 6.430536270141602,
+     "loc": -61.98016686585813,
+     "source_prompt": "a recording of clapping and bell",
+     "target_prompt": "a recording of clapping and bell, the clapping is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1117,
+     "sisdr": -38.3920540453482,
+     "mrstft": 4.303955554962158,
+     "loc": -150.82302090133024,
+     "source_prompt": "a recording of door",
+     "target_prompt": "a recording of door, the door is twice as close and louder"
+    },
+    {
+     "scene": 1782,
+     "sisdr": -29.00937741026647,
+     "mrstft": 3.6841824054718018,
+     "loc": -30.742915340326817,
+     "source_prompt": "a recording of drum and engine",
+     "target_prompt": "a recording of drum and engine, the engine is 2 times farther away and quieter"
+    },
+    {
+     "scene": 1795,
+     "sisdr": -56.1196759555612,
+     "mrstft": 5.267824649810791,
+     "loc": -65.29763007823192,
+     "source_prompt": "a recording of glass, bell and door",
+     "target_prompt": "a recording of glass, bell and door, the glass is 2 times farther away and quieter"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "meta": {
+  "date": "2026-10-18",
+  "script": "src/p3_r2_room_acoustics.py",
+  "room_m": [
+   30.0,
+   20.0,
+   8.0
+  ],
+  "volume_m3": 4800.0,
+  "src": [
+   18.0,
+   12.0,
+   1.5
+  ],
+  "mic": [
+   15.0,
+   10.0,
+   1.6
+  ],
+  "sr": 16000,
+  "renderer": "image-source, max_order 22, rir_len 2.5 s, uniform alpha, 1/r spreading, (1-alpha)^k reflection loss",
+  "notes": "geometric acoustics = image sources (phantom sources); wave acoustics matters below the Schroeder frequency f_s; statistical acoustics = Sabine closed form",
+  "direct_path_m": 3.606937759374287
+ },
+ "per_alpha": {
+  "0.3": {
+   "sabine_rt60_s": 1.288,
+   "schroeder_T20_s": 1.933871235594449,
+   "schroeder_T30_s": 2.0427843005111597,
+   "schroeder_frequency_hz": 41.259183831311624,
+   "drr_db": -0.5892599596395658,
+   "early_energy_fraction_50ms": 0.7265659704288094,
+   "n_image_arrivals_le_50ms": 8,
+   "n_image_arrivals_le_100ms": 48,
+   "n_image_arrivals_total": 29161
+  },
+  "0.35": {
+   "sabine_rt60_s": 1.104,
+   "schroeder_T20_s": 1.5325465536365876,
+   "schroeder_T30_s": 1.650384839014575,
+   "schroeder_frequency_hz": 37.08531649020691,
+   "drr_db": 0.3348876973556106,
+   "early_energy_fraction_50ms": 0.7856099530830082,
+   "n_image_arrivals_le_50ms": 8,
+   "n_image_arrivals_le_100ms": 48,
+   "n_image_arrivals_total": 29161
+  },
+  "0.4": {
+   "sabine_rt60_s": 0.9660000000000001,
+   "schroeder_T20_s": 1.250257216007518,
+   "schroeder_T30_s": 1.3689435024784196,
+   "schroeder_frequency_hz": 33.77552741357786,
+   "drr_db": 1.1558709674142822,
+   "early_energy_fraction_50ms": 0.831177690525012,
+   "n_image_arrivals_le_50ms": 8,
+   "n_image_arrivals_le_100ms": 48,
+   "n_image_arrivals_total": 29161
+  },
+  "0.45": {
+   "sabine_rt60_s": 0.8586666666666667,
+   "schroeder_T20_s": 1.064711238180747,
+   "schroeder_T30_s": 1.1321216935023035,
+   "schroeder_frequency_hz": 30.715382865679093,
+   "drr_db": 1.9177197305057536,
+   "early_energy_fraction_50ms": 0.8668919666969928,
+   "n_image_arrivals_le_50ms": 8,
+   "n_image_arrivals_le_100ms": 48,
+   "n_image_arrivals_total": 29161
+  },
+  "0.5": {
+   "sabine_rt60_s": 0.7728,
+   "schroeder_T20_s": 0.8888832920021612,
+   "schroeder_T30_s": 0.9620166753046868,
+   "schroeder_frequency_hz": 28.313964094663707,
+   "drr_db": 2.650999077921028,
+   "early_energy_fraction_50ms": 0.8952471744644139,
+   "n_image_arrivals_le_50ms": 8,
+   "n_image_arrivals_le_100ms": 48,
+   "n_image_arrivals_total": 29161
+  }
+ },
+ "modal": {
+  "modes_below_50hz": 100,
+  "modes_below_100hz": 635,
+  "modes_below_200hz": 4528,
+  "modal_density_per_hz_at_100hz": 17.2,
+  "notes": "exact shoebox mode enumeration; above f_s modal overlap (density x bandwidth) exceeds 3 and the room behaves statistically; renderer passband is 0-8 kHz at 16 kHz"
+ }
+}

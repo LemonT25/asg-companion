@@ -1,0 +1,487 @@
+{
+ "meta": {
+  "script": "src/p3_r2_listening.py",
+  "design": "agreement 0..100 per clip, original shown, hidden gt and orig",
+  "filters": {
+   "level_db": 15.0,
+   "active_min": 0.4,
+   "active_max_transient": 0.6,
+   "clap_rank_max": 3,
+   "quiet_db": 20.0,
+   "crest_impulsive": 8.0,
+   "low_freq_excluded_for_e4": [
+    "Bass_drum",
+    "Thump_and_thud"
+   ],
+   "e4_gap_min_frames": 80,
+   "e4_lead_max_s": 0.5,
+   "pilot_excluded": {
+    "1433": "glass and alarm cannot be told apart by ear"
+   }
+  }
+ },
+ "trials": [
+  {
+   "id": "E1_00899",
+   "edit": "E1",
+   "scene": 899,
+   "spec": {
+    "scene": 899,
+    "E1_slot": 0,
+    "E2_slot": 0,
+    "E2_newv": 10.0,
+    "E3_slot": 1,
+    "E3_factor": 2.0
+   },
+   "alpha": -1.0,
+   "room": false,
+   "sources": [
+    {
+     "cls": "Engine",
+     "level": -19.809547574756714,
+     "rel": -0.6176057234511134,
+     "active": 0.9875,
+     "clap_rank": 0,
+     "traj": "passby",
+     "v": 14.916777610778809,
+     "crest": 9.661370949131838
+    },
+    {
+     "cls": "Alarm",
+     "level": -19.1919418513056,
+     "rel": 0.0,
+     "active": 1.0,
+     "clap_rank": 1,
+     "traj": "static",
+     "v": 6.8766770362854,
+     "crest": 3.3158496951932155
+    }
+   ],
+   "gt_level_dbfs": -19.19194255492758,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3"
+   ],
+   "text": {
+    "original_en": "The original recording contains an engine passing by and an alarm, in the open air.",
+    "original_zh": "原录音里有引擎声（经过）和警报声，在室外。",
+    "edit_en": "The engine is removed. The alarm must stay exactly as in the original.",
+    "edit_zh": "去掉引擎声。警报声必须和原录音完全一样。"
+   }
+  },
+  {
+   "id": "E1_01289",
+   "edit": "E1",
+   "scene": 1289,
+   "spec": {
+    "scene": 1289,
+    "E1_slot": 1,
+    "E2_slot": 0,
+    "E2_newv": 30.0,
+    "E3_slot": 1,
+    "E3_factor": 2.0
+   },
+   "alpha": -1.0,
+   "room": false,
+   "sources": [
+    {
+     "cls": "Alarm",
+     "level": -31.37555950206616,
+     "rel": -3.8504341186445323,
+     "active": 0.6375,
+     "clap_rank": 2,
+     "traj": "passby",
+     "v": 8.016687393188477,
+     "crest": 6.210524520864991
+    },
+    {
+     "cls": "Door",
+     "level": -27.525125383421628,
+     "rel": 0.0,
+     "active": 0.9125,
+     "clap_rank": 2,
+     "traj": "static",
+     "v": 5.901157379150391,
+     "crest": 23.78242607259941
+    }
+   ],
+   "gt_level_dbfs": -31.375557657237483,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3"
+   ],
+   "text": {
+    "original_en": "The original recording contains an alarm passing by and a door, in the open air.",
+    "original_zh": "原录音里有警报声（经过）和门声，在室外。",
+    "edit_en": "The door is removed. The alarm must stay exactly as in the original.",
+    "edit_zh": "去掉门声。警报声必须和原录音完全一样。"
+   }
+  },
+  {
+   "id": "E1_01190",
+   "edit": "E1",
+   "scene": 1190,
+   "spec": {
+    "scene": 1190,
+    "E1_slot": 1,
+    "E3_slot": 0,
+    "E3_factor": 2.0
+   },
+   "alpha": -1.0,
+   "room": false,
+   "sources": [
+    {
+     "cls": "Engine",
+     "level": -35.15819128644434,
+     "rel": -10.086960606669702,
+     "active": 1.0,
+     "clap_rank": 0,
+     "traj": "static",
+     "v": 7.364104270935059,
+     "crest": 2.267415421493046
+    },
+    {
+     "cls": "Hammer",
+     "level": -25.07123067977464,
+     "rel": 0.0,
+     "active": 1.0,
+     "clap_rank": 1,
+     "traj": "static",
+     "v": 2.348461389541626,
+     "crest": 17.960430388903692
+    }
+   ],
+   "gt_level_dbfs": -35.15821359500558,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3"
+   ],
+   "text": {
+    "original_en": "The original recording contains an engine and a hammer, in the open air.",
+    "original_zh": "原录音里有引擎声和锤击声，在室外。",
+    "edit_en": "The hammer is removed. The engine must stay exactly as in the original.",
+    "edit_zh": "去掉锤击声。引擎声必须和原录音完全一样。"
+   }
+  },
+  {
+   "id": "E2_01211",
+   "edit": "E2",
+   "scene": 1211,
+   "spec": {
+    "scene": 1211,
+    "E2_slot": 0,
+    "E2_newv": 10.0
+   },
+   "alpha": -1.0,
+   "room": false,
+   "sources": [
+    {
+     "cls": "Engine",
+     "level": -20.701444750003542,
+     "rel": 0.0,
+     "active": 0.95,
+     "clap_rank": 2,
+     "traj": "passby",
+     "v": 38.79953384399414,
+     "crest": 10.841072101328809
+    }
+   ],
+   "gt_level_dbfs": -14.187580522796708,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3",
+    "x6"
+   ],
+   "text": {
+    "original_en": "The original recording contains an engine passing by, in the open air.",
+    "original_zh": "原录音里有引擎声（经过），在室外。",
+    "edit_en": "The engine passes by at 10 m/s instead of 39 m/s, that is slower. The pitch drop as it passes should be smaller and more gradual, and the rise and fall of loudness should be longer.",
+    "edit_zh": "引擎声以 10 m/s 而不是 39 m/s 经过，也就是变慢了。经过时的音高下落应当更小更缓，响度的起落应当更长。"
+   }
+  },
+  {
+   "id": "E2_01231",
+   "edit": "E2",
+   "scene": 1231,
+   "spec": {
+    "scene": 1231,
+    "E2_slot": 0,
+    "E2_newv": 20.0
+   },
+   "alpha": -1.0,
+   "room": false,
+   "sources": [
+    {
+     "cls": "Engine",
+     "level": -16.812137716440056,
+     "rel": 0.0,
+     "active": 1.0,
+     "clap_rank": 0,
+     "traj": "passby",
+     "v": 5.929095268249512,
+     "crest": 6.927984108556387
+    }
+   ],
+   "gt_level_dbfs": -20.92860571487233,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3",
+    "x6"
+   ],
+   "text": {
+    "original_en": "The original recording contains an engine passing by, in the open air.",
+    "original_zh": "原录音里有引擎声（经过），在室外。",
+    "edit_en": "The engine passes by at 20 m/s instead of 6 m/s, that is faster. The pitch drop as it passes should be larger and quicker, and the rise and fall of loudness should be shorter.",
+    "edit_zh": "引擎声以 20 m/s 而不是 6 m/s 经过，也就是变快了。经过时的音高下落应当更大更急，响度的起落应当更短。"
+   }
+  },
+  {
+   "id": "E3_00720",
+   "edit": "E3",
+   "scene": 720,
+   "spec": {
+    "scene": 720,
+    "E1_slot": 0,
+    "E3_slot": 1,
+    "E3_factor": 4.0,
+    "E4_newa": 0.4
+   },
+   "alpha": 0.30000001192092896,
+   "room": true,
+   "sources": [
+    {
+     "cls": "Engine",
+     "level": -26.033204737321896,
+     "rel": -2.1343420851866277,
+     "active": 1.0,
+     "clap_rank": 0,
+     "traj": "static",
+     "v": 5.570610523223877,
+     "crest": 4.031528974460415
+    },
+    {
+     "cls": "Door",
+     "level": -23.898862652135268,
+     "rel": 0.0,
+     "active": 0.725,
+     "clap_rank": 1,
+     "traj": "static",
+     "v": 3.7938950061798096,
+     "crest": 15.335618411562724
+    }
+   ],
+   "gt_level_dbfs": -25.549306275137855,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3"
+   ],
+   "text": {
+    "original_en": "The original recording contains an engine and a door, in a room (absorption 0.30).",
+    "original_zh": "原录音里有引擎声和门声，在一个房间里（吸声系数 0.30）。",
+    "edit_en": "The door is moved 4 times farther away: it should sound quieter and more distant, with relatively more room sound. The engine must stay exactly as in the original.",
+    "edit_zh": "门声被移到4 倍远的位置：它应当听起来更轻更远，房间混响的比例更大。引擎声必须和原录音完全一样。"
+   }
+  },
+  {
+   "id": "E3_01521",
+   "edit": "E3",
+   "scene": 1521,
+   "spec": {
+    "scene": 1521,
+    "E1_slot": 1,
+    "E3_slot": 0,
+    "E3_factor": 4.0,
+    "E4_newa": 0.4
+   },
+   "alpha": 0.5,
+   "room": true,
+   "sources": [
+    {
+     "cls": "Hammer",
+     "level": -31.962693860437412,
+     "rel": 0.0,
+     "active": 0.9875,
+     "clap_rank": 0,
+     "traj": "static",
+     "v": 2.1871531009674072,
+     "crest": 40.035034436292634
+    },
+    {
+     "cls": "Engine",
+     "level": -46.87126377279575,
+     "rel": -14.908569912358338,
+     "active": 0.9875,
+     "clap_rank": 0,
+     "traj": "static",
+     "v": 15.780289649963379,
+     "crest": 5.549480811775488
+    }
+   ],
+   "gt_level_dbfs": -42.16403745471827,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours",
+    "x1",
+    "x3"
+   ],
+   "text": {
+    "original_en": "The original recording contains a hammer and an engine, in a room (absorption 0.50).",
+    "original_zh": "原录音里有锤击声和引擎声，在一个房间里（吸声系数 0.50）。",
+    "edit_en": "The hammer is moved 4 times farther away: it should sound quieter and more distant, with relatively more room sound. The engine must stay exactly as in the original.",
+    "edit_zh": "锤击声被移到4 倍远的位置：它应当听起来更轻更远，房间混响的比例更大。引擎声必须和原录音完全一样。"
+   }
+  },
+  {
+   "id": "E4_01522",
+   "edit": "E4",
+   "scene": 1522,
+   "spec": {
+    "scene": 1522,
+    "E3_slot": 0,
+    "E3_factor": 0.5,
+    "E4_newa": 0.3
+   },
+   "alpha": 0.44999998807907104,
+   "room": true,
+   "sources": [
+    {
+     "cls": "Hammer",
+     "level": -30.326786216296902,
+     "rel": 0.0,
+     "active": 0.9875,
+     "clap_rank": 0,
+     "traj": "static",
+     "v": 3.375753879547119,
+     "crest": 32.83517209079046
+    }
+   ],
+   "gt_level_dbfs": -27.062454165064803,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours"
+   ],
+   "text": {
+    "original_en": "The original recording contains a hammer, in a room (absorption 0.45).",
+    "original_zh": "原录音里有锤击声，在一个房间里（吸声系数 0.45）。",
+    "edit_en": "The room becomes less absorbing (absorption 0.45 to 0.30): the reverberation tail after each sound becomes longer. The sounds themselves stay the same.",
+    "edit_zh": "房间变得更不吸声（吸声系数 0.45 变为 0.30）：每个声音之后的混响尾巴应当变长。声音本身不变。"
+   }
+  },
+  {
+   "id": "E4_00131",
+   "edit": "E4",
+   "scene": 131,
+   "spec": {
+    "scene": 131,
+    "E1_slot": 1,
+    "E3_slot": 0,
+    "E3_factor": 2.0,
+    "E4_newa": 0.3
+   },
+   "alpha": 0.5,
+   "room": true,
+   "sources": [
+    {
+     "cls": "Tap",
+     "level": -26.518396771698747,
+     "rel": 0.0,
+     "active": 0.9875,
+     "clap_rank": 1,
+     "traj": "static",
+     "v": 1.646539330482483,
+     "crest": 21.16978627382176
+    },
+    {
+     "cls": "Door",
+     "level": -58.541871380275346,
+     "rel": -32.0234746085766,
+     "active": 0.2875,
+     "clap_rank": 6,
+     "traj": "static",
+     "v": 17.65337371826172,
+     "crest": 12.74766371923875
+    }
+   ],
+   "gt_level_dbfs": -25.116362884618436,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours"
+   ],
+   "text": {
+    "original_en": "The original recording contains a tapping sound, in a room (absorption 0.50).",
+    "original_zh": "原录音里有轻敲声，在一个房间里（吸声系数 0.50）。",
+    "edit_en": "The room becomes less absorbing (absorption 0.50 to 0.30): the reverberation tail after each sound becomes longer. The sounds themselves stay the same.",
+    "edit_zh": "房间变得更不吸声（吸声系数 0.50 变为 0.30）：每个声音之后的混响尾巴应当变长。声音本身不变。"
+   }
+  },
+  {
+   "id": "E4_00108",
+   "edit": "E4",
+   "scene": 108,
+   "spec": {
+    "scene": 108,
+    "E1_slot": 0,
+    "E3_slot": 0,
+    "E3_factor": 2.0,
+    "E4_newa": 0.5
+   },
+   "alpha": 0.3499999940395355,
+   "room": true,
+   "sources": [
+    {
+     "cls": "Thump_and_thud",
+     "level": -25.00857660241682,
+     "rel": 0.0,
+     "active": 0.8625,
+     "clap_rank": 2,
+     "traj": "static",
+     "v": 14.560516357421875,
+     "crest": 17.795629516833195
+    },
+    {
+     "cls": "Gunshot_and_gunfire",
+     "level": -31.549425760254707,
+     "rel": -6.5408491578378865,
+     "active": 0.2375,
+     "clap_rank": 3,
+     "traj": "static",
+     "v": 15.247332572937012,
+     "crest": 19.19775985192797
+    }
+   ],
+   "gt_level_dbfs": -25.293664802632236,
+   "conditions": [
+    "gt",
+    "orig",
+    "ours"
+   ],
+   "text": {
+    "original_en": "The original recording contains a thump and a gunshot, in a room (absorption 0.35).",
+    "original_zh": "原录音里有重击声和枪声，在一个房间里（吸声系数 0.35）。",
+    "edit_en": "The room becomes more absorbing (absorption 0.35 to 0.50): the reverberation tail after each sound becomes shorter. The sounds themselves stay the same.",
+    "edit_zh": "房间变得更吸声（吸声系数 0.35 变为 0.50）：每个声音之后的混响尾巴应当变短。声音本身不变。"
+   }
+  }
+ ]
+}
