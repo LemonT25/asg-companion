@@ -1,0 +1,28 @@
+{
+ "meta": {
+  "date": "2026-08-12",
+  "script": "src/p3_ckpt_select.py",
+  "rule": "pre-registered: pick lower validation reconstruction recon = stem + mix + 0.5*dry on first 500 val scenes; th reported, not used for selection"
+ },
+ "candidates": {
+  "50k_backup": {
+   "stem": 2.696028334753854,
+   "mix": 2.242931272302355,
+   "dry": 7.402757020223708,
+   "th": 0.25944635963865686,
+   "recon": 8.640338117168064,
+   "step": 50000,
+   "n_scenes": 504
+  },
+  "60k_final": {
+   "stem": 2.640966545967829,
+   "mix": 2.2118232675961087,
+   "dry": 7.318512746265957,
+   "th": 0.2642159555994329,
+   "recon": 8.512046186696915,
+   "step": 60000,
+   "n_scenes": 504
+  }
+ },
+ "selected": "60k_final"
+}

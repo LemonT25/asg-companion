@@ -1,0 +1,19 @@
+{
+ "meta": {
+  "date": "2026-08-16",
+  "script": "src/p3_theta_estimators.py",
+  "note": "three estimator generations on ownership posterior stems, held-out open scenes; est=waveform conv (est_latest 3.4M), est2=T-F conv (est2_latest 0.9M), est2b=T-F 2ch+bins (est2b_latest 1.6M)",
+  "n_scenes": 80,
+  "n_slots": 122
+ },
+ "rel_median": {
+  "est": 0.26493263438826736,
+  "est2": 0.2332487877225493,
+  "est2b": 0.20693379338964024
+ },
+ "rel_mean": {
+  "est": 0.41920038289924316,
+  "est2": 0.4026817975019916,
+  "est2b": 0.45800350610217877
+ }
+}

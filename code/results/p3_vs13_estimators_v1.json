@@ -1,0 +1,30 @@
+{
+ "meta": {
+  "date": "2026-08-21",
+  "script": "extracted from logs/a12_rd_ft_{editor,verifier}.log final eval blocks + p3_r_e2_v1.aggregates",
+  "note": "A12.3 three-way split; eval cars unseen by both networks"
+ },
+ "editor": {
+  "n_eval": 98,
+  "rel_median": 0.09698759025367781,
+  "mae_kmh_median": 5.756425559520721,
+  "mae_kmh_mean": 8.009406499564648
+ },
+ "verifier": {
+  "n_eval": 98,
+  "rel_median": 0.10318473489559728,
+  "mae_kmh_median": 6.351774841547012,
+  "mae_kmh_mean": 7.692052146153791
+ },
+ "editor_on_eval_clips": {
+  "desc": "editor |v_hat - v_true| on the same clips (km/h)",
+  "err_kmh": {
+   "median": 5.229921489953996,
+   "ci95": [
+    4.471892118453982,
+    8.594074368476862
+   ],
+   "n": 60
+  }
+ }
+}

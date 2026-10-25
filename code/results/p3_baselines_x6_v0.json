@@ -1,0 +1,887 @@
+{
+ "meta": {
+  "date": "2026-08-14",
+  "script": "src/p3_x6_audioomni.py",
+  "system": "X6 Audio-Omni (SIGGRAPH'26)",
+  "family": "regeneration",
+  "ckpt": "/workspace/ext_baselines/Audio-Omni/model/model.ckpt",
+  "qwen_cfg": "/workspace/ext_baselines/qwen25omni3b_cfg",
+  "steps": 100,
+  "cfg_scale": 7.0,
+  "python": "/workspace/venvs/audioomni/bin/python",
+  "sr_adapter": "native 44.1 kHz stereo, fixed 11.0 s/485100-sample output; 4 s/16 kHz mixture resampled to 44.1 kHz mono by the repo loader and tail-zero-padded to the fixed 10 s/441000-sample source-conditioning window (repo mel conditioner expects 1723 mel frames; same padding as the repo's Editing UI _load_audio_input_wav); edited output mono-averaged, resampled 44.1->16 kHz, trimmed to 64000 samples; repo output is peak-normalized int16, absorbed by LS scale fit to the mixture (disclosed)",
+  "notes": "X6=Audio-Omni(SIGGRAPH26) instruction-based regeneration: whole mixture re-generated from a natural-language edit instruction (repo SYSTEM_EDITING prompt, free-form user instruction; exact strings in 'instructions'); edited mixture compared against the same references; GT class names in instructions and LS scale fit favor the baseline (disclosed); no stem/estimator stage (regeneration family); deterministic seed per (spec, edit); same edits as p3_edit_eval_v0.json"
+ },
+ "X6": {
+  "rows": {
+   "E1": [
+    {
+     "scene": 1361,
+     "sisdr": -32.35686232399181,
+     "mrstft": 2.7928221225738525
+    },
+    {
+     "scene": 1776,
+     "sisdr": -43.53017839375287,
+     "mrstft": 6.536776065826416
+    },
+    {
+     "scene": 430,
+     "sisdr": -20.142028491806776,
+     "mrstft": 4.127549648284912
+    },
+    {
+     "scene": 180,
+     "sisdr": -17.89630676228587,
+     "mrstft": 2.1194257736206055
+    },
+    {
+     "scene": 1588,
+     "sisdr": -44.25961855958447,
+     "mrstft": 4.334418773651123
+    },
+    {
+     "scene": 776,
+     "sisdr": -41.27867543896621,
+     "mrstft": 2.551060676574707
+    },
+    {
+     "scene": 1150,
+     "sisdr": -48.717901968406245,
+     "mrstft": 3.800243377685547
+    },
+    {
+     "scene": 1316,
+     "sisdr": -47.255266183798135,
+     "mrstft": 2.717057466506958
+    },
+    {
+     "scene": 654,
+     "sisdr": -34.88453711717967,
+     "mrstft": 3.5779783725738525
+    },
+    {
+     "scene": 1624,
+     "sisdr": -35.6721679093286,
+     "mrstft": 1.079307198524475
+    },
+    {
+     "scene": 1180,
+     "sisdr": -34.56139502584877,
+     "mrstft": 4.1124958992004395
+    },
+    {
+     "scene": 887,
+     "sisdr": -58.540022088394636,
+     "mrstft": 3.3932430744171143
+    },
+    {
+     "scene": 535,
+     "sisdr": -40.012296023825826,
+     "mrstft": 3.944650411605835
+    },
+    {
+     "scene": 771,
+     "sisdr": -58.89353547905053,
+     "mrstft": 4.748201847076416
+    },
+    {
+     "scene": 699,
+     "sisdr": -49.51710807646516,
+     "mrstft": 3.341600179672241
+    },
+    {
+     "scene": 222,
+     "sisdr": -18.7885206818815,
+     "mrstft": 2.6756153106689453
+    },
+    {
+     "scene": 372,
+     "sisdr": -33.89981396650762,
+     "mrstft": 6.935670852661133
+    },
+    {
+     "scene": 108,
+     "sisdr": -26.1343450445959,
+     "mrstft": 2.7823526859283447
+    },
+    {
+     "scene": 1067,
+     "sisdr": -31.566393235188883,
+     "mrstft": 2.2308895587921143
+    },
+    {
+     "scene": 896,
+     "sisdr": -41.8177099063114,
+     "mrstft": 4.008791923522949
+    },
+    {
+     "scene": 1169,
+     "sisdr": -60.961235980573306,
+     "mrstft": 4.034347057342529
+    },
+    {
+     "scene": 967,
+     "sisdr": -41.867734220073906,
+     "mrstft": 2.8692467212677
+    },
+    {
+     "scene": 143,
+     "sisdr": -31.479061287604033,
+     "mrstft": 4.663258075714111
+    },
+    {
+     "scene": 255,
+     "sisdr": -41.896146399595445,
+     "mrstft": 2.5939202308654785
+    },
+    {
+     "scene": 1311,
+     "sisdr": -40.85374097377124,
+     "mrstft": 4.716924667358398
+    },
+    {
+     "scene": 1070,
+     "sisdr": -43.452508953280585,
+     "mrstft": 3.576353073120117
+    },
+    {
+     "scene": 155,
+     "sisdr": -38.354395695205696,
+     "mrstft": 4.967728137969971
+    },
+    {
+     "scene": 1608,
+     "sisdr": -22.44227469984196,
+     "mrstft": 6.492546558380127
+    },
+    {
+     "scene": 796,
+     "sisdr": -30.64272341488357,
+     "mrstft": 4.3681159019470215
+    },
+    {
+     "scene": 1433,
+     "sisdr": -41.06728873640933,
+     "mrstft": 3.1320273876190186
+    },
+    {
+     "scene": 1163,
+     "sisdr": -33.47959230278275,
+     "mrstft": 2.642336845397949
+    },
+    {
+     "scene": 1989,
+     "sisdr": -43.9598536268234,
+     "mrstft": 2.7727537155151367
+    },
+    {
+     "scene": 625,
+     "sisdr": -51.33213821489568,
+     "mrstft": 2.786879777908325
+    },
+    {
+     "scene": 1791,
+     "sisdr": -42.21660028469679,
+     "mrstft": 3.261847734451294
+    },
+    {
+     "scene": 936,
+     "sisdr": -41.78190233915225,
+     "mrstft": 3.3721415996551514
+    },
+    {
+     "scene": 1782,
+     "sisdr": -38.40823771608768,
+     "mrstft": 3.8739497661590576
+    },
+    {
+     "scene": 1795,
+     "sisdr": -34.39565698136852,
+     "mrstft": 2.671154022216797
+    }
+   ],
+   "E2": [
+    {
+     "scene": 1811,
+     "sisdr": -38.52552244485423,
+     "mrstft": 3.1026182174682617
+    },
+    {
+     "scene": 159,
+     "sisdr": -38.75323676005485,
+     "mrstft": 4.766151428222656
+    },
+    {
+     "scene": 654,
+     "sisdr": -19.7616247981767,
+     "mrstft": 2.9228944778442383
+    },
+    {
+     "scene": 699,
+     "sisdr": -38.67444363420514,
+     "mrstft": 2.4413464069366455
+    },
+    {
+     "scene": 1066,
+     "sisdr": -31.663099462028995,
+     "mrstft": 4.161005973815918
+    },
+    {
+     "scene": 1067,
+     "sisdr": -27.424650785266586,
+     "mrstft": 3.4405739307403564
+    },
+    {
+     "scene": 952,
+     "sisdr": -34.758175277238216,
+     "mrstft": 5.291964054107666
+    },
+    {
+     "scene": 1169,
+     "sisdr": -38.87026613367239,
+     "mrstft": 3.7794110774993896
+    },
+    {
+     "scene": 1231,
+     "sisdr": -38.79952487728514,
+     "mrstft": 3.5165183544158936
+    },
+    {
+     "scene": 961,
+     "sisdr": -23.57386778019293,
+     "mrstft": 2.280677556991577
+    },
+    {
+     "scene": 1311,
+     "sisdr": -39.12129163264639,
+     "mrstft": 5.246016979217529
+    },
+    {
+     "scene": 155,
+     "sisdr": -29.66919163297943,
+     "mrstft": 4.978104114532471
+    },
+    {
+     "scene": 1608,
+     "sisdr": -28.486485801850773,
+     "mrstft": 4.939350605010986
+    },
+    {
+     "scene": 1163,
+     "sisdr": -35.23069246931919,
+     "mrstft": 2.5415751934051514
+    },
+    {
+     "scene": 14,
+     "sisdr": -9.234384475076428,
+     "mrstft": 0.8781089782714844
+    },
+    {
+     "scene": 1211,
+     "sisdr": -25.052067356262086,
+     "mrstft": 4.499463081359863
+    },
+    {
+     "scene": 936,
+     "sisdr": -37.65807276436396,
+     "mrstft": 5.903966426849365
+    }
+   ],
+   "E3": [
+    {
+     "scene": 1361,
+     "sisdr": -25.5331413711991,
+     "mrstft": 4.6567792892456055
+    },
+    {
+     "scene": 1776,
+     "sisdr": -31.732459993625632,
+     "mrstft": 3.7589948177337646
+    },
+    {
+     "scene": 245,
+     "sisdr": -27.516735959653232,
+     "mrstft": 1.9969269037246704
+    },
+    {
+     "scene": 430,
+     "sisdr": -30.43349672125491,
+     "mrstft": 3.9520180225372314
+    },
+    {
+     "scene": 180,
+     "sisdr": -31.01111156202031,
+     "mrstft": 3.6451008319854736
+    },
+    {
+     "scene": 1588,
+     "sisdr": -53.47197914858701,
+     "mrstft": 7.076632022857666
+    },
+    {
+     "scene": 776,
+     "sisdr": -28.704446273832556,
+     "mrstft": 5.395639419555664
+    },
+    {
+     "scene": 1150,
+     "sisdr": -45.394069975757,
+     "mrstft": 3.9455060958862305
+    },
+    {
+     "scene": 1316,
+     "sisdr": -56.62746715034846,
+     "mrstft": 7.907686233520508
+    },
+    {
+     "scene": 654,
+     "sisdr": -41.67707793427547,
+     "mrstft": 6.594141006469727
+    },
+    {
+     "scene": 1624,
+     "sisdr": -32.911954069833705,
+     "mrstft": 3.1956822872161865
+    },
+    {
+     "scene": 1180,
+     "sisdr": -37.53056972307673,
+     "mrstft": 6.192787170410156
+    },
+    {
+     "scene": 887,
+     "sisdr": -30.67118971806282,
+     "mrstft": 2.398207187652588
+    },
+    {
+     "scene": 535,
+     "sisdr": -40.856348327841154,
+     "mrstft": 6.526915073394775
+    },
+    {
+     "scene": 371,
+     "sisdr": -23.47438872598008,
+     "mrstft": 1.8487415313720703
+    },
+    {
+     "scene": 756,
+     "sisdr": -44.07644222397906,
+     "mrstft": 8.01157283782959
+    },
+    {
+     "scene": 771,
+     "sisdr": -56.11912015609198,
+     "mrstft": 6.256069183349609
+    },
+    {
+     "scene": 1123,
+     "sisdr": -22.03451624521402,
+     "mrstft": 0.5312610268592834
+    },
+    {
+     "scene": 699,
+     "sisdr": -23.34012584162494,
+     "mrstft": 3.746223211288452
+    },
+    {
+     "scene": 1107,
+     "sisdr": -25.18522387159491,
+     "mrstft": 0.9130306243896484
+    },
+    {
+     "scene": 222,
+     "sisdr": -42.425179642084885,
+     "mrstft": 5.515653133392334
+    },
+    {
+     "scene": 1733,
+     "sisdr": -30.87185468331489,
+     "mrstft": 3.3702762126922607
+    },
+    {
+     "scene": 372,
+     "sisdr": -45.47332313492855,
+     "mrstft": 7.313665866851807
+    },
+    {
+     "scene": 1830,
+     "sisdr": -23.86630851601086,
+     "mrstft": 1.8614215850830078
+    },
+    {
+     "scene": 108,
+     "sisdr": -29.689837140754456,
+     "mrstft": 4.027948379516602
+    },
+    {
+     "scene": 1067,
+     "sisdr": -22.900851356693725,
+     "mrstft": 3.780979871749878
+    },
+    {
+     "scene": 896,
+     "sisdr": -38.393895519137374,
+     "mrstft": 5.1335015296936035
+    },
+    {
+     "scene": 1169,
+     "sisdr": -62.540701471178636,
+     "mrstft": 6.074783802032471
+    },
+    {
+     "scene": 967,
+     "sisdr": -48.7702732430068,
+     "mrstft": 5.137136936187744
+    },
+    {
+     "scene": 143,
+     "sisdr": -43.19344260628856,
+     "mrstft": 4.881936550140381
+    },
+    {
+     "scene": 454,
+     "sisdr": -43.41640112610952,
+     "mrstft": 5.361764430999756
+    },
+    {
+     "scene": 561,
+     "sisdr": -45.40524680977776,
+     "mrstft": 2.406907081604004
+    },
+    {
+     "scene": 255,
+     "sisdr": -35.665542422756296,
+     "mrstft": 2.8529369831085205
+    },
+    {
+     "scene": 1311,
+     "sisdr": -47.72054859020805,
+     "mrstft": 6.075765609741211
+    },
+    {
+     "scene": 1070,
+     "sisdr": -35.775019836213616,
+     "mrstft": 6.269019603729248
+    },
+    {
+     "scene": 1360,
+     "sisdr": -16.067331815217585,
+     "mrstft": 0.7033711075782776
+    },
+    {
+     "scene": 1485,
+     "sisdr": -13.461204493382194,
+     "mrstft": 1.3796170949935913
+    },
+    {
+     "scene": 796,
+     "sisdr": -40.57244719593967,
+     "mrstft": 6.604960918426514
+    },
+    {
+     "scene": 1433,
+     "sisdr": -39.9868412272381,
+     "mrstft": 4.8605828285217285
+    },
+    {
+     "scene": 1163,
+     "sisdr": -37.071651454360335,
+     "mrstft": 3.339604139328003
+    },
+    {
+     "scene": 613,
+     "sisdr": -32.09259181827036,
+     "mrstft": 0.6576344966888428
+    },
+    {
+     "scene": 586,
+     "sisdr": -30.20876194772553,
+     "mrstft": 5.569468021392822
+    },
+    {
+     "scene": 1989,
+     "sisdr": -33.9560674256462,
+     "mrstft": 5.1581807136535645
+    },
+    {
+     "scene": 625,
+     "sisdr": -39.64116875725555,
+     "mrstft": 2.1821842193603516
+    },
+    {
+     "scene": 685,
+     "sisdr": -29.506036942842332,
+     "mrstft": 4.36374044418335
+    },
+    {
+     "scene": 1791,
+     "sisdr": -35.93713266245374,
+     "mrstft": 5.399810314178467
+    },
+    {
+     "scene": 936,
+     "sisdr": -81.03565751882991,
+     "mrstft": 5.401051998138428
+    },
+    {
+     "scene": 1117,
+     "sisdr": -48.08034186449335,
+     "mrstft": 3.9304115772247314
+    },
+    {
+     "scene": 1782,
+     "sisdr": -25.28334482812085,
+     "mrstft": 2.6565301418304443
+    },
+    {
+     "scene": 1795,
+     "sisdr": -23.210657751484472,
+     "mrstft": 4.3398566246032715
+    }
+   ]
+  },
+  "edits": {
+   "E1": {
+    "sisdr": {
+     "median": -40.85374097377124,
+     "ci95": [
+      -41.896146399595445,
+      -34.56139502584877
+     ],
+     "n": 37
+    },
+    "mrstft": {
+     "median": 3.3932430744171143,
+     "ci95": [
+      2.7928221225738525,
+      4.008791923522949
+     ],
+     "n": 37
+    }
+   },
+   "E2": {
+    "sisdr": {
+     "median": -34.758175277238216,
+     "ci95": [
+      -38.67444363420514,
+      -27.424650785266586
+     ],
+     "n": 17
+    },
+    "mrstft": {
+     "median": 3.7794110774993896,
+     "ci95": [
+      2.9228944778442383,
+      4.939350605010986
+     ],
+     "n": 17
+    }
+   },
+   "E3": {
+    "sisdr": {
+     "median": -35.72028112948496,
+     "ci95": [
+      -40.10680797659761,
+      -30.841150640041565
+     ],
+     "n": 50
+    },
+    "mrstft": {
+     "median": 4.3517985343933105,
+     "ci95": [
+      3.7589948177337646,
+      5.25997257232666
+     ],
+     "n": 50
+    }
+   }
+  },
+  "instructions": [
+   {
+    "scene": 1361,
+    "E1": "remove the thump sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 1776,
+    "E1": "remove the bass drum sound",
+    "E3": "make the alarm sound 4 times farther away"
+   },
+   {
+    "scene": 245,
+    "E3": "make the tap sound 4 times farther away"
+   },
+   {
+    "scene": 430,
+    "E1": "remove the drum sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 180,
+    "E1": "remove the door sound",
+    "E3": "make the door sound twice as close"
+   },
+   {
+    "scene": 1588,
+    "E1": "remove the engine sound",
+    "E3": "make the door sound 4 times farther away"
+   },
+   {
+    "scene": 1811,
+    "E2": "make the engine pass by at 30 meters per second"
+   },
+   {
+    "scene": 776,
+    "E1": "remove the engine sound",
+    "E3": "make the alarm sound 2 times farther away"
+   },
+   {
+    "scene": 159,
+    "E2": "make the alarm pass by at 30 meters per second"
+   },
+   {
+    "scene": 1150,
+    "E1": "remove the engine sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 1316,
+    "E1": "remove the door sound",
+    "E3": "make the clapping sound 2 times farther away"
+   },
+   {
+    "scene": 654,
+    "E1": "remove the drum sound",
+    "E2": "make the engine pass by at 5 meters per second",
+    "E3": "make the drum sound 2 times farther away"
+   },
+   {
+    "scene": 1624,
+    "E1": "remove the engine sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 1180,
+    "E1": "remove the alarm sound",
+    "E3": "make the door sound 4 times farther away"
+   },
+   {
+    "scene": 887,
+    "E1": "remove the engine sound",
+    "E3": "make the engine sound 4 times farther away"
+   },
+   {
+    "scene": 535,
+    "E1": "remove the gunshot sound",
+    "E3": "make the door sound 4 times farther away"
+   },
+   {
+    "scene": 371,
+    "E3": "make the engine sound 4 times farther away"
+   },
+   {
+    "scene": 756,
+    "E3": "make the door sound twice as close"
+   },
+   {
+    "scene": 771,
+    "E1": "remove the drum sound",
+    "E3": "make the door sound 2 times farther away"
+   },
+   {
+    "scene": 1123,
+    "E3": "make the thump sound 2 times farther away"
+   },
+   {
+    "scene": 699,
+    "E1": "remove the thump sound",
+    "E2": "make the engine pass by at 30 meters per second",
+    "E3": "make the thump sound 2 times farther away"
+   },
+   {
+    "scene": 1107,
+    "E3": "make the gunshot sound 4 times farther away"
+   },
+   {
+    "scene": 222,
+    "E1": "remove the drum sound",
+    "E3": "make the drum sound 4 times farther away"
+   },
+   {
+    "scene": 1066,
+    "E2": "make the bell pass by at 30 meters per second"
+   },
+   {
+    "scene": 1733,
+    "E3": "make the alarm sound 4 times farther away"
+   },
+   {
+    "scene": 372,
+    "E1": "remove the drum sound",
+    "E3": "make the door sound 2 times farther away"
+   },
+   {
+    "scene": 1830,
+    "E3": "make the bass drum sound 4 times farther away"
+   },
+   {
+    "scene": 108,
+    "E1": "remove the thump sound",
+    "E3": "make the thump sound 2 times farther away"
+   },
+   {
+    "scene": 1067,
+    "E1": "remove the engine sound",
+    "E2": "make the alarm pass by at 20 meters per second",
+    "E3": "make the engine sound twice as close"
+   },
+   {
+    "scene": 952,
+    "E2": "make the alarm pass by at 20 meters per second"
+   },
+   {
+    "scene": 896,
+    "E1": "remove the clapping sound",
+    "E3": "make the clapping sound twice as close"
+   },
+   {
+    "scene": 1169,
+    "E1": "remove the hammer sound",
+    "E2": "make the engine pass by at 5 meters per second",
+    "E3": "make the glass sound 4 times farther away"
+   },
+   {
+    "scene": 967,
+    "E1": "remove the gunshot sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 1231,
+    "E2": "make the engine pass by at 20 meters per second"
+   },
+   {
+    "scene": 143,
+    "E1": "remove the bass drum sound",
+    "E3": "make the thump sound 2 times farther away"
+   },
+   {
+    "scene": 454,
+    "E3": "make the glass sound twice as close"
+   },
+   {
+    "scene": 961,
+    "E2": "make the bell pass by at 30 meters per second"
+   },
+   {
+    "scene": 561,
+    "E3": "make the bell sound 2 times farther away"
+   },
+   {
+    "scene": 255,
+    "E1": "remove the gunshot sound",
+    "E3": "make the engine sound 4 times farther away"
+   },
+   {
+    "scene": 1311,
+    "E1": "remove the clapping sound",
+    "E2": "make the engine pass by at 10 meters per second",
+    "E3": "make the clapping sound 2 times farther away"
+   },
+   {
+    "scene": 1070,
+    "E1": "remove the alarm sound",
+    "E3": "make the bell sound 2 times farther away"
+   },
+   {
+    "scene": 155,
+    "E1": "remove the alarm sound",
+    "E2": "make the engine pass by at 10 meters per second"
+   },
+   {
+    "scene": 1360,
+    "E3": "make the thump sound 2 times farther away"
+   },
+   {
+    "scene": 1608,
+    "E1": "remove the alarm sound",
+    "E2": "make the alarm pass by at 20 meters per second"
+   },
+   {
+    "scene": 1485,
+    "E3": "make the drum sound 2 times farther away"
+   },
+   {
+    "scene": 796,
+    "E1": "remove the engine sound",
+    "E3": "make the bell sound twice as close"
+   },
+   {
+    "scene": 1433,
+    "E1": "remove the glass sound",
+    "E3": "make the glass sound 4 times farther away"
+   },
+   {
+    "scene": 1163,
+    "E1": "remove the gunshot sound",
+    "E2": "make the engine pass by at 40 meters per second",
+    "E3": "make the bell sound 2 times farther away"
+   },
+   {
+    "scene": 613,
+    "E3": "make the thump sound twice as close"
+   },
+   {
+    "scene": 586,
+    "E3": "make the alarm sound 2 times farther away"
+   },
+   {
+    "scene": 14,
+    "E2": "make the bell pass by at 40 meters per second"
+   },
+   {
+    "scene": 1989,
+    "E1": "remove the clapping sound",
+    "E3": "make the glass sound twice as close"
+   },
+   {
+    "scene": 625,
+    "E1": "remove the gunshot sound",
+    "E3": "make the gunshot sound 2 times farther away"
+   },
+   {
+    "scene": 685,
+    "E3": "make the door sound twice as close"
+   },
+   {
+    "scene": 1791,
+    "E1": "remove the clapping sound",
+    "E3": "make the door sound 2 times farther away"
+   },
+   {
+    "scene": 1211,
+    "E2": "make the engine pass by at 10 meters per second"
+   },
+   {
+    "scene": 936,
+    "E1": "remove the bell sound",
+    "E2": "make the bell pass by at 40 meters per second",
+    "E3": "make the clapping sound 2 times farther away"
+   },
+   {
+    "scene": 1117,
+    "E3": "make the door sound twice as close"
+   },
+   {
+    "scene": 1782,
+    "E1": "remove the drum sound",
+    "E3": "make the engine sound 2 times farther away"
+   },
+   {
+    "scene": 1795,
+    "E1": "remove the bell sound",
+    "E3": "make the glass sound 2 times farther away"
+   }
+  ]
+ }
+}

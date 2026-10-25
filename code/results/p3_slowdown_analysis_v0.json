@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "date": "2026-08-21",
+  "script": "src/p3_slowdown_analysis.py",
+  "ledger": "p3_r_e2_v1.json"
+ },
+ "medians": {
+  "up_edit": 11.76983733177185,
+  "dn_edit": 28.455270630121234,
+  "up_src": 21.536855643987654,
+  "dn_src": 19.30386261940003
+ },
+ "correlations_dn": {
+  "v_true": {
+   "rho": -0.12355301063514366,
+   "p": 0.5153873381466966,
+   "n": 30
+  },
+  "editor_err": null,
+  "verr_src": {
+   "rho": 0.46562847608453833,
+   "p": 0.00951219723032523,
+   "n": 30
+  }
+ },
+ "correlations_up": {
+  "v_true": {
+   "rho": -0.9035273675772992,
+   "p": 8.143793787189331e-12,
+   "n": 30
+  },
+  "editor_err": null
+ },
+ "gt_v_render_probe": {
+  "note": "edits executed with GROUND-TRUTH v (no estimator): isolates render+verifier from estimation error",
+  "up_median_kmh": 12.015456008911126,
+  "dn_median_kmh": 27.03227424621582,
+  "n": 30
+ }
+}
